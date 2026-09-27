@@ -1,0 +1,181 @@
+{
+  "m1": {
+    "0.05": {
+      "prob_satisfy_mean": 0.5735080000000001,
+      "prob_satisfy_std": 0.17852177608347955,
+      "avg_n_pois": 2.11,
+      "avg_time_min": 234.75,
+      "t_safe_example": 280.3
+    },
+    "0.1": {
+      "prob_satisfy_mean": 0.6438720000000002,
+      "prob_satisfy_std": 0.13794410105546376,
+      "avg_n_pois": 2.03,
+      "avg_time_min": 227.5,
+      "t_safe_example": 269.4
+    },
+    "0.15": {
+      "prob_satisfy_mean": 0.6438720000000002,
+      "prob_satisfy_std": 0.13794410105546376,
+      "avg_n_pois": 2.03,
+      "avg_time_min": 227.5,
+      "t_safe_example": 262.1
+    },
+    "0.2": {
+      "prob_satisfy_mean": 0.6658440000000002,
+      "prob_satisfy_std": 0.1320592589105361,
+      "avg_n_pois": 2.0,
+      "avg_time_min": 224.95,
+      "t_safe_example": 256.2
+    },
+    "0.3": {
+      "prob_satisfy_mean": 0.6658440000000002,
+      "prob_satisfy_std": 0.1320592589105361,
+      "avg_n_pois": 2.0,
+      "avg_time_min": 224.95,
+      "t_safe_example": 246.7
+    },
+    "0.5": {
+      "prob_satisfy_mean": 0.7709980000000003,
+      "prob_satisfy_std": 0.06701323746842856,
+      "avg_n_pois": 2.0,
+      "avg_time_min": 216.25,
+      "t_safe_example": 231.0
+    }
+  },
+  "m2": {
+    "10": {
+      "ccp": 0.8766666666666667,
+      "drccp": 0.8933333333333333,
+      "gain": 0.016666666666666607,
+      "n_pois_ccp": 2,
+      "n_pois_drccp": 2
+    },
+    "20": {
+      "ccp": 0.8633333333333333,
+      "drccp": 0.89,
+      "gain": 0.026666666666666727,
+      "n_pois_ccp": 2,
+      "n_pois_drccp": 2
+    },
+    "30": {
+      "ccp": 0.8733333333333333,
+      "drccp": 0.8666666666666667,
+      "gain": -0.006666666666666599,
+      "n_pois_ccp": 2,
+      "n_pois_drccp": 2
+    },
+    "45": {
+      "ccp": 0.84,
+      "drccp": 0.8133333333333334,
+      "gain": -0.026666666666666616,
+      "n_pois_ccp": 2,
+      "n_pois_drccp": 2
+    },
+    "60": {
+      "ccp": 0.08333333333333333,
+      "drccp": 0.8666666666666667,
+      "gain": 0.7833333333333333,
+      "n_pois_ccp": 3,
+      "n_pois_drccp": 2
+    }
+  },
+  "m3": {
+    "by_turn": {
+      "1": {
+        "tripsense": 0.7516319720749217,
+        "fixed_prior": 0.7531071380244155,
+        "n": 100
+      },
+      "2": {
+        "tripsense": 0.759281373493533,
+        "fixed_prior": 0.7531071380244155,
+        "n": 100
+      },
+      "3": {
+        "tripsense": 0.7857767012272354,
+        "fixed_prior": 0.7531071380244155,
+        "n": 100
+      },
+      "4": {
+        "tripsense": 0.789126171759101,
+        "fixed_prior": 0.746427945701147,
+        "n": 69
+      },
+      "5": {
+        "tripsense": 0.7830457654292683,
+        "fixed_prior": 0.7431142070201227,
+        "n": 33
+      }
+    }
+  },
+  "m4": {
+    "tripsense": {
+      "mean": 0.7861176482166902,
+      "std": 0.1722160410917016
+    },
+    "fixed_prior": {
+      "mean": 0.7531071380244155,
+      "std": 0.1786243123602474
+    },
+    "popularity": {
+      "mean": 0.7196345495181252,
+      "std": 0.16100783021782353
+    }
+  },
+  "m5": {
+    "1": {
+      "mean": 0.2189949884691234,
+      "std": 0.0,
+      "n": 100
+    },
+    "2": {
+      "mean": 0.20331052363443508,
+      "std": 2.7755575615628914e-17,
+      "n": 100
+    },
+    "3": {
+      "mean": 0.20145918987141395,
+      "std": 0.0,
+      "n": 100
+    },
+    "4": {
+      "mean": 0.20123634025007256,
+      "std": 5.551115123125783e-17,
+      "n": 69
+    },
+    "5": {
+      "mean": 0.20120945152808653,
+      "std": 0.0,
+      "n": 33
+    }
+  },
+  "m6": {
+    "tripsense": {
+      "avg_n_pois": 2.0,
+      "avg_n_cats": 2.0,
+      "type_distribution": {
+        "museum": 0.475,
+        "heritage": 0.29,
+        "park": 0.235
+      }
+    },
+    "fixed_prior": {
+      "avg_n_pois": 2.0,
+      "avg_n_cats": 2.0,
+      "type_distribution": {
+        "park": 0.5,
+        "museum": 0.5
+      }
+    },
+    "popularity": {
+      "avg_n_pois": 3.0,
+      "avg_n_cats": 3.0,
+      "type_distribution": {
+        "heritage": 0.333,
+        "attraction": 0.333,
+        "park": 0.333
+      }
+    }
+  }
+}

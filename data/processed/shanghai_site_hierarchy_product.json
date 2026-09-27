@@ -1,0 +1,2234 @@
+[
+  {
+    "poi_id": "B0FFGFAU1D",
+    "name": "七宝古镇游船码头",
+    "parent_poi_id": "B00155L7QF",
+    "parent_name": "七宝古镇",
+    "relation": "inside",
+    "role": "transport",
+    "level": 1
+  },
+  {
+    "poi_id": "B0MG4UXVAJ",
+    "name": "七宝古镇-街道灯笼装饰夜景打卡位",
+    "parent_poi_id": "B00155L7QF",
+    "parent_name": "七宝古镇",
+    "relation": "inside",
+    "role": "viewpoint",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG1OQ54",
+    "name": "七宝教寺-飞来佛殿",
+    "parent_poi_id": "B00154SLJR",
+    "parent_name": "七宝教寺",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG1OWEA",
+    "name": "七宝教寺-大雄宝殿",
+    "parent_poi_id": "B00154SLJR",
+    "parent_name": "七宝教寺",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG1JEGF",
+    "name": "七宝教寺-观音殿",
+    "parent_poi_id": "B00154SLJR",
+    "parent_name": "七宝教寺",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0GKKSXBLF",
+    "name": "七宝教寺-天王殿",
+    "parent_poi_id": "B00154SLJR",
+    "parent_name": "七宝教寺",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG20LT7",
+    "name": "七宝教寺-显通宝殿",
+    "parent_poi_id": "B00154SLJR",
+    "parent_name": "七宝教寺",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFHID3WZ",
+    "name": "七宝老街-闵行市民文化广场",
+    "parent_poi_id": "B0FFGFB0FD",
+    "parent_name": "七宝老街",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFF00HE2",
+    "name": "七宝老街-张充仁纪念馆",
+    "parent_poi_id": "B0FFGFB0FD",
+    "parent_name": "七宝老街",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGYU4BC",
+    "name": "七宝老街-蒲溪广场",
+    "parent_poi_id": "B0FFGFB0FD",
+    "parent_name": "七宝老街",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFH83ZUB",
+    "name": "七宝老街-钟楼广场",
+    "parent_poi_id": "B0FFGFB0FD",
+    "parent_name": "七宝老街",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156YL6R",
+    "name": "世纪公园-湖滨区",
+    "parent_poi_id": "B00154DUI6",
+    "parent_name": "上海世纪公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFF5QXQO",
+    "name": "世纪公园-观星广场",
+    "parent_poi_id": "B00154DUI6",
+    "parent_name": "上海世纪公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0KUFCWY2H",
+    "name": "湿地花岛",
+    "parent_poi_id": "B00156CLWX",
+    "parent_name": "上海东滩湿地公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFIUFP8V",
+    "name": "上海之鱼-年丰公园",
+    "parent_poi_id": "B0FFG8C3Q7",
+    "parent_name": "上海之鱼",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0G325GJAW",
+    "name": "上海之鱼-粉黛乱子草园",
+    "parent_poi_id": "B0FFG8C3Q7",
+    "parent_name": "上海之鱼",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFMGQDDY",
+    "name": "青年艺术公园",
+    "parent_poi_id": "B0FFG8C3Q7",
+    "parent_name": "上海之鱼",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0015750E8",
+    "name": "福寿园新四军广场",
+    "parent_poi_id": "B00156GEHX",
+    "parent_name": "上海人文纪念公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B001571GJX",
+    "name": "佘山国家森林公园-佘山秀化寺",
+    "parent_poi_id": "B00155IWT7",
+    "parent_name": "上海佘山国家森林公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0015725P1",
+    "name": "佘山国家森林公园-观光塔",
+    "parent_poi_id": "B00155IWT7",
+    "parent_name": "上海佘山国家森林公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0015274AA",
+    "name": "上海佘山国家森林公园-西佘山园",
+    "parent_poi_id": "B00155IWT7",
+    "parent_name": "上海佘山国家森林公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0MG45XGZG",
+    "name": "上海共青森林公园-红杉林打卡位",
+    "parent_poi_id": "B0015211C2",
+    "parent_name": "上海共青森林公园",
+    "relation": "inside",
+    "role": "viewpoint",
+    "level": 1
+  },
+  {
+    "poi_id": "B0J1GS8Y0B",
+    "name": "上海动物园河马馆",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFS32K1",
+    "name": "上海动物园-亚洲象馆",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFI52TL9",
+    "name": "上海动物园-袋鼠馆",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0H33CWSSR",
+    "name": "上海动物园-东北马鹿",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0MG45XEY7",
+    "name": "上海动物园-网红梦核鱼缸打卡位",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "viewpoint",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156YL4F",
+    "name": "上海儿童动物园",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFHMT05D",
+    "name": "鹈鹕",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFS33ID",
+    "name": "狼馆",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFS32I8",
+    "name": "大猩猩馆",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFZKG49",
+    "name": "红肩金刚鹦鹉",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFDKWMD",
+    "name": "南非海狮",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0GD2ZRND0",
+    "name": "白眉长臂猿",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0GD2ASW4C",
+    "name": "熊猫岭馆",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0L3OLZ631",
+    "name": "小熊猫",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0GD2ATLRK",
+    "name": "孟加拉虎",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFEK7RU",
+    "name": "两栖爬行动物区域",
+    "parent_poi_id": "B0015397C9",
+    "parent_name": "上海动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFS4SHQ",
+    "name": "上海大宁公园-北海",
+    "parent_poi_id": "B0FFH18766",
+    "parent_name": "上海大宁公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156YKTL",
+    "name": "上海大宁公园-白沙滩",
+    "parent_poi_id": "B0FFH18766",
+    "parent_name": "上海大宁公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFS4UPZ",
+    "name": "上海大宁公园-雕塑",
+    "parent_poi_id": "B0FFH18766",
+    "parent_name": "上海大宁公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0015725GH",
+    "name": "栊翠庵",
+    "parent_poi_id": "B00152289C",
+    "parent_name": "上海大观园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00155M0V8",
+    "name": "上海影视乐园-车墩影视基地",
+    "parent_poi_id": "B00150744F",
+    "parent_name": "上海影视乐园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG963ZO",
+    "name": "上海影视乐园-和平广场",
+    "parent_poi_id": "B00150744F",
+    "parent_name": "上海影视乐园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG951UB",
+    "name": "外滩公园",
+    "parent_poi_id": "B00150744F",
+    "parent_name": "上海影视乐园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG962SG",
+    "name": "上海影视乐园-圣德教堂",
+    "parent_poi_id": "B00150744F",
+    "parent_name": "上海影视乐园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG1YKPL",
+    "name": "上海月湖雕塑公园-表演广场",
+    "parent_poi_id": "B0FFH6RLXF",
+    "parent_name": "上海月湖雕塑公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFJA4MJ9",
+    "name": "上海月湖雕塑公园-佘山林荫广场",
+    "parent_poi_id": "B0FFH6RLXF",
+    "parent_name": "上海月湖雕塑公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0MBSADUP2",
+    "name": "朱家角光影幻境服务中心",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "service",
+    "level": 1
+  },
+  {
+    "poi_id": "B0MG45XGZ8",
+    "name": "朱家角古镇-摇橹船与仿古建筑打卡位",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "viewpoint",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGFFPBU",
+    "name": "上海朱家角古镇旅游区-水乐堂",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156R4WJ",
+    "name": "朱家角古镇-三圣殿",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156R3PL",
+    "name": "上海朱家角古镇旅游区-猛将殿",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0015725M2",
+    "name": "上海朱家角古镇旅游区-慈航殿",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0015725MD",
+    "name": "上海朱家角古镇旅游区-二太子殿",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156R51S",
+    "name": "上海朱家角古镇旅游区-财神殿",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFDGMNE",
+    "name": "朱家角古镇-六十甲子殿",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B001556RCN",
+    "name": "上海朱家角古镇旅游区-慈门街",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGGW1II",
+    "name": "朱家角古镇-四百年银杏树",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0I1Y55ZG3",
+    "name": "朱家角课植园实景园林昆曲牡丹亭",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFD23VO",
+    "name": "朱家角天主堂",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFL33VHF",
+    "name": "朱家角基督堂",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFHX6WYC",
+    "name": "朱家角古镇-城隍殿",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00157950W",
+    "name": "朱家角城隍庙",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGXSYL2",
+    "name": "上海朱家角古镇旅游区-银杏树广场",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGBBW1E",
+    "name": "朱家角镇市民广场体育公园",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFT7YCH",
+    "name": "涌泉桥饭店",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFF2FTGL",
+    "name": "放生桥",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFDG9LV",
+    "name": "放生桥码头",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "transport",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156OAXN",
+    "name": "王昶纪念馆",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFT8BF1",
+    "name": "中市河桥",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B001558F4P",
+    "name": "上海珠溪园",
+    "parent_poi_id": "B001558F5I",
+    "parent_name": "上海朱家角古镇旅游区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0IGZDYZPW",
+    "name": "上海植物园盆景博物馆",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "exhibit",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFDPYX9",
+    "name": "上海植物园-兰室",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156YL2O",
+    "name": "上海植物园-松柏园",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG280CQ",
+    "name": "上海植物园-蕨类园",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG2D2GC",
+    "name": "上海植物园-木兰园",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGMD2DF",
+    "name": "上海植物园展览温室",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFF36A4Z",
+    "name": "上海植物园-热带植物馆",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0LDT6NY7D",
+    "name": "上海植物园-北区",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFK7OEWY",
+    "name": "上海植物园-瀑布",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFGYUPR",
+    "name": "上海植物园-四季花卉温室",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGM2163",
+    "name": "上海植物园-月季园",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGM20BF",
+    "name": "上海植物园-牡丹园",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGMRORM",
+    "name": "上海植物园-银杏林",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFDHTEY",
+    "name": "上海植物园-杜鹃园",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGM2164",
+    "name": "上海植物园-蔷薇园",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGM2379",
+    "name": "上海植物园-梅林",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG1PC7Z",
+    "name": "上海植物园-槭树园",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGM1ZV4",
+    "name": "竹园",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFKCWP49",
+    "name": "球宿根植物园",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGMBRFV",
+    "name": "游船码头",
+    "parent_poi_id": "B00154DWH8",
+    "parent_name": "上海植物园",
+    "relation": "inside",
+    "role": "transport",
+    "level": 1
+  },
+  {
+    "poi_id": "B0JD5CAN92",
+    "name": "上海汽车博览公园-日本园",
+    "parent_poi_id": "B00155KS2F",
+    "parent_name": "上海汽车博览公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFI7RAE1",
+    "name": "上海浦江郊野公园奇迹花园-莫奈花园",
+    "parent_poi_id": "B0FFGE2F10",
+    "parent_name": "上海浦江郊野公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0LDYU30KY",
+    "name": "上海海昌海洋公园-极速企鹅",
+    "parent_poi_id": "B0FFG954E8",
+    "parent_name": "上海海昌海洋公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0JGRR8QGI",
+    "name": "楚梅阁",
+    "parent_poi_id": "B00155LYLB",
+    "parent_name": "上海海湾国家森林公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGCUL7V",
+    "name": "禅修园",
+    "parent_poi_id": "B00155LYLB",
+    "parent_name": "上海海湾国家森林公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0H3TDHIMA",
+    "name": "上海淞沪抗战纪念馆-胜利广场",
+    "parent_poi_id": "B00155FF41",
+    "parent_name": "上海淞沪抗战纪念公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B001541BAB",
+    "name": "上海淞沪抗战纪念公园-陈化成纪念馆",
+    "parent_poi_id": "B00155FF41",
+    "parent_name": "上海淞沪抗战纪念公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFHI9PMH",
+    "name": "上海淞沪抗战纪念公园-宝山孔庙大成殿",
+    "parent_poi_id": "B00155FF41",
+    "parent_name": "上海淞沪抗战纪念公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG40U8U",
+    "name": "上海滨江森林公园-特色植物观赏区",
+    "parent_poi_id": "B00155FHMD",
+    "parent_name": "上海滨江森林公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG2BRUC",
+    "name": "上海滨江森林公园-湿生植物观赏区",
+    "parent_poi_id": "B00155FHMD",
+    "parent_name": "上海滨江森林公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFOZWYW",
+    "name": "滨江森林公园-滨江岸线观景区",
+    "parent_poi_id": "B00155FHMD",
+    "parent_name": "上海滨江森林公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0KADCVRQB",
+    "name": "田埂花海",
+    "parent_poi_id": "B00155FHMD",
+    "parent_name": "上海滨江森林公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFINHR7V",
+    "name": "滨江森林公园-滨江岸线观景台",
+    "parent_poi_id": "B00155FHMD",
+    "parent_name": "上海滨江森林公园",
+    "relation": "inside",
+    "role": "viewpoint",
+    "level": 1
+  },
+  {
+    "poi_id": "B0L2MMYYNO",
+    "name": "滨江森林公园1期",
+    "parent_poi_id": "B00155FHMD",
+    "parent_name": "上海滨江森林公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFOZ4NX",
+    "name": "上海滨江森林公园东南区-游客阅览室",
+    "parent_poi_id": "B00155FHMD",
+    "parent_name": "上海滨江森林公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00155LXII",
+    "name": "上海犹太难民纪念馆-摩西会堂",
+    "parent_poi_id": "B00155KFXH",
+    "parent_name": "上海犹太难民纪念馆",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFIVOQS4",
+    "name": "上海申隆生态园-天鹅湖",
+    "parent_poi_id": "B00155KPTS",
+    "parent_name": "上海申隆生态园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0G256R1NF",
+    "name": "上海财神庙-东岳殿",
+    "parent_poi_id": "B00156ECI5",
+    "parent_name": "上海财神庙",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFJYV16Y",
+    "name": "上海辰山植物园-旱生植物园",
+    "parent_poi_id": "B00156DYI3",
+    "parent_name": "上海辰山植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFOK0ZS",
+    "name": "上海辰山植物园-岩石和药用植物园",
+    "parent_poi_id": "B00156DYI3",
+    "parent_name": "上海辰山植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFOJ4BH",
+    "name": "上海辰山植物园-球宿根园",
+    "parent_poi_id": "B00156DYI3",
+    "parent_name": "上海辰山植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFPLJSE",
+    "name": "上海辰山植物园-木兰园",
+    "parent_poi_id": "B00156DYI3",
+    "parent_name": "上海辰山植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFOM7SG",
+    "name": "上海辰山植物园-月季园",
+    "parent_poi_id": "B00156DYI3",
+    "parent_name": "上海辰山植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG0AHOH",
+    "name": "上海辰山植物园-春景园",
+    "parent_poi_id": "B00156DYI3",
+    "parent_name": "上海辰山植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFOLJ3Y",
+    "name": "上海辰山植物园-湿地植物园",
+    "parent_poi_id": "B00156DYI3",
+    "parent_name": "上海辰山植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFP001P",
+    "name": "上海辰山植物园-鸢尾园",
+    "parent_poi_id": "B00156DYI3",
+    "parent_name": "上海辰山植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG1FUGA",
+    "name": "上海辰山植物园-沙生植物馆",
+    "parent_poi_id": "B00156DYI3",
+    "parent_name": "上海辰山植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGGW9UV",
+    "name": "矿坑花园",
+    "parent_poi_id": "B00156DYI3",
+    "parent_name": "上海辰山植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0KRJO6ARD",
+    "name": "岩生植物园",
+    "parent_poi_id": "B00156DYI3",
+    "parent_name": "上海辰山植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG214AB",
+    "name": "珍稀植物园",
+    "parent_poi_id": "B00156DYI3",
+    "parent_name": "上海辰山植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFL6EBGT",
+    "name": "小小动物园",
+    "parent_poi_id": "B00156DYI3",
+    "parent_name": "上海辰山植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG1S0J1",
+    "name": "儿童植物园",
+    "parent_poi_id": "B00156DYI3",
+    "parent_name": "上海辰山植物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGUCVD6",
+    "name": "迪士尼小镇湖畔区",
+    "parent_poi_id": "B0FFGYMCF9",
+    "parent_name": "上海迪士尼度假区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0MG45XEY4",
+    "name": "上海迪士尼度假区-城堡顶仰拍打卡位",
+    "parent_poi_id": "B0FFGYMCF9",
+    "parent_name": "上海迪士尼度假区",
+    "relation": "inside",
+    "role": "viewpoint",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGXQ0VD",
+    "name": "百食香街区",
+    "parent_poi_id": "B0FFGYMCF9",
+    "parent_name": "上海迪士尼度假区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGXQ0M8",
+    "name": "蒸汽船米奇喷泉",
+    "parent_poi_id": "B0FFGYMCF9",
+    "parent_name": "上海迪士尼度假区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGVSSB8",
+    "name": "彩虹桥",
+    "parent_poi_id": "B0FFGYMCF9",
+    "parent_name": "上海迪士尼度假区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFK1UZ9F",
+    "name": "光明生态园广场",
+    "parent_poi_id": "B0FFGYMCF9",
+    "parent_name": "上海迪士尼度假区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFII5WHM",
+    "name": "光明生态园",
+    "parent_poi_id": "B0FFGYMCF9",
+    "parent_name": "上海迪士尼度假区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGW0KYP",
+    "name": "莫斯利安香草园",
+    "parent_poi_id": "B0FFGYMCF9",
+    "parent_name": "上海迪士尼度假区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156LTU8",
+    "name": "醉白清荷",
+    "parent_poi_id": "B00151CDD0",
+    "parent_name": "上海醉白池公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0HGYZVXE9",
+    "name": "上海野生动物园-太阳广场",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156R4GN",
+    "name": "上海野生动物园大熊猫馆",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFOG1DI",
+    "name": "上海野生动物园-松鼠猴",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0JAPH60HD",
+    "name": "上海野生动物园-中美貘",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0JAPHYCNI",
+    "name": "上海野生动物园-优雅长颈鹿",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0JAPHXBUI",
+    "name": "上海野生动物园-非洲旷野",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFCYA43",
+    "name": "上海野生动物园-广场鸽",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0JAPHW9GP",
+    "name": "上海野生动物园-大食蚁兽",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0JAPHW1S8",
+    "name": "上海野生动物园-荒野大力熊",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156YL10",
+    "name": "上海野生动物园金丝猴岛",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0JAPH3VD7",
+    "name": "上海野生动物园-森林之王",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0HGYZWT34",
+    "name": "上海野生动物园-热带鸟园",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156YL23",
+    "name": "上海野生动物园老虎扑食",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0L05ZSVA5",
+    "name": "上海野生动物园-棕熊水世界",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0MG45XGZ7",
+    "name": "上海野生动物园-摩天轮打卡位",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "viewpoint",
+    "level": 1
+  },
+  {
+    "poi_id": "B0JAPH021A",
+    "name": "上海野生动物园-草原霸主",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0HR9L8PHZ",
+    "name": "马来熊王国",
+    "parent_poi_id": "B00152F15F",
+    "parent_name": "上海野生动物园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFM9SREY",
+    "name": "上海长风海洋世界-水族馆",
+    "parent_poi_id": "B00155FHN3",
+    "parent_name": "上海长风海洋世界",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFHR8NHA",
+    "name": "世界文豪广场",
+    "parent_poi_id": "B00155KZKW",
+    "parent_name": "上海鲁迅公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG2CPOM",
+    "name": "盛彩广场",
+    "parent_poi_id": "B00155G3HG",
+    "parent_name": "上海鲜花港",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFDK7VB",
+    "name": "上海四季花港-郁金香女神",
+    "parent_poi_id": "B00155G3HG",
+    "parent_name": "上海鲜花港",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0MG4UXOGX",
+    "name": "世博文化公园-水底森林打卡位",
+    "parent_poi_id": "B0FFKTGH5N",
+    "parent_name": "世博文化公园",
+    "relation": "inside",
+    "role": "viewpoint",
+    "level": 1
+  },
+  {
+    "poi_id": "B0IB17DOMI",
+    "name": "申园",
+    "parent_poi_id": "B0FFKTGH5N",
+    "parent_name": "世博文化公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0L1R5BU0P",
+    "name": "东方明珠零米大厅",
+    "parent_poi_id": "B00150F6D6",
+    "parent_name": "东方明珠广播电视塔",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00151E2D4",
+    "name": "东方明珠旅游码头",
+    "parent_poi_id": "B00150F6D6",
+    "parent_name": "东方明珠广播电视塔",
+    "relation": "inside",
+    "role": "transport",
+    "level": 1
+  },
+  {
+    "poi_id": "B0015725T4",
+    "name": "秦始皇雕像",
+    "parent_poi_id": "B00155IPXY",
+    "parent_name": "东方绿舟",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0HKO5GSWB",
+    "name": "红军足印纪念园",
+    "parent_poi_id": "B00155IPXY",
+    "parent_name": "东方绿舟",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0HG57C0NR",
+    "name": "索道桥",
+    "parent_poi_id": "B00155IPXY",
+    "parent_name": "东方绿舟",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0MGOCVPM4",
+    "name": "中国共产党第一次全国代表大会纪念馆-报告厅",
+    "parent_poi_id": "B0MGOCVX94",
+    "parent_name": "中国共产党第一次全国代表大会纪念馆",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0MG45XEYF",
+    "name": "中山公园-与草地和大树打卡位",
+    "parent_poi_id": "B00157G053",
+    "parent_name": "中山公园",
+    "relation": "inside",
+    "role": "viewpoint",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFH10Z44",
+    "name": "荷花池",
+    "parent_poi_id": "B00157G053",
+    "parent_name": "中山公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0LG97X3OH",
+    "name": "露天音乐广场",
+    "parent_poi_id": "B00157G053",
+    "parent_name": "中山公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156YKQ5",
+    "name": "天山公园-水杉林",
+    "parent_poi_id": "B00157G053",
+    "parent_name": "中山公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156YKZF",
+    "name": "月季苑",
+    "parent_poi_id": "B00157G053",
+    "parent_name": "中山公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFHX6W3H",
+    "name": "中山公园-米兰广场",
+    "parent_poi_id": "B00157G053",
+    "parent_name": "中山公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFHED7N9",
+    "name": "九亭文化广场-双拥广场",
+    "parent_poi_id": "B001577IAR",
+    "parent_name": "九亭文化广场",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFLA97D7",
+    "name": "书院厅",
+    "parent_poi_id": "B00155IOKX",
+    "parent_name": "书院人家",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0KUFC5F8J",
+    "name": "静思峰",
+    "parent_poi_id": "B0FFFGQ0HS",
+    "parent_name": "亩中山水园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFEPU7R",
+    "name": "湖心亭(豫园店)",
+    "parent_poi_id": "B00155KKQJ",
+    "parent_name": "人民公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00155LIHN",
+    "name": "儿童公园-梅园广场",
+    "parent_poi_id": "B0FFG0ZN57",
+    "parent_name": "儿童公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B001572IFX",
+    "name": "前卫生态村-上海雷锋纪念馆",
+    "parent_poi_id": "B0FFHC9R74",
+    "parent_name": "前卫生态村",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00155HQJC",
+    "name": "北蔡消防主题公园-联勤广场",
+    "parent_poi_id": "B0FFGZR766",
+    "parent_name": "北蔡消防主题公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFJWW24G",
+    "name": "北郊公园-外冈法治文化公园",
+    "parent_poi_id": "B0FFGXKK7E",
+    "parent_name": "北郊公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0J0CDBE5Q",
+    "name": "半马苏河广场",
+    "parent_poi_id": "B0H1SUJKH4",
+    "parent_name": "半马苏河公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0K229827J",
+    "name": "雨水花园",
+    "parent_poi_id": "B0FFILJJDN",
+    "parent_name": "南汇新城春花秋色公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0MG45XGZH",
+    "name": "南翔古镇-河道和古镇建筑打卡位",
+    "parent_poi_id": "B00155LZBN",
+    "parent_name": "南翔古镇",
+    "relation": "inside",
+    "role": "viewpoint",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFILI1TQ",
+    "name": "南门景观大堤-崇明沿江观光大堤",
+    "parent_poi_id": "B00155QGG9",
+    "parent_name": "南门景观大堤",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0LB9DXRNA",
+    "name": "上海市外环环城林带启动石",
+    "parent_poi_id": "B0IKJC7KOC",
+    "parent_name": "启动林公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0GUASATS1",
+    "name": "嘉北郊野公园-魔力谷",
+    "parent_poi_id": "B0FFGD82MA",
+    "parent_name": "嘉北郊野公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFS7CLJ",
+    "name": "四平科技公园-中心广场",
+    "parent_poi_id": "B00155L2QO",
+    "parent_name": "四平科技公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFIK0Y68",
+    "name": "复兴公园-大草坪",
+    "parent_poi_id": "B00155KTVH",
+    "parent_name": "复兴公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00157HYSM",
+    "name": "复兴公园-马恩雕像",
+    "parent_poi_id": "B00155KTVH",
+    "parent_name": "复兴公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156R4ID",
+    "name": "复旦大学博物馆-蔡冠深人文馆",
+    "parent_poi_id": "B00155KCC9",
+    "parent_name": "复旦大学博物馆",
+    "relation": "inside",
+    "role": "exhibit",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFF59QKI",
+    "name": "外滩观光隧道",
+    "parent_poi_id": "ZTRIP_SH_004",
+    "parent_name": "外滩",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFL0G26V",
+    "name": "BUND22外滩二十二号",
+    "parent_poi_id": "ZTRIP_SH_004",
+    "parent_name": "外滩",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0H25OORPF",
+    "name": "浦江游轮",
+    "parent_poi_id": "ZTRIP_SH_004",
+    "parent_name": "外滩",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00155IPKZ",
+    "name": "天原公园-长宁老年公园",
+    "parent_poi_id": "B00155L3HB",
+    "parent_name": "天原公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0M6RH1DWZ",
+    "name": "天山公园-南区",
+    "parent_poi_id": "B00154DIBB",
+    "parent_name": "天山公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0KBF5R6RA",
+    "name": "财神殿",
+    "parent_poi_id": "B00156D593",
+    "parent_name": "小普陀寺",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0KBFST7M1",
+    "name": "文殊殿",
+    "parent_poi_id": "B00156D593",
+    "parent_name": "小普陀寺",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0KGGU7GNZ",
+    "name": "弥陀殿",
+    "parent_poi_id": "B00156D593",
+    "parent_name": "小普陀寺",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0KBTZYKQY",
+    "name": "药师殿",
+    "parent_poi_id": "B0KB7MHPEO",
+    "parent_name": "小普陀寺洛迦山",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0KBTZW9DG",
+    "name": "大雄宝殿",
+    "parent_poi_id": "B0KB7MHPEO",
+    "parent_name": "小普陀寺洛迦山",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFLG77YH",
+    "name": "大雄宝殿",
+    "parent_poi_id": "B0FFGYRICS",
+    "parent_name": "崇明区三佛讲寺",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00155FHYG",
+    "name": "川沙公园-鹤鸣楼",
+    "parent_poi_id": "B00155G075",
+    "parent_name": "川沙公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFKEKTZO",
+    "name": "上海市见义勇为纪念广场",
+    "parent_poi_id": "B0FFF9E7QI",
+    "parent_name": "平安广场",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156LU0F",
+    "name": "天地合欢",
+    "parent_poi_id": "B001519846",
+    "parent_name": "延虹绿地",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0KUBROLBE",
+    "name": "天鹅野鸭景观",
+    "parent_poi_id": "B00153099F",
+    "parent_name": "思贤公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0KUB7WUVT",
+    "name": "假山瀑布",
+    "parent_poi_id": "B00153099F",
+    "parent_name": "思贤公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0MG45XGZF",
+    "name": "新场古镇-灯笼街道打卡位",
+    "parent_poi_id": "B00155LZNL",
+    "parent_name": "新场古镇",
+    "relation": "inside",
+    "role": "viewpoint",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGCER7G",
+    "name": "中国锣鼓书艺术馆",
+    "parent_poi_id": "B00155LZNL",
+    "parent_name": "新场古镇",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFWQ50H",
+    "name": "上海战役月浦攻坚战纪念碑",
+    "parent_poi_id": "B00156E2YG",
+    "parent_name": "月浦公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFHIXQWW",
+    "name": "杨浦公园-老苗水族馆",
+    "parent_poi_id": "B00155L2WJ",
+    "parent_name": "杨浦公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFDLY4A",
+    "name": "枫泾古镇-三桥里",
+    "parent_poi_id": "B001556VY1",
+    "parent_name": "枫泾古镇",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00155L1W4",
+    "name": "枫泾古镇-施王庙",
+    "parent_poi_id": "B001556VY1",
+    "parent_name": "枫泾古镇",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFFDLCGL",
+    "name": "桥湾亭",
+    "parent_poi_id": "B001556VY1",
+    "parent_name": "枫泾古镇",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156CUTR",
+    "name": "槎浦公园-东区",
+    "parent_poi_id": "B0FFFF0QNL",
+    "parent_name": "槎浦公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0L1TL5D7D",
+    "name": "汇龙潭公园-嘉定州桥",
+    "parent_poi_id": "B00155L7QH",
+    "parent_name": "汇龙潭公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0H336OAYF",
+    "name": "沔青公园-梦泽飞鹭",
+    "parent_poi_id": "B0FFHMR0PZ",
+    "parent_name": "沔青公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0H3DDPWNJ",
+    "name": "主入口广场",
+    "parent_poi_id": "B0FFHMR0PZ",
+    "parent_name": "沔青公园",
+    "relation": "inside",
+    "role": "entrance",
+    "level": 1
+  },
+  {
+    "poi_id": "B0I6RMV3FN",
+    "name": "杜鹃花园中园",
+    "parent_poi_id": "B00155KIQQ",
+    "parent_name": "济阳公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0K229A6ED",
+    "name": "浦江第一湾公园-景观台",
+    "parent_poi_id": "B0FFKMT7T6",
+    "parent_name": "浦江第一湾公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFILI2ZJ",
+    "name": "雷锋广场",
+    "parent_poi_id": "B00156GT3G",
+    "parent_name": "海天湖公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156GWVK",
+    "name": "滨江大道-曲涧通江",
+    "parent_poi_id": "B001533722",
+    "parent_name": "滨江大道",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG1OVOX",
+    "name": "滨海公园-动物园",
+    "parent_poi_id": "B00155QNYS",
+    "parent_name": "滨海公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B001576YTR",
+    "name": "杏壇",
+    "parent_poi_id": "B001537817",
+    "parent_name": "瀛洲公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFLG12Y1",
+    "name": "生态公园-马陆葡萄主题公园",
+    "parent_poi_id": "B00156R4YE",
+    "parent_name": "生态公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0G36UMKF6",
+    "name": "碧云净院-大雄宝殿",
+    "parent_poi_id": "B001556OB7",
+    "parent_name": "碧云净院",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0G36UMD48",
+    "name": "碧云净院-念佛堂",
+    "parent_poi_id": "B001556OB7",
+    "parent_name": "碧云净院",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFIY3426",
+    "name": "福泉古寺-观音殿",
+    "parent_poi_id": "B00154D7AX",
+    "parent_name": "福泉古寺",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0H3N51YK0",
+    "name": "帐篷搭建点郊野公园",
+    "parent_poi_id": "B0FFKD9GDX",
+    "parent_name": "米市渡松南郊野公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGPRSPS",
+    "name": "罗泾镇健康主题公园",
+    "parent_poi_id": "B00156GL01",
+    "parent_name": "罗泾公园(北区)",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156GMMO",
+    "name": "老白渡滨江绿地-煤仓广场",
+    "parent_poi_id": "B00156GN39",
+    "parent_name": "老白渡滨江绿地",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156GN6W",
+    "name": "老白渡滨江绿地-烟囱广场",
+    "parent_poi_id": "B00156GN39",
+    "parent_name": "老白渡滨江绿地",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFKWO02P",
+    "name": "菩提禅寺-财神殿",
+    "parent_poi_id": "B00155Q88P",
+    "parent_name": "菩提禅寺",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFL78MMP",
+    "name": "菩提禅寺-般若",
+    "parent_poi_id": "B00155Q88P",
+    "parent_name": "菩提禅寺",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFKWOJG3",
+    "name": "大雄宝殿",
+    "parent_poi_id": "B00155Q88P",
+    "parent_name": "菩提禅寺",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156R4X5",
+    "name": "西岸自然艺术公园-刘三故居",
+    "parent_poi_id": "B00155G2UQ",
+    "parent_name": "西岸自然艺术公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0L2JM65LO",
+    "name": "浸想宅院",
+    "parent_poi_id": "B00155G2UQ",
+    "parent_name": "西岸自然艺术公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFGR6XGC",
+    "name": "西林禅寺-圆应塔",
+    "parent_poi_id": "B001509B96",
+    "parent_name": "西林禅寺",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0H6GL3BIU",
+    "name": "西沙明珠湖景区-明珠湖公园",
+    "parent_poi_id": "B00155R3U3",
+    "parent_name": "西沙明珠湖景区",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFG95JGM",
+    "name": "诸翟公园-闵行市民文化广场",
+    "parent_poi_id": "B001546A5F",
+    "parent_name": "诸翟公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156R51K",
+    "name": "可以观",
+    "parent_poi_id": "ZTRIP_SH_005",
+    "parent_name": "豫园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156R50S",
+    "name": "别有天",
+    "parent_poi_id": "ZTRIP_SH_005",
+    "parent_name": "豫园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFKXKRCQ",
+    "name": "月老殿",
+    "parent_poi_id": "ZTRIP_SH_005",
+    "parent_name": "豫园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0L0XSKCL7",
+    "name": "童涵春堂中药博物馆",
+    "parent_poi_id": "ZTRIP_SH_005",
+    "parent_name": "豫园",
+    "relation": "inside",
+    "role": "exhibit",
+    "level": 1
+  },
+  {
+    "poi_id": "B0K2AMWGOJ",
+    "name": "总体国家安全观赵巷镇网络安全主题公园",
+    "parent_poi_id": "B0FFGLM9BO",
+    "parent_name": "赵巷公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFLET355",
+    "name": "健康主题公园",
+    "parent_poi_id": "B0FFG8TU6G",
+    "parent_name": "车墩人口文化广场",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFKCWTY2",
+    "name": "金山城市沙滩-观景台",
+    "parent_poi_id": "B00155D6FY",
+    "parent_name": "金山城市沙滩",
+    "relation": "inside",
+    "role": "viewpoint",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFHG9733",
+    "name": "闸北公园-宋教仁先生之墓",
+    "parent_poi_id": "B00154DWCM",
+    "parent_name": "闸北公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0JUTXV5FW",
+    "name": "陈云纪念馆-陈云故里",
+    "parent_poi_id": "B00154EXYV",
+    "parent_name": "陈云纪念馆",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B00156R4PT",
+    "name": "上海西郊淀山湖湿地",
+    "parent_poi_id": "B0LB7K2UTG",
+    "parent_name": "青西郊野公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0I64RX6YL",
+    "name": "高东公园-北园",
+    "parent_poi_id": "B001559IL3",
+    "parent_name": "高东公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFM80PNZ",
+    "name": "高东公园-南园",
+    "parent_poi_id": "B001559IL3",
+    "parent_name": "高东公园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  },
+  {
+    "poi_id": "B0FFKPEVV8",
+    "name": "高东生态园-高东体育主题公园",
+    "parent_poi_id": "B00156EOP9",
+    "parent_name": "高东生态园",
+    "relation": "inside",
+    "role": "attraction",
+    "level": 1
+  }
+]

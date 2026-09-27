@@ -1,0 +1,6 @@
+﻿poi_id,name,city,poi_type_en,rating,popularity,dwell_min_low,dwell_min_high,dwell_mu,dwell_sigma,source
+B000A5648B,中国人民抗日战争纪念馆,北京,heritage,5.0,1.0,60,120,4.4409,0.2703,default
+B000A45467,八达岭长城,北京,heritage,4.9,0.986,60,120,4.4409,0.2703,default
+B000A856LJ,朝阳大悦城,北京,leisure,4.9,0.986,45,90,4.1532,0.2703,default
+B0H6TD635N,北京清河万象汇,北京,leisure,4.9,0.986,45,90,4.1532,0.2703,default
+B000A83C1S,天安门广场,北京,attraction,4.9,0.986,60,150,4.5525,0.3574,default

@@ -1,0 +1,93 @@
+{
+  "B00155L7QD": {
+    "name": "佘山国家旅游度假区",
+    "poi_type_en": "park",
+    "category_name": "旅游度假区",
+    "primary_scene": "park_nature",
+    "scene_tags": ["nature", "outdoor", "hiking", "family"],
+    "travel_role": "urban_experience",
+    "cultural_score": 0.35,
+    "nature_score": 0.85,
+    "reason": "度假区/山体自然休闲，不应标为 heritage"
+  },
+  "B00155LYLW": {
+    "name": "滴水湖",
+    "poi_type_en": "park",
+    "category_name": "湖泊",
+    "primary_scene": "park_nature",
+    "scene_tags": ["nature", "outdoor", "low_energy"],
+    "travel_role": "urban_experience",
+    "cultural_score": 0.2,
+    "nature_score": 0.9,
+    "reason": "滨水自然景点，不应标为 heritage"
+  },
+  "B0FFF2V6XW": {
+    "name": "美兰湖景区",
+    "poi_type_en": "park",
+    "category_name": "风景区",
+    "primary_scene": "park_nature",
+    "scene_tags": ["nature", "outdoor", "low_energy"],
+    "travel_role": "urban_experience",
+    "cultural_score": 0.25,
+    "nature_score": 0.85,
+    "reason": "湖区风景，不应标为 heritage"
+  },
+  "B0FFGMS7VI": {
+    "name": "长兴岛",
+    "poi_type_en": "park",
+    "category_name": "岛屿",
+    "primary_scene": "park_nature",
+    "scene_tags": ["nature", "outdoor", "low_energy"],
+    "travel_role": "urban_experience",
+    "cultural_score": 0.2,
+    "nature_score": 0.85,
+    "reason": "崇明岛屿自然休闲，不应标为 heritage"
+  },
+  "B0LKMA4HPY": {
+    "name": "LV巨轮",
+    "poi_type_en": "leisure",
+    "category_name": "商业展览",
+    "primary_scene": "indoor_leisure",
+    "scene_tags": ["landmark", "exhibition", "architecture", "shopping", "food", "photo", "rainy_day", "reservation_required"],
+    "travel_role": "indoor_leisure",
+    "cultural_score": 0.4,
+    "nature_score": 0.0,
+    "commercial_score": 0.85,
+    "reason": "商业展览装置，不应标为 heritage"
+  },
+  "B00150F6D6": {
+    "name": "东方明珠广播电视塔",
+    "poi_type_en": "attraction",
+    "category_name": "观光塔",
+    "primary_scene": "landmark_sightseeing",
+    "scene_tags": ["landmark", "city_view", "photo", "night", "family"],
+    "travel_role": "core_attraction",
+    "cultural_score": 0.55,
+    "nature_score": 0.0,
+    "scenic_score": 0.95,
+    "reason": "现代观光地标，不是历史遗产建筑"
+  },
+  "B00156EP9N": {
+    "name": "上海千古情景区",
+    "poi_type_en": "attraction",
+    "category_name": "主题演艺",
+    "primary_scene": "family_entertainment",
+    "scene_tags": ["entertainment", "performance", "family", "indoor"],
+    "travel_role": "urban_experience",
+    "cultural_score": 0.45,
+    "nature_score": 0.1,
+    "reason": "演艺娱乐园区，不应标为 heritage"
+  },
+  "B001533722": {
+    "name": "滨江大道",
+    "poi_type_en": "attraction",
+    "category_name": "滨水步道",
+    "primary_scene": "urban_walk",
+    "scene_tags": ["citywalk", "photo", "street_life", "waterfront"],
+    "travel_role": "urban_experience",
+    "cultural_score": 0.4,
+    "nature_score": 0.35,
+    "scenic_score": 0.8,
+    "reason": "滨水步道更接近景观漫步，不是历史遗产"
+  }
+}

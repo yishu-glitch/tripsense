@@ -1,0 +1,39 @@
+{
+  "schema_version": "shanghai-poi-serving-v2",
+  "source_rows": 5634,
+  "output_rows": 4632,
+  "review_excluded_rows": 1000,
+  "facility_children_removed": 2,
+  "scene_override_excluded": 4,
+  "route_graph_nodes": 300,
+  "route_candidates": 250,
+  "roles": {
+    "urban_experience": 2014,
+    "cultural_experience": 1561,
+    "indoor_leisure": 972,
+    "commercial_support": 82,
+    "core_attraction": 3
+  },
+  "primary_scenes": {
+    "park_nature": 1550,
+    "history_architecture": 1366,
+    "indoor_leisure": 972,
+    "urban_walk": 349,
+    "museum_exhibition": 195,
+    "family_entertainment": 115,
+    "commercial_support": 82,
+    "landmark_sightseeing": 3
+  },
+  "scene_confidence": {
+    "high": 4083,
+    "medium": 549
+  },
+  "scene_review_queue": 0,
+  "eligibility": {
+    "scenario_candidate": 2986,
+    "default_candidate": 1564,
+    "on_demand_candidate": 82
+  },
+  "missing_valid_hours": 779,
+  "output": "data/processed/poi_shanghai_recommendation.csv"
+}

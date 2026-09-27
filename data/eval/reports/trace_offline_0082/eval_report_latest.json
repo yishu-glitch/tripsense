@@ -1,0 +1,285 @@
+{
+  "total": 1,
+  "passed": 1,
+  "pass_rate": 1.0,
+  "metric_pass_rates": {
+    "adjust": 1.0,
+    "ccp": 1.0,
+    "density": 1.0,
+    "geo": 1.0,
+    "retain": 1.0,
+    "theme": 1.0
+  },
+  "by_scene": {
+    "自然公园游": {
+      "n": 1,
+      "pass_rate": 1.0
+    }
+  },
+  "by_difficulty": {
+    "medium": {
+      "n": 1,
+      "pass_rate": 1.0
+    }
+  },
+  "by_op": {
+    "replace": {
+      "n": 1,
+      "pass_rate": 1.0
+    },
+    "shorten": {
+      "n": 1,
+      "pass_rate": 1.0
+    },
+    "state_change": {
+      "n": 1,
+      "pass_rate": 1.0
+    }
+  },
+  "failure_code_counts": {},
+  "attribution": {
+    "taxonomy": [
+      "prompt",
+      "algorithm",
+      "knowledge_data",
+      "rag_architecture",
+      "case_design",
+      "other"
+    ],
+    "hard_primary_counts": {
+      "prompt": 0,
+      "algorithm": 0,
+      "knowledge_data": 0,
+      "rag_architecture": 0,
+      "case_design": 0,
+      "other": 0
+    },
+    "soft_primary_counts": {
+      "prompt": 0,
+      "algorithm": 0,
+      "knowledge_data": 0,
+      "rag_architecture": 0,
+      "case_design": 0,
+      "other": 0
+    },
+    "examples": {},
+    "note": "hard= case overall fail; soft= metric miss while overall still passes. Offline (no --llm) rarely attributes to prompt."
+  },
+  "results": [
+    {
+      "case_id": "dlg-0082",
+      "city": "beijing",
+      "style_scene": "自然公园游",
+      "difficulty": "medium",
+      "tags": [
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.88,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=149.4 safe=403.1 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 0.6,
+          "passed": true,
+          "detail": "replace_noop"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=自然公园游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/2 max=9.0"
+        },
+        {
+          "name": "density",
+          "score": 0.6,
+          "passed": true,
+          "detail": "stops=3 expected~5 too_sparse"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 3,
+        "planned_minutes": 149.4,
+        "safe_budget_minutes": 403.1,
+        "chance_constraint_satisfied": true,
+        "scene": "自然公园游",
+        "mode": "full",
+        "stops": [
+          "天坛公园-斋宫",
+          "天坛公园-回音壁",
+          "天坛公园-祈年殿"
+        ]
+      },
+      "turn_trace": [
+        {
+          "turn": 1,
+          "user": "我打算明天去北京玩一天，早上9点出发，晚上6点前结束。我年纪大了，走不动太多路，想去些经典景点，比如天安门、故宫，还有公园什么的。你能帮我规划一下吗？",
+          "assistant": "我先按你的描述整理一版路线；之后想放慢、换地方，或天气有变化，都可以继续说。",
+          "stops": [
+            "天坛公园-斋宫",
+            "天坛公园-回音壁",
+            "天坛公园-祈年殿"
+          ],
+          "passed": true,
+          "overall": 0.96,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=149.4 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=自然公园游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/2 max=9.0"
+            },
+            "density": {
+              "score": 0.6,
+              "passed": true,
+              "detail": "stops=3 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": true,
+          "scene": "自然公园游",
+          "mode": "full"
+        },
+        {
+          "turn": 2,
+          "user": "这个路线不错，但故宫太大了，我腿脚不好，走不了那么久。能不能去掉故宫，换成更轻松的地方？比如像天坛这样的公园，可以坐着休息的。",
+          "assistant": "好，我顺着你这句话，在现有路线上轻轻调一版。",
+          "stops": [
+            "天坛公园-斋宫",
+            "天坛公园-回音壁",
+            "天坛公园-祈年殿"
+          ],
+          "passed": true,
+          "overall": 0.89,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=149.4 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 0.65,
+              "passed": true,
+              "detail": "shorten_not_reflected"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=自然公园游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/2 max=9.0"
+            },
+            "density": {
+              "score": 0.6,
+              "passed": true,
+              "detail": "stops=3 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": false,
+          "needs_clarification": false,
+          "scene": "自然公园游",
+          "mode": "full"
+        },
+        {
+          "turn": 3,
+          "user": "嗯，这样好多了。不过我觉得下午去两个公园可能还是有点赶，我走得慢，每个公园可能要多花点时间。要不就只去北海公园，然后早点结束，让我回去休息？",
+          "assistant": "好，我顺着你这句话，在现有路线上轻轻调一版。",
+          "stops": [
+            "天坛公园-斋宫",
+            "天坛公园-回音壁",
+            "天坛公园-祈年殿"
+          ],
+          "passed": true,
+          "overall": 0.88,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=149.4 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 0.6,
+              "passed": true,
+              "detail": "replace_noop"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=自然公园游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/2 max=9.0"
+            },
+            "density": {
+              "score": 0.6,
+              "passed": true,
+              "detail": "stops=3 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": false,
+          "needs_clarification": false,
+          "scene": "自然公园游",
+          "mode": "full"
+        }
+      ],
+      "error": null
+    }
+  ]
+}

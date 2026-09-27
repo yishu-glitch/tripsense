@@ -1,0 +1,3892 @@
+{
+  "total": 13,
+  "passed": 11,
+  "pass_rate": 0.8461538461538461,
+  "metric_pass_rates": {
+    "adjust": 1.0,
+    "ccp": 1.0,
+    "density": 0.6923076923076923,
+    "geo": 0.8461538461538461,
+    "retain": 1.0,
+    "theme": 0.7692307692307693
+  },
+  "by_scene": {
+    "亲子研学游": {
+      "n": 5,
+      "pass_rate": 1.0
+    },
+    "休闲购物游": {
+      "n": 3,
+      "pass_rate": 0.6666666666666666
+    },
+    "历史文化游": {
+      "n": 2,
+      "pass_rate": 1.0
+    },
+    "城市漫游": {
+      "n": 3,
+      "pass_rate": 0.6666666666666666
+    }
+  },
+  "by_difficulty": {
+    "high": {
+      "n": 5,
+      "pass_rate": 0.8
+    },
+    "low": {
+      "n": 2,
+      "pass_rate": 1.0
+    },
+    "medium": {
+      "n": 6,
+      "pass_rate": 0.8333333333333334
+    }
+  },
+  "by_op": {
+    "(none)": {
+      "n": 1,
+      "pass_rate": 1.0
+    },
+    "add_stop": {
+      "n": 9,
+      "pass_rate": 0.8888888888888888
+    },
+    "replace": {
+      "n": 7,
+      "pass_rate": 0.7142857142857143
+    },
+    "shorten": {
+      "n": 6,
+      "pass_rate": 0.8333333333333334
+    },
+    "state_change": {
+      "n": 9,
+      "pass_rate": 0.7777777777777778
+    }
+  },
+  "failure_code_counts": {
+    "geo_jump": 2,
+    "theme_mismatch": 3,
+    "too_sparse": 4
+  },
+  "attribution": {
+    "taxonomy": [
+      "prompt",
+      "algorithm",
+      "knowledge_data",
+      "rag_architecture",
+      "case_design",
+      "other"
+    ],
+    "hard_primary_counts": {
+      "prompt": 0,
+      "algorithm": 2,
+      "knowledge_data": 0,
+      "rag_architecture": 0,
+      "case_design": 0,
+      "other": 0
+    },
+    "soft_primary_counts": {
+      "prompt": 0,
+      "algorithm": 4,
+      "knowledge_data": 0,
+      "rag_architecture": 0,
+      "case_design": 0,
+      "other": 0
+    },
+    "examples": {
+      "algorithm": [
+        {
+          "case_id": "dlg-0325",
+          "kind": "soft",
+          "codes": "geo_jump",
+          "hypothesis": "[soft] anomalies=1/2 max=151.0",
+          "secondary": ""
+        },
+        {
+          "case_id": "dlg-0468",
+          "kind": "hard",
+          "codes": "theme_mismatch,too_sparse",
+          "hypothesis": "hit_ratio=0.00 scene=城市漫游; stops=1 expected~5 too_sparse",
+          "secondary": "knowledge_data"
+        },
+        {
+          "case_id": "dlg-0514",
+          "kind": "soft",
+          "codes": "too_sparse",
+          "hypothesis": "[soft] stops=2 expected~5 too_sparse",
+          "secondary": ""
+        }
+      ]
+    },
+    "note": "hard= case overall fail; soft= metric miss while overall still passes. Offline (no --llm) rarely attributes to prompt."
+  },
+  "results": [
+    {
+      "case_id": "dlg-0325",
+      "city": "beijing",
+      "style_scene": "历史文化游",
+      "difficulty": "medium",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.885,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=295.4 safe=403.1 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "add_stop_but_shrunk_for_ccp"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=历史文化游"
+        },
+        {
+          "name": "geo",
+          "score": 0.5,
+          "passed": false,
+          "detail": "anomalies=1/2 max=151.0"
+        },
+        {
+          "name": "density",
+          "score": 0.6,
+          "passed": true,
+          "detail": "stops=3 expected~5 too_sparse"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "no_hard_constraints"
+        }
+      ],
+      "failures": [
+        {
+          "case_id": "dlg-0325",
+          "turn": 3,
+          "failed_metrics": [
+            "geo"
+          ],
+          "failure_codes": [
+            "geo_jump"
+          ],
+          "stage": "replan",
+          "evidence": {
+            "planned_minutes": 295.4,
+            "safe_budget_minutes": 403.1,
+            "n_stops": 3,
+            "stop_names": [
+              "北京古代建筑博物馆",
+              "先农坛",
+              "798艺术区"
+            ],
+            "user_utterance": "嗯，不过我还是想多去几个地方，比如798艺术区听说有很多工业建筑改造，也很酷。能不能把前门去掉，换成798？这样一天能逛几个？",
+            "scene": "历史文化游",
+            "mode": "full",
+            "llm_enabled": true
+          },
+          "hypothesis": "[soft] anomalies=1/2 max=151.0",
+          "suggested_fix_area": "planner",
+          "regression": false,
+          "primary_cause": "algorithm",
+          "secondary_cause": ""
+        }
+      ],
+      "plan_summary": {
+        "n_stops": 3,
+        "planned_minutes": 295.4,
+        "safe_budget_minutes": 403.1,
+        "chance_constraint_satisfied": true,
+        "scene": "历史文化游",
+        "mode": "full",
+        "stops": [
+          "北京古代建筑博物馆",
+          "先农坛",
+          "798艺术区"
+        ]
+      },
+      "turn_trace": [
+        {
+          "turn": 1,
+          "user": "我想一天内逛尽可能多的北京经典景点，而且我特别喜欢看建筑，尤其是古建筑。能帮我规划一条高效的路线吗？最好能多打卡几个地方。",
+          "assistant": "你想一天里尽量多看北京的经典，尤其偏爱古建筑，我会按偏人文、节奏紧凑一点的方向先排一版，把经典地标串得顺一些、少走回头路；哪一站想多停一会儿，我们再调。",
+          "stops": [
+            "北京古代建筑博物馆",
+            "先农坛"
+          ],
+          "passed": true,
+          "overall": 0.9400000000000001,
+          "failure_codes": [
+            "too_sparse"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=104.8 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=历史文化游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=1.0"
+            },
+            "density": {
+              "score": 0.4,
+              "passed": false,
+              "detail": "stops=2 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "历史文化游",
+          "mode": "full",
+          "want_places": []
+        },
+        {
+          "turn": 2,
+          "user": "路线不错，但我更想多看点有特色的历史建筑，比如胡同里的那种老建筑或者民国时期的建筑。另外我体力好，可以多走点路，不用打车，走路就行。",
+          "assistant": "明白，你想多看点胡同老建筑和民国风的历史建筑，走路就行、体力没问题。我先保留现在这两站，把偏好往历史建筑上靠，再往后多排几处同主题的点，节奏可以放快些。",
+          "stops": [
+            "北京古代建筑博物馆",
+            "先农坛",
+            "胡同老建筑",
+            "民国时期建筑",
+            "智化寺"
+          ],
+          "passed": true,
+          "overall": 0.9600000000000001,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=307.2 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 0.8,
+              "passed": true,
+              "detail": "state_change_expanded"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=历史文化游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/4 max=61.8"
+            },
+            "density": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "stops=5 expected~5"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "历史文化游",
+          "mode": "full",
+          "want_places": [
+            "胡同老建筑",
+            "民国时期建筑"
+          ]
+        },
+        {
+          "turn": 3,
+          "user": "嗯，不过我还是想多去几个地方，比如798艺术区听说有很多工业建筑改造，也很酷。能不能把前门去掉，换成798？这样一天能逛几个？",
+          "assistant": "好，前门那站先拿掉，换成798艺术区——它离现在这条线有点距离，我让后半段往那边收一收。一天能逛几个得看路上花多久，先按这个方向排一版，你到现场再看状态微调。",
+          "stops": [
+            "北京古代建筑博物馆",
+            "先农坛",
+            "798艺术区"
+          ],
+          "passed": true,
+          "overall": 0.885,
+          "failure_codes": [
+            "geo_jump"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=295.4 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "add_stop_but_shrunk_for_ccp"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=历史文化游"
+            },
+            "geo": {
+              "score": 0.5,
+              "passed": false,
+              "detail": "anomalies=1/2 max=151.0"
+            },
+            "density": {
+              "score": 0.6,
+              "passed": true,
+              "detail": "stops=3 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "历史文化游",
+          "mode": "full",
+          "want_places": [
+            "798艺术区"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "dlg-0120",
+      "city": "beijing",
+      "style_scene": "历史文化游",
+      "difficulty": "high",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace"
+      ],
+      "overall": 0.9066666666666667,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=156.7 safe=188.7 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 0.7,
+          "passed": true,
+          "detail": "add_stop_noop"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=历史文化游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/1 max=33.5"
+        },
+        {
+          "name": "density",
+          "score": 0.6666666666666667,
+          "passed": true,
+          "detail": "stops=2 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "no_hard_constraints"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 2,
+        "planned_minutes": 156.7,
+        "safe_budget_minutes": 188.7,
+        "chance_constraint_satisfied": true,
+        "scene": "历史文化游",
+        "mode": "full",
+        "stops": [
+          "故宫博物院",
+          "中国国家博物馆"
+        ]
+      },
+      "turn_trace": [
+        {
+          "turn": 1,
+          "user": "你好，我打算明天一天玩北京，从早上8点到晚上10点，能去多少地方就去多少，推荐一下路线吧！",
+          "assistant": "你想明天从早8点玩到晚10点，尽量多走多看，我先按一天满一点的节奏排一版北京经典路线；具体站点和顺序我们边看边调。",
+          "stops": [
+            "天坛公园",
+            "天坛公园-祈年殿",
+            "天坛公园-斋宫",
+            "国家自然博物馆",
+            "北京古代建筑博物馆",
+            "先农坛"
+          ],
+          "passed": true,
+          "overall": 0.9750000000000001,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=348.2 safe=598.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=历史文化游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/5 max=17.4"
+            },
+            "density": {
+              "score": 0.75,
+              "passed": true,
+              "detail": "stops=6 expected~8 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": true,
+          "scene": "综合观光游",
+          "mode": "full",
+          "want_places": []
+        },
+        {
+          "turn": 2,
+          "user": "这路线不错，但我担心故宫时间不够，能压缩一下其他景点吗？比如北海和恭王府能不能去掉，换成去国博或者798艺术区？我想多看些室内的，今天太热了。",
+          "assistant": "明白，今天太热，想多待室内、给故宫留足时间。北海和恭王府本来就不在这版路线里，不用动；国博在候选里，798我帮你联网找一下。先保留天坛一带，把后半段换成室内为主，你看行吗？",
+          "stops": [
+            "天坛公园",
+            "天坛公园-祈年殿",
+            "天坛公园-斋宫"
+          ],
+          "passed": true,
+          "overall": 1.0,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=147.4 safe=188.7 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=历史文化游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/2 max=12.4"
+            },
+            "density": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "stops=3 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "综合观光游",
+          "mode": "full",
+          "want_places": [
+            "中国国家博物馆",
+            "798艺术区"
+          ]
+        },
+        {
+          "turn": 3,
+          "user": "国博和798很好！但今天实在太热了，我中午有点中暑的感觉，能不能减少户外景点，多去一些凉爽的室内？比如把天坛和景山也去掉，换成去颐和园？不过颐和园户外也多…或者去科技馆？另外什刹海和鼓楼也可以不去。",
+          "assistant": "天太热还中暑了，那咱们今天优先室内、少晒着。国博和798先留着，天坛、景山、什刹海、鼓楼这些户外段我帮你拿掉，往博物馆、美术馆这类凉快的地方收一收。科技馆我先记下，看看能不能排进来。",
+          "stops": [
+            "中国科学技术馆"
+          ],
+          "passed": true,
+          "overall": 0.91,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=61.6 safe=143.7 flag=True"
+            },
+            "adjust": {
+              "score": 0.8,
+              "passed": true,
+              "detail": "replace_duration_drift"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=历史文化游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "single_or_missing_travel"
+            },
+            "density": {
+              "score": 0.5,
+              "passed": true,
+              "detail": "stops=1 expected~2"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "综合观光游",
+          "mode": "full",
+          "want_places": [
+            "中国科技馆"
+          ]
+        },
+        {
+          "turn": 4,
+          "user": "科技馆不错，但我其实对历史文化更感兴趣，之前去掉故宫太可惜了，能加回来吗？另外我想去国家博物馆深度看看，时间够吗？可以少去一些地方，但质量要高。",
+          "assistant": "明白，那咱们把重心挪到历史文化上。科技馆先不去了，故宫加回来，国家博物馆也安排上，深度看的话时间得留给它。四小时左右，少而精更合适，我先按这个方向排一版，你看合不合适。 公开检索没拿到「时间够吗」的精确坐标，先按区划/邻近已确认地点排一版，入库后再校正",
+          "stops": [
+            "故宫博物院",
+            "中国国家博物馆"
+          ],
+          "passed": true,
+          "overall": 0.9666666666666667,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=156.7 safe=188.7 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=历史文化游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=33.5"
+            },
+            "density": {
+              "score": 0.6666666666666667,
+              "passed": true,
+              "detail": "stops=2 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "历史文化游",
+          "mode": "full",
+          "want_places": [
+            "故宫",
+            "国家博物馆"
+          ]
+        },
+        {
+          "turn": 5,
+          "user": "太好了！那就这样吧，不过我发现我其实挺想看看天安门广场的，能不能早上先去天安门，然后故宫，再去国博？科技馆和798可以去掉，我更喜欢历史人文。",
+          "assistant": "好，那就按历史人文这条线走：早上从天安门广场开始，接着故宫，再去国博，科技馆和798就不安排了。天安门广场我先帮你补进这一版，具体开放情况以现场为准。",
+          "stops": [
+            "故宫博物院",
+            "中国国家博物馆"
+          ],
+          "passed": true,
+          "overall": 0.9066666666666667,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=156.7 safe=188.7 flag=True"
+            },
+            "adjust": {
+              "score": 0.7,
+              "passed": true,
+              "detail": "add_stop_noop"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=历史文化游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=33.5"
+            },
+            "density": {
+              "score": 0.6666666666666667,
+              "passed": true,
+              "detail": "stops=2 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": false,
+          "needs_clarification": false,
+          "scene": "历史文化游",
+          "mode": "full",
+          "want_places": [
+            "天安门广场"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "dlg-0468",
+      "city": "beijing",
+      "style_scene": "城市漫游",
+      "difficulty": "high",
+      "tags": [
+        "add_stop",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.72,
+      "passed": false,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=44.8 safe=403.1 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        },
+        {
+          "name": "theme",
+          "score": 0.0,
+          "passed": false,
+          "detail": "hit_ratio=0.00 scene=城市漫游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "single_or_missing_travel"
+        },
+        {
+          "name": "density",
+          "score": 0.19999999999999996,
+          "passed": false,
+          "detail": "stops=1 expected~5 too_sparse"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "no_hard_constraints"
+        }
+      ],
+      "failures": [
+        {
+          "case_id": "dlg-0468",
+          "turn": 5,
+          "failed_metrics": [
+            "theme",
+            "density"
+          ],
+          "failure_codes": [
+            "theme_mismatch",
+            "too_sparse"
+          ],
+          "stage": "replan",
+          "evidence": {
+            "planned_minutes": 44.8,
+            "safe_budget_minutes": 403.1,
+            "n_stops": 1,
+            "stop_names": [
+              "廊坊会议展览中心"
+            ],
+            "user_utterance": "算了，今天太累了，不想跑那么多了。干脆下午就在五道营附近找个咖啡馆坐坐，拍点街景，不去圆明园了。",
+            "scene": "城市漫游",
+            "mode": "relaxed",
+            "llm_enabled": true
+          },
+          "hypothesis": "hit_ratio=0.00 scene=城市漫游; stops=1 expected~5 too_sparse",
+          "suggested_fix_area": "scoring|poi_metadata",
+          "regression": false,
+          "primary_cause": "algorithm",
+          "secondary_cause": "knowledge_data"
+        }
+      ],
+      "plan_summary": {
+        "n_stops": 1,
+        "planned_minutes": 44.8,
+        "safe_budget_minutes": 403.1,
+        "chance_constraint_satisfied": true,
+        "scene": "城市漫游",
+        "mode": "relaxed",
+        "stops": [
+          "廊坊会议展览中心"
+        ]
+      },
+      "turn_trace": [
+        {
+          "turn": 1,
+          "user": "我想在北京拍一天照片，帮我规划个路线吧，主要是人少、光线好的地方。",
+          "assistant": "你想在北京用一天时间拍照，重点是人少、光线好的地方。我先按偏出片、节奏从容的方向整理一版，把适合清晨和傍晚光线的点错开排；不合适我们再商量。",
+          "stops": [
+            "天坛公园-祈年殿",
+            "天坛公园",
+            "天坛公园-回音壁",
+            "天坛公园-斋宫"
+          ],
+          "passed": true,
+          "overall": 0.98,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=220.4 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=城市漫游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/3 max=9.0"
+            },
+            "density": {
+              "score": 0.8,
+              "passed": true,
+              "detail": "stops=4 expected~5"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "城市漫游",
+          "mode": "photo",
+          "want_places": []
+        },
+        {
+          "turn": 2,
+          "user": "颐和园和北海公园不错，但798太商业化了，我不喜欢。能换成更自然、人更少的地方吗？",
+          "assistant": "明白，798 那种商业氛围先不排了。颐和园、北海公园这类自然感强的保留，我帮你把路线往更清静、绿意多的公园方向调一版，天坛一带也先留着。 公开检索没拿到「人更少的地方吗」的精确坐标，先按区划/邻近已确认地点排一版，入库后再校正",
+          "stops": [
+            "颐和园",
+            "北海公园"
+          ],
+          "passed": true,
+          "overall": 0.9400000000000001,
+          "failure_codes": [
+            "too_sparse"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=155.5 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=城市漫游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=55.5"
+            },
+            "density": {
+              "score": 0.4,
+              "passed": false,
+              "detail": "stops=2 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "城市漫游",
+          "mode": "photo",
+          "want_places": [
+            "颐和园",
+            "北海公园"
+          ]
+        },
+        {
+          "turn": 3,
+          "user": "圆明园好，但今天太热了，走了一天有点累，能不能加个室内的、凉快的地方歇歇？",
+          "assistant": "走了一天确实该歇歇。圆明园先留着，我在它附近找个室内的、凉快的地方，让你中途坐下来缓一缓，其他安排尽量不动。",
+          "stops": [
+            "颐和园",
+            "颐和园博物馆"
+          ],
+          "passed": true,
+          "overall": 0.9400000000000001,
+          "failure_codes": [
+            "too_sparse"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=133.4 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=城市漫游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=5.0"
+            },
+            "density": {
+              "score": 0.4,
+              "passed": false,
+              "detail": "stops=2 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "城市漫游",
+          "mode": "relaxed",
+          "want_places": []
+        },
+        {
+          "turn": 4,
+          "user": "国家博物馆不错，但我想多拍点照片，去圆明园之前能不能再绕道去拍个胡同？听说南锣鼓巷人太多，有没有人少点的胡同？",
+          "assistant": "好，国博和颐和园这边先不动。你想在去圆明园前加一段胡同拍照，又不想挤南锣鼓巷——我先按「人少、好出片」的方向找几个候选，排在颐和园和圆明园之间，具体点位以现场为准。",
+          "stops": [
+            "颐和园",
+            "南锣鼓巷"
+          ],
+          "passed": true,
+          "overall": 0.9400000000000001,
+          "failure_codes": [
+            "too_sparse"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=151.0 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=城市漫游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=56.2"
+            },
+            "density": {
+              "score": 0.4,
+              "passed": false,
+              "detail": "stops=2 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "城市漫游",
+          "mode": "relaxed",
+          "want_places": [
+            "人少胡同（避开南锣鼓巷）"
+          ]
+        },
+        {
+          "turn": 5,
+          "user": "算了，今天太累了，不想跑那么多了。干脆下午就在五道营附近找个咖啡馆坐坐，拍点街景，不去圆明园了。",
+          "assistant": "累了就慢下来，今天不赶圆明园了。下午就留在五道营一带，找家咖啡馆坐坐、拍拍街景，节奏放松些。我把圆明园去掉，后半段往五道营附近收一收，前面已经排好的先不动。",
+          "stops": [
+            "廊坊会议展览中心"
+          ],
+          "passed": false,
+          "overall": 0.72,
+          "failure_codes": [
+            "theme_mismatch",
+            "too_sparse"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=44.8 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 0.0,
+              "passed": false,
+              "detail": "hit_ratio=0.00 scene=城市漫游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "single_or_missing_travel"
+            },
+            "density": {
+              "score": 0.19999999999999996,
+              "passed": false,
+              "detail": "stops=1 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "城市漫游",
+          "mode": "relaxed",
+          "want_places": []
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "dlg-0724",
+      "city": "beijing",
+      "style_scene": "城市漫游",
+      "difficulty": "medium",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "state_change"
+      ],
+      "overall": 1.0,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=300.4 safe=403.1 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=城市漫游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/4 max=16.2"
+        },
+        {
+          "name": "density",
+          "score": 1.0,
+          "passed": true,
+          "detail": "stops=5 expected~5"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "no_hard_constraints"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 5,
+        "planned_minutes": 300.4,
+        "safe_budget_minutes": 403.1,
+        "chance_constraint_satisfied": true,
+        "scene": "城市漫游",
+        "mode": "relaxed",
+        "stops": [
+          "景山公园",
+          "什刹海",
+          "烟袋斜街",
+          "后海酒吧街",
+          "后海公园"
+        ]
+      },
+      "turn_trace": [
+        {
+          "turn": 1,
+          "user": "我们想在北京玩一天，主要是情侣约会，喜欢浪漫有氛围感的地方，不要太大众，有什么推荐吗？",
+          "assistant": "你们想在北京过一天情侣约会，偏浪漫、有氛围感，又不想太大众。我先按城市漫游的方向，挑一些安静好逛、适合两个人慢慢走的地方排一版；不合适我们再换。",
+          "stops": [
+            "烟袋斜街",
+            "后海酒吧街"
+          ],
+          "passed": true,
+          "overall": 0.9400000000000001,
+          "failure_codes": [
+            "too_sparse"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=103.6 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=城市漫游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=2.8"
+            },
+            "density": {
+              "score": 0.4,
+              "passed": false,
+              "detail": "stops=2 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "城市漫游",
+          "mode": "relaxed",
+          "want_places": []
+        },
+        {
+          "turn": 2,
+          "user": "五塔寺听起来不错，但五道营会不会太商业化了？我们想找更清静、拍照好看的地方。",
+          "assistant": "明白，五道营那种热闹劲儿确实不太对味。五塔寺先记下，我帮你把路线往更清静、好出片的方向调一调，烟袋斜街这类偏商业的可以少留些。",
+          "stops": [
+            "烟袋斜街",
+            "五塔寺公园",
+            "北京历代帝王庙",
+            "广济寺"
+          ],
+          "passed": true,
+          "overall": 0.91,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=264.8 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 0.65,
+              "passed": true,
+              "detail": "shorten_not_reflected"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=城市漫游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/3 max=23.2"
+            },
+            "density": {
+              "score": 0.8,
+              "passed": true,
+              "detail": "stops=4 expected~5"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "城市漫游",
+          "mode": "relaxed",
+          "want_places": [
+            "五塔寺"
+          ]
+        },
+        {
+          "turn": 3,
+          "user": "国子监街可以，不过我们不太想赶太多景点，下午去景山公园就够了，什刹海也想去但怕时间紧。",
+          "assistant": "明白，不想赶太多，那咱们就慢一点。国子监街和景山公园留着，什刹海如果时间够就顺路去，不够也不勉强。我先把节奏调松，看看怎么排更从容。",
+          "stops": [
+            "景山公园",
+            "什刹海",
+            "烟袋斜街",
+            "后海酒吧街",
+            "后海公园"
+          ],
+          "passed": true,
+          "overall": 1.0,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=300.4 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=城市漫游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/4 max=16.2"
+            },
+            "density": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "stops=5 expected~5"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "城市漫游",
+          "mode": "relaxed",
+          "want_places": [
+            "景山公园",
+            "什刹海"
+          ]
+        },
+        {
+          "turn": 4,
+          "user": "好的，但能不能再加个室内的地方？万一天气不好或者走累了可以歇歇脚。",
+          "assistant": "明白，想留个室内的地方歇脚、也防着天气变。什刹海、后海这一带还是照旧，我在中间或靠后给你加个室内的点，走累了能进去坐坐。具体加哪家我先按这一带找找看。",
+          "stops": [
+            "景山公园",
+            "什刹海",
+            "烟袋斜街",
+            "中国美术馆"
+          ],
+          "passed": true,
+          "overall": 0.98,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=273.1 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=城市漫游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/3 max=19.7"
+            },
+            "density": {
+              "score": 0.8,
+              "passed": true,
+              "detail": "stops=4 expected~5"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "城市漫游",
+          "mode": "relaxed",
+          "want_places": []
+        },
+        {
+          "turn": 5,
+          "user": "完美！那晚餐有什么推荐吗？我们想吃点有情调的餐厅，最好在景山附近。",
+          "assistant": "好呀，晚餐想找有情调、又在景山附近的，这个方向我记下了。前面景山、什刹海这一带先不动，我把收尾往景山附近收一收，帮你挑几家氛围合适的餐厅看看。",
+          "stops": [
+            "景山公园",
+            "什刹海",
+            "烟袋斜街",
+            "后海酒吧街",
+            "后海公园"
+          ],
+          "passed": true,
+          "overall": 1.0,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=300.4 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=城市漫游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/4 max=16.2"
+            },
+            "density": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "stops=5 expected~5"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "城市漫游",
+          "mode": "relaxed",
+          "want_places": []
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "dlg-0516",
+      "city": "beijing",
+      "style_scene": "亲子研学游",
+      "difficulty": "high",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace"
+      ],
+      "overall": 0.98,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=355.5 safe=403.1 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=亲子研学游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/3 max=28.2"
+        },
+        {
+          "name": "density",
+          "score": 0.8,
+          "passed": true,
+          "detail": "stops=4 expected~5"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 4,
+        "planned_minutes": 355.5,
+        "safe_budget_minutes": 403.1,
+        "chance_constraint_satisfied": true,
+        "scene": "亲子研学游",
+        "mode": "relaxed",
+        "stops": [
+          "故宫博物院",
+          "中国古动物馆",
+          "王府井古人类文化遗址博物馆",
+          "中山公园"
+        ]
+      },
+      "turn_trace": [
+        {
+          "turn": 1,
+          "user": "你好，我带孩子第一次来北京，只有一天时间，想去故宫、天安门和长城，能帮忙规划一下吗？",
+          "assistant": "你带孩子第一次来北京、只有一天，想去故宫、天安门和长城，我先按亲子、节奏从容的方向整理一版。长城离市区较远，一天里怎么取舍交给算法先排，不合适我们再商量。",
+          "stops": [
+            "故宫博物院",
+            "天安门广场",
+            "中国国家博物馆",
+            "中山公园"
+          ],
+          "passed": true,
+          "overall": 0.98,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=309.4 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/3 max=47.3"
+            },
+            "density": {
+              "score": 0.8,
+              "passed": true,
+              "detail": "stops=4 expected~5"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "亲子研学游",
+          "mode": "relaxed",
+          "want_places": [
+            "故宫",
+            "天安门",
+            "长城"
+          ]
+        },
+        {
+          "turn": 2,
+          "user": "长城太远了，孩子会累。能不能去掉长城，换成别的？孩子喜欢历史，最好有博物馆之类的。",
+          "assistant": "明白，长城来回太折腾，孩子容易累。故宫、国博这些市区的历史点我们先留着，把长城那一段去掉，换成更近的博物馆类去处，节奏也放轻松些。",
+          "stops": [
+            "北京古代建筑博物馆",
+            "国家自然博物馆"
+          ],
+          "passed": true,
+          "overall": 0.9400000000000001,
+          "failure_codes": [
+            "too_sparse"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=173.8 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=17.0"
+            },
+            "density": {
+              "score": 0.4,
+              "passed": false,
+              "detail": "stops=2 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "亲子研学游",
+          "mode": "relaxed",
+          "want_places": []
+        },
+        {
+          "turn": 3,
+          "user": "国家博物馆不错，但孩子可能觉得光看文物有点闷。有没有能互动体验的？或者科技馆之类的？",
+          "assistant": "明白，孩子看文物容易闷，想找能动手、能玩的。国家自然博物馆本来就挺适合小朋友，先留着；古代建筑博物馆那站我帮你换成更偏互动体验的方向，比如科技馆这类。你心里有具体想去的馆吗？没有的话我先按这个方向排一版。",
+          "stops": [
+            "国家自然博物馆",
+            "中国科技馆"
+          ],
+          "passed": false,
+          "overall": 0.75,
+          "failure_codes": [
+            "geo_jump",
+            "too_sparse"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=313.4 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 0.8,
+              "passed": true,
+              "detail": "replace_duration_drift"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 0.0,
+              "passed": false,
+              "detail": "anomalies=1/1 max=156.6"
+            },
+            "density": {
+              "score": 0.4,
+              "passed": false,
+              "detail": "stops=2 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "亲子研学游",
+          "mode": "relaxed",
+          "want_places": [
+            "中国科技馆"
+          ]
+        },
+        {
+          "turn": 4,
+          "user": "科技馆好！但一天两个地方会不会太赶？我们还想有吃饭和休息的时间。另外，孩子对天文也感兴趣，能加个天文馆吗？",
+          "assistant": "科技馆保留，自然博物馆也先留着。一天两个馆加吃饭休息，节奏确实偏满，我把整体放慢一点，再帮你找找天文馆能不能顺路加进来。天文馆的具体位置和开放情况我先查一下，排进去后你再看看合不合适。",
+          "stops": [
+            "国家自然博物馆",
+            "中国科技馆"
+          ],
+          "passed": false,
+          "overall": 0.73,
+          "failure_codes": [
+            "geo_jump",
+            "too_sparse"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=313.4 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 0.7,
+              "passed": true,
+              "detail": "add_stop_noop"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 0.0,
+              "passed": false,
+              "detail": "anomalies=1/1 max=156.6"
+            },
+            "density": {
+              "score": 0.4,
+              "passed": false,
+              "detail": "stops=2 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": false,
+          "needs_clarification": false,
+          "scene": "亲子研学游",
+          "mode": "relaxed",
+          "want_places": [
+            "天文馆"
+          ]
+        },
+        {
+          "turn": 5,
+          "user": "那就上午故宫，下午天文馆吧。晚上还能去王府井逛逛吗？孩子想吃北京小吃。",
+          "assistant": "好，上午故宫、下午天文馆，晚上去王府井吃小吃，这个方向挺顺。我先按这个排一版：故宫和天文馆都放进去，王府井留在傍晚，孩子逛吃也方便。天文馆和王府井的具体位置我联网核一下再定。",
+          "stops": [
+            "故宫博物院",
+            "中国古动物馆",
+            "王府井古人类文化遗址博物馆",
+            "中山公园"
+          ],
+          "passed": true,
+          "overall": 0.98,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=355.5 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/3 max=28.2"
+            },
+            "density": {
+              "score": 0.8,
+              "passed": true,
+              "detail": "stops=4 expected~5"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "亲子研学游",
+          "mode": "relaxed",
+          "want_places": [
+            "故宫",
+            "北京天文馆",
+            "王府井"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "dlg-0240",
+      "city": "shanghai",
+      "style_scene": "城市漫游",
+      "difficulty": "high",
+      "tags": [
+        "add_stop",
+        "state_change"
+      ],
+      "overall": 1.0,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=174.0 safe=188.7 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=0.67 scene=城市漫游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/2 max=13.7"
+        },
+        {
+          "name": "density",
+          "score": 1.0,
+          "passed": true,
+          "detail": "stops=3 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "no_hard_constraints"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 3,
+        "planned_minutes": 174.0,
+        "safe_budget_minutes": 188.7,
+        "chance_constraint_satisfied": true,
+        "scene": "城市漫游",
+        "mode": "relaxed",
+        "stops": [
+          "北外滩滨江绿地",
+          "外滩",
+          "K11购物艺术中心"
+        ]
+      },
+      "turn_trace": [
+        {
+          "turn": 1,
+          "user": "我明天想去上海拍照，喜欢人少、光线好的地方，最好能拍到城市天际线。",
+          "assistant": "你想明天在上海拍点照片，偏好安静、光线好的机位，最好能带到城市天际线。我先按偏出片、节奏从容的方向整理一版，把这类取景点排进去；不合适我们再换。",
+          "stops": [
+            "上海拍照",
+            "喜欢人少"
+          ],
+          "passed": true,
+          "overall": 0.9666666666666667,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=148.0 safe=188.7 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=城市漫游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=58.0"
+            },
+            "density": {
+              "score": 0.6666666666666667,
+              "passed": true,
+              "detail": "stops=2 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "城市漫游",
+          "mode": "photo",
+          "want_places": [
+            "上海拍照",
+            "喜欢人少",
+            "最好能拍到城市天际线"
+          ]
+        },
+        {
+          "turn": 2,
+          "user": "北外滩听起来不错，但外滩人会不会多？我想晚点出发，中午再去吧，有推荐吗？",
+          "assistant": "中午出发没问题，那上午就不排了。外滩人确实可能偏多，北外滩一带相对松快些，我先把外滩、滨江大道这类江景点放进来，按中午起步排一版；想更安静的话我们再换。",
+          "stops": [
+            "北外滩滨江绿地",
+            "外滩",
+            "滨江大道"
+          ],
+          "passed": true,
+          "overall": 1.0,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=155.3 safe=188.7 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=城市漫游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/2 max=10.8"
+            },
+            "density": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "stops=3 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "城市漫游",
+          "mode": "photo",
+          "want_places": [
+            "北外滩",
+            "外滩",
+            "滨江大道"
+          ]
+        },
+        {
+          "turn": 3,
+          "user": "老码头我拍过了，换个地方吧。对了，我上午走了很多路有点累，下午想找个室内坐着拍，比如咖啡店那种。",
+          "assistant": "老码头那站我帮你换掉，前面北外滩和外滩先留着。下午你走累了，想坐着拍，我把后半段往室内咖啡馆、能歇脚的地方收一收，节奏也放慢些。",
+          "stops": [
+            "北外滩滨江绿地",
+            "咖啡店"
+          ],
+          "passed": true,
+          "overall": 0.9666666666666667,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=153.2 safe=188.7 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=0.50 scene=城市漫游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=64.0"
+            },
+            "density": {
+              "score": 0.6666666666666667,
+              "passed": true,
+              "detail": "stops=2 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "城市漫游",
+          "mode": "relaxed",
+          "want_places": [
+            "咖啡店"
+          ]
+        },
+        {
+          "turn": 4,
+          "user": "突然下雨了，室内也拍不了什么，还是去商场逛逛吧，正好避雨，顺便看看有没有有趣的展览。",
+          "assistant": "下雨了，那咱们把户外的先放一放，改成逛商场避雨、顺便看看有没有展览。北外滩滨江和咖啡店先不动，我把后面的方向往室内和商场收一收，你看行不行？",
+          "stops": [
+            "北外滩滨江绿地",
+            "咖啡店"
+          ],
+          "passed": true,
+          "overall": 0.9666666666666667,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=153.2 safe=188.7 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=0.50 scene=城市漫游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=64.0"
+            },
+            "density": {
+              "score": 0.6666666666666667,
+              "passed": true,
+              "detail": "stops=2 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": false,
+          "needs_clarification": false,
+          "scene": "城市漫游",
+          "mode": "relaxed",
+          "want_places": []
+        },
+        {
+          "turn": 5,
+          "user": "K11不错，但我想先去外滩拍夜景，雨停了，然后去K11，这样安排可以吗？",
+          "assistant": "好，雨停了正好。先按你的想法把外滩夜景放前面，再去 K11。前面这段先不动，后半段我往这个方向顺一版，节奏保持轻松。",
+          "stops": [
+            "北外滩滨江绿地",
+            "外滩",
+            "K11购物艺术中心"
+          ],
+          "passed": true,
+          "overall": 1.0,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=174.0 safe=188.7 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=0.67 scene=城市漫游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/2 max=13.7"
+            },
+            "density": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "stops=3 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "城市漫游",
+          "mode": "relaxed",
+          "want_places": [
+            "外滩",
+            "K11"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "dlg-0514",
+      "city": "beijing",
+      "style_scene": "亲子研学游",
+      "difficulty": "medium",
+      "tags": [
+        "add_stop",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.9400000000000001,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=173.8 safe=403.1 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=亲子研学游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/1 max=17.0"
+        },
+        {
+          "name": "density",
+          "score": 0.4,
+          "passed": false,
+          "detail": "stops=2 expected~5 too_sparse"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        }
+      ],
+      "failures": [
+        {
+          "case_id": "dlg-0514",
+          "turn": 4,
+          "failed_metrics": [
+            "density"
+          ],
+          "failure_codes": [
+            "too_sparse"
+          ],
+          "stage": "replan",
+          "evidence": {
+            "planned_minutes": 173.8,
+            "safe_budget_minutes": 403.1,
+            "n_stops": 2,
+            "stop_names": [
+              "北京古代建筑博物馆",
+              "国家自然博物馆"
+            ],
+            "user_utterance": "国博不错！但孩子小，怕他闹，有没有更轻松一点的室内？而且我们想省点时间，最好能少走回头路。",
+            "scene": "亲子研学游",
+            "mode": "relaxed",
+            "llm_enabled": true
+          },
+          "hypothesis": "[soft] stops=2 expected~5 too_sparse",
+          "suggested_fix_area": "planner",
+          "regression": false,
+          "primary_cause": "algorithm",
+          "secondary_cause": ""
+        }
+      ],
+      "plan_summary": {
+        "n_stops": 2,
+        "planned_minutes": 173.8,
+        "safe_budget_minutes": 403.1,
+        "chance_constraint_satisfied": true,
+        "scene": "亲子研学游",
+        "mode": "relaxed",
+        "stops": [
+          "北京古代建筑博物馆",
+          "国家自然博物馆"
+        ]
+      },
+      "turn_trace": [
+        {
+          "turn": 1,
+          "user": "我想带3岁的孩子去北京玩一天，但又想多跑几个地方，有什么推荐吗？",
+          "assistant": "带3岁小朋友玩一天，还想多走几个地方，我先按亲子友好、节奏别太赶的方向整理一版，把适合孩子的公园和室内场馆搭配起来，中间留出休息和吃饭的时间；不合适我们再调。",
+          "stops": [
+            "北京古代建筑博物馆",
+            "国家自然博物馆",
+            "天坛公园-斋宫",
+            "天坛公园",
+            "天坛公园-祈年殿"
+          ],
+          "passed": true,
+          "overall": 1.0,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=374.6 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/4 max=17.4"
+            },
+            "density": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "stops=5 expected~5"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "亲子研学游",
+          "mode": "relaxed",
+          "want_places": []
+        },
+        {
+          "turn": 2,
+          "user": "故宫太大了，孩子肯定走不动，能不能换成轻松一点的公园？最好能多去几个地方。",
+          "assistant": "明白，故宫先不去了，孩子走不动确实累。我按亲子节奏，把公园类的点排得更轻松些，尽量多串几个。前面博物馆和天坛的部分先保留，后面往公园方向调整。",
+          "stops": [
+            "北京古代建筑博物馆",
+            "国家自然博物馆",
+            "天坛公园-斋宫",
+            "天坛公园",
+            "天坛公园-祈年殿"
+          ],
+          "passed": true,
+          "overall": 0.94,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=374.6 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 0.7,
+              "passed": true,
+              "detail": "add_stop_noop"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/4 max=17.4"
+            },
+            "density": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "stops=5 expected~5"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": false,
+          "needs_clarification": true,
+          "scene": "亲子研学游",
+          "mode": "relaxed",
+          "want_places": []
+        },
+        {
+          "turn": 3,
+          "user": "这几个公园不错，但我想再增加一个室内的，万一太晒了可以进去，而且最好能打卡多一些。",
+          "assistant": "明白，公园保留，再补一个室内馆当备选，太晒就进去躲躲。我先按这个方向排一版，尽量让打卡点顺路多几个，不合适再调。",
+          "stops": [
+            "北京古代建筑博物馆",
+            "国家自然博物馆"
+          ],
+          "passed": true,
+          "overall": 0.9,
+          "failure_codes": [
+            "too_sparse"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=173.8 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 0.8,
+              "passed": true,
+              "detail": "replace_duration_drift"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=17.0"
+            },
+            "density": {
+              "score": 0.4,
+              "passed": false,
+              "detail": "stops=2 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "亲子研学游",
+          "mode": "relaxed",
+          "want_places": []
+        },
+        {
+          "turn": 4,
+          "user": "国博不错！但孩子小，怕他闹，有没有更轻松一点的室内？而且我们想省点时间，最好能少走回头路。",
+          "assistant": "国博先记下，回头帮你看看。孩子小想轻松点、少走回头路，这个我懂——先保留现在这两站，把节奏再放缓些，室内为主，尽量顺路不折返。你更想上午还是下午出门？",
+          "stops": [
+            "北京古代建筑博物馆",
+            "国家自然博物馆"
+          ],
+          "passed": true,
+          "overall": 0.9400000000000001,
+          "failure_codes": [
+            "too_sparse"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=173.8 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=17.0"
+            },
+            "density": {
+              "score": 0.4,
+              "passed": false,
+              "detail": "stops=2 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": false,
+          "needs_clarification": true,
+          "scene": "亲子研学游",
+          "mode": "relaxed",
+          "want_places": [
+            "中国国家博物馆"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "dlg-0450",
+      "city": "shanghai",
+      "style_scene": "休闲购物游",
+      "difficulty": "medium",
+      "tags": [
+        "add_stop",
+        "state_change"
+      ],
+      "overall": 0.9333333333333333,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=156.6 safe=223.1 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "add_stop_but_shrunk_for_ccp"
+        },
+        {
+          "name": "theme",
+          "score": 0.6666666666666666,
+          "passed": true,
+          "detail": "hit_ratio=0.33 scene=休闲购物游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/2 max=16.0"
+        },
+        {
+          "name": "density",
+          "score": 1.0,
+          "passed": true,
+          "detail": "stops=3 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "no_hard_constraints"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 3,
+        "planned_minutes": 156.6,
+        "safe_budget_minutes": 223.1,
+        "chance_constraint_satisfied": true,
+        "scene": "休闲购物游",
+        "mode": "relaxed",
+        "stops": [
+          "兴业太古汇",
+          "思南路",
+          "武康路"
+        ]
+      },
+      "turn_trace": [
+        {
+          "turn": 1,
+          "user": "你好，我想规划一天上海逛街路线，喜欢购物和时尚，不要太累，下午5点前结束。",
+          "assistant": "你想用一天在上海逛街，偏购物和时尚，节奏轻松一点，下午5点前收尾。我先按这个方向排一版好逛不赶的路线，不合适我们再调。",
+          "stops": [
+            "兴业太古汇"
+          ],
+          "passed": true,
+          "overall": 0.9500000000000001,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=39.2 safe=58.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=休闲购物游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "single_or_missing_travel"
+            },
+            "density": {
+              "score": 0.5,
+              "passed": true,
+              "detail": "stops=1 expected~2"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": true,
+          "scene": "休闲购物游",
+          "mode": "relaxed",
+          "want_places": []
+        },
+        {
+          "turn": 2,
+          "user": "南京西路我去过好多次了，有没有其他选择？想有点新鲜感，但还是要好逛。",
+          "assistant": "南京西路逛腻了，那咱们换个有新鲜感、又好逛的地方。前面这段先不动，后半段我往田子坊、武康路这类有味道的街区方向调一版，走走逛逛都合适。不合适咱们再换。",
+          "stops": [
+            "兴业太古汇",
+            "思南路",
+            "田子坊",
+            "豫园商城"
+          ],
+          "passed": true,
+          "overall": 0.8666666666666667,
+          "failure_codes": [
+            "theme_mismatch"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=210.2 safe=223.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 0.5,
+              "passed": false,
+              "detail": "hit_ratio=0.25 scene=休闲购物游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/3 max=14.2"
+            },
+            "density": {
+              "score": 0.6666666666666667,
+              "passed": true,
+              "detail": "stops=4 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "休闲购物游",
+          "mode": "relaxed",
+          "want_places": []
+        },
+        {
+          "turn": 3,
+          "user": "新天地不错，但我想更小众一点，有没有设计师品牌集合店那种？最好能拍照。",
+          "assistant": "新天地先留着，但你想更小众、能拍照的设计师集合店，这类店我这边暂时没有已核验的具体点位。先按这个方向把后半段往更安静、好出片的街区收一收，具体店铺我联网找找再补进来，你看行吗？",
+          "stops": [
+            "兴业太古汇",
+            "思南路",
+            "田子坊",
+            "设计师品牌集合店"
+          ],
+          "passed": true,
+          "overall": 0.9666666666666667,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=208.6 safe=223.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=0.50 scene=休闲购物游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/3 max=18.2"
+            },
+            "density": {
+              "score": 0.6666666666666667,
+              "passed": true,
+              "detail": "stops=4 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "休闲购物游",
+          "mode": "relaxed",
+          "want_places": [
+            "设计师品牌集合店"
+          ]
+        },
+        {
+          "turn": 4,
+          "user": "武康路那带挺好，但走路会不会太远？我有点懒，最好店与店之间很近。",
+          "assistant": "明白，你想在武康路一带慢慢逛，还希望店和店之间别走太远。我先把节奏放得更松，尽量让这一带的地点挨得近一些，前面已经排好的部分先不动，只调整后半段。",
+          "stops": [
+            "兴业太古汇",
+            "思南路",
+            "武康路",
+            "上海新天地"
+          ],
+          "passed": true,
+          "overall": 0.9666666666666667,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=217.6 safe=223.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=0.50 scene=休闲购物游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/3 max=16.2"
+            },
+            "density": {
+              "score": 0.6666666666666667,
+              "passed": true,
+              "detail": "stops=4 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "休闲购物游",
+          "mode": "relaxed",
+          "want_places": [
+            "武康路"
+          ]
+        },
+        {
+          "turn": 5,
+          "user": "完美！不过我还想加一个美术馆或者展览，文化一点但不要太大，就在附近。",
+          "assistant": "好呀，加个小型美术馆或展览，文化味更足一点。前面逛的几站先不动，我在新天地、思南路这一带找找体量不大、偏文化的点，插进后半段，节奏还是松一点。",
+          "stops": [
+            "兴业太古汇",
+            "思南路",
+            "武康路"
+          ],
+          "passed": true,
+          "overall": 0.9333333333333333,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=156.6 safe=223.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "add_stop_but_shrunk_for_ccp"
+            },
+            "theme": {
+              "score": 0.6666666666666666,
+              "passed": true,
+              "detail": "hit_ratio=0.33 scene=休闲购物游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/2 max=16.0"
+            },
+            "density": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "stops=3 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "休闲购物游",
+          "mode": "relaxed",
+          "want_places": [
+            "美术馆",
+            "展览"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "dlg-0362",
+      "city": "beijing",
+      "style_scene": "休闲购物游",
+      "difficulty": "medium",
+      "tags": [
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.7333333333333334,
+      "passed": false,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=39.2 safe=182.3 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        },
+        {
+          "name": "theme",
+          "score": 0.0,
+          "passed": false,
+          "detail": "hit_ratio=0.00 scene=休闲购物游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "single_or_missing_travel"
+        },
+        {
+          "name": "density",
+          "score": 0.33333333333333337,
+          "passed": false,
+          "detail": "stops=1 expected~3 too_sparse"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        }
+      ],
+      "failures": [
+        {
+          "case_id": "dlg-0362",
+          "turn": 3,
+          "failed_metrics": [
+            "theme",
+            "density"
+          ],
+          "failure_codes": [
+            "theme_mismatch",
+            "too_sparse"
+          ],
+          "stage": "replan",
+          "evidence": {
+            "planned_minutes": 39.2,
+            "safe_budget_minutes": 182.3,
+            "n_stops": 1,
+            "stop_names": [
+              "有北京特色的咖啡馆"
+            ],
+            "user_utterance": "其实我有点累了，不想走太多路，能不能只去一个地方，坐下来喝杯咖啡休息一下？比如找个有北京特色的咖啡馆。",
+            "scene": "综合观光游",
+            "mode": "relaxed",
+            "llm_enabled": true
+          },
+          "hypothesis": "hit_ratio=0.00 scene=休闲购物游; stops=1 expected~3 too_sparse",
+          "suggested_fix_area": "scoring|poi_metadata",
+          "regression": false,
+          "primary_cause": "algorithm",
+          "secondary_cause": "knowledge_data"
+        }
+      ],
+      "plan_summary": {
+        "n_stops": 1,
+        "planned_minutes": 39.2,
+        "safe_budget_minutes": 182.3,
+        "chance_constraint_satisfied": true,
+        "scene": "综合观光游",
+        "mode": "relaxed",
+        "stops": [
+          "有北京特色的咖啡馆"
+        ]
+      },
+      "turn_trace": [
+        {
+          "turn": 1,
+          "user": "我明天下午到北京出差，只有半天时间，想快速打卡几个标志性的地方，你有什么推荐？",
+          "assistant": "你明天下午到北京，只有半天想快速看几个标志性地方，我先按经典地标、节奏紧凑的方向出一版；具体去哪几个我们再看，不合适就调。",
+          "stops": [
+            "烟袋斜街",
+            "后海酒吧街"
+          ],
+          "passed": true,
+          "overall": 0.9666666666666667,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=82.0 safe=182.3 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=休闲购物游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=2.8"
+            },
+            "density": {
+              "score": 0.6666666666666667,
+              "passed": true,
+              "detail": "stops=2 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "综合观光游",
+          "mode": "full",
+          "want_places": []
+        },
+        {
+          "turn": 2,
+          "user": "感觉故宫外围和天坛都是室外，但我看天气预报说明天下午特别热，能不能换成室内的景点？",
+          "assistant": "明白，明天下午太热，室外确实不太舒服。你现在的路线是烟袋斜街和后海酒吧街，我先把这两站保留，再帮你找几个室内的博物馆、文化场馆替换后半段，尽量少走露天。",
+          "stops": [
+            "烟袋斜街",
+            "后海酒吧街",
+            "中国美术馆"
+          ],
+          "passed": true,
+          "overall": 0.9600000000000001,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=164.6 safe=182.3 flag=True"
+            },
+            "adjust": {
+              "score": 0.8,
+              "passed": true,
+              "detail": "replace_duration_drift"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=休闲购物游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/2 max=21.0"
+            },
+            "density": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "stops=3 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "综合观光游",
+          "mode": "full",
+          "want_places": []
+        },
+        {
+          "turn": 3,
+          "user": "其实我有点累了，不想走太多路，能不能只去一个地方，坐下来喝杯咖啡休息一下？比如找个有北京特色的咖啡馆。",
+          "assistant": "累了就慢下来，咱们不赶路。今天只留一个地方，找家胡同里有北京味儿的咖啡馆坐坐，其他几站先放下。你说的这种店我先帮你找找看，具体哪家以现场为准。",
+          "stops": [
+            "有北京特色的咖啡馆"
+          ],
+          "passed": false,
+          "overall": 0.7333333333333334,
+          "failure_codes": [
+            "theme_mismatch",
+            "too_sparse"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=39.2 safe=182.3 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 0.0,
+              "passed": false,
+              "detail": "hit_ratio=0.00 scene=休闲购物游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "single_or_missing_travel"
+            },
+            "density": {
+              "score": 0.33333333333333337,
+              "passed": false,
+              "detail": "stops=1 expected~3 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "综合观光游",
+          "mode": "relaxed",
+          "want_places": [
+            "有北京特色的咖啡馆"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "dlg-0493",
+      "city": "beijing",
+      "style_scene": "休闲购物游",
+      "difficulty": "low",
+      "tags": [
+        "state_change"
+      ],
+      "overall": 0.74,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=131.3 safe=403.1 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        },
+        {
+          "name": "theme",
+          "score": 0.0,
+          "passed": false,
+          "detail": "hit_ratio=0.00 scene=休闲购物游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/1 max=41.7"
+        },
+        {
+          "name": "density",
+          "score": 0.4,
+          "passed": false,
+          "detail": "stops=2 expected~5 too_sparse"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "no_hard_constraints"
+        }
+      ],
+      "failures": [
+        {
+          "case_id": "dlg-0493",
+          "turn": 3,
+          "failed_metrics": [
+            "theme",
+            "density"
+          ],
+          "failure_codes": [
+            "theme_mismatch",
+            "too_sparse"
+          ],
+          "stage": "replan",
+          "evidence": {
+            "planned_minutes": 131.3,
+            "safe_budget_minutes": 403.1,
+            "n_stops": 2,
+            "stop_names": [
+              "五道营胡同",
+              "北京侨福芳草地购物中心"
+            ],
+            "user_utterance": "五道营和芳草地听起来不错！不过我想在咖啡馆多待会儿，再找几个适合拍照的网红店，能调整一下吗？",
+            "scene": "综合观光游",
+            "mode": "photo",
+            "llm_enabled": true
+          },
+          "hypothesis": "[soft] hit_ratio=0.00 scene=休闲购物游; stops=2 expected~5 too_sparse",
+          "suggested_fix_area": "scoring|poi_metadata",
+          "regression": false,
+          "primary_cause": "algorithm",
+          "secondary_cause": "knowledge_data"
+        }
+      ],
+      "plan_summary": {
+        "n_stops": 2,
+        "planned_minutes": 131.3,
+        "safe_budget_minutes": 403.1,
+        "chance_constraint_satisfied": true,
+        "scene": "综合观光游",
+        "mode": "photo",
+        "stops": [
+          "五道营胡同",
+          "北京侨福芳草地购物中心"
+        ]
+      },
+      "turn_trace": [
+        {
+          "turn": 1,
+          "user": "我想在北京玩一天，喜欢拍照打卡，节奏轻松点，有什么推荐吗？",
+          "assistant": "你想在北京轻松玩一天，重点是拍照出片、节奏别太赶。我先按偏出片、慢一点的方向给你一版可改的初稿，把适合取景的地标和街区串起来；不合适我们再商量。",
+          "stops": [
+            "烟袋斜街",
+            "后海酒吧街"
+          ],
+          "passed": true,
+          "overall": 0.9400000000000001,
+          "failure_codes": [
+            "too_sparse"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=103.6 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=休闲购物游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=2.8"
+            },
+            "density": {
+              "score": 0.4,
+              "passed": false,
+              "detail": "stops=2 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "综合观光游",
+          "mode": "photo",
+          "want_places": []
+        },
+        {
+          "turn": 2,
+          "user": "798我之前去过了，有没有更文艺一点的地方？最好人少一点，拍照好看。",
+          "assistant": "798去过就换换口味，给你找更文艺、人少又出片的地方。烟袋斜街和后海先留着，我把后半段往琉璃厂这类老城文艺片区调一调，节奏放慢些，不合适再改。",
+          "stops": [
+            "烟袋斜街",
+            "北京琉璃厂"
+          ],
+          "passed": true,
+          "overall": 0.9400000000000001,
+          "failure_codes": [
+            "too_sparse"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=154.5 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=休闲购物游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=53.7"
+            },
+            "density": {
+              "score": 0.4,
+              "passed": false,
+              "detail": "stops=2 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "综合观光游",
+          "mode": "photo",
+          "want_places": [
+            "琉璃厂"
+          ]
+        },
+        {
+          "turn": 3,
+          "user": "五道营和芳草地听起来不错！不过我想在咖啡馆多待会儿，再找几个适合拍照的网红店，能调整一下吗？",
+          "assistant": "好呀，五道营和芳草地都留着，节奏也放慢些，让你在咖啡馆多坐一会儿。我再帮你找几个适合拍照的店，往那一带凑一凑，不合适咱们再调。",
+          "stops": [
+            "五道营胡同",
+            "北京侨福芳草地购物中心"
+          ],
+          "passed": true,
+          "overall": 0.74,
+          "failure_codes": [
+            "theme_mismatch",
+            "too_sparse"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=131.3 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 0.0,
+              "passed": false,
+              "detail": "hit_ratio=0.00 scene=休闲购物游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=41.7"
+            },
+            "density": {
+              "score": 0.4,
+              "passed": false,
+              "detail": "stops=2 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "no_hard_constraints"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "综合观光游",
+          "mode": "photo",
+          "want_places": [
+            "五道营",
+            "芳草地"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "dlg-0367",
+      "city": "shanghai",
+      "style_scene": "亲子研学游",
+      "difficulty": "low",
+      "tags": [],
+      "overall": 0.96,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=230.7 safe=403.1 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "first_turn_or_no_tags"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=亲子研学游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/2 max=13.9"
+        },
+        {
+          "name": "density",
+          "score": 0.6,
+          "passed": true,
+          "detail": "stops=3 expected~5 too_sparse"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 3,
+        "planned_minutes": 230.7,
+        "safe_budget_minutes": 403.1,
+        "chance_constraint_satisfied": true,
+        "scene": "亲子研学游",
+        "mode": "deep",
+        "stops": [
+          "国际乒联博物馆",
+          "上海世博会博物馆",
+          "上海潜艇展览馆(中国航海博物馆黄浦分馆)"
+        ]
+      },
+      "turn_trace": [
+        {
+          "turn": 1,
+          "user": "你好，我打算周末带孩子去上海玩一天，孩子10岁，想找个有教育意义的地方，最好能学点历史知识，你有什么推荐吗？",
+          "assistant": "你想周末带10岁孩子在上海玩一天，希望既有教育意义又能学点历史。我先按亲子研学、偏人文历史的方向整理一版，节奏别太赶，方便孩子边走边看；不合适我们再商量。",
+          "stops": [
+            "国际乒联博物馆",
+            "上海世博会博物馆",
+            "田子坊",
+            "复兴公园",
+            "思南路",
+            "上海新天地"
+          ],
+          "passed": true,
+          "overall": 0.98,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=358.9 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/5 max=14.6"
+            },
+            "density": {
+              "score": 0.8,
+              "passed": true,
+              "detail": "stops=6 expected~5"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "亲子研学游",
+          "mode": "deep",
+          "want_places": []
+        },
+        {
+          "turn": 2,
+          "user": "博物馆和纪念馆听起来不错，不过孩子可能坐不住太久，能再安排一个室外活动吗？比如有自然景观的地方，让孩子跑一跑。",
+          "assistant": "明白，孩子坐不住太久，中间得有个能跑一跑的地方。博物馆和纪念馆先保留，我在路线里加一段室外自然景观，让孩子放放电，节奏也松一点。",
+          "stops": [
+            "国际乒联博物馆",
+            "上海世博会博物馆",
+            "田子坊",
+            "让孩子跑一跑"
+          ],
+          "passed": true,
+          "overall": 0.98,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=317.0 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/3 max=65.6"
+            },
+            "density": {
+              "score": 0.8,
+              "passed": true,
+              "detail": "stops=4 expected~5"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "亲子研学游",
+          "mode": "deep",
+          "want_places": [
+            "让孩子跑一跑"
+          ]
+        },
+        {
+          "turn": 3,
+          "user": "自然博物馆孩子肯定喜欢，但世纪公园会不会太普通了？有没有更有特色的户外景点，比如能看黄浦江的地方，最好还能顺便接触点科技知识。",
+          "assistant": "自然博物馆先留着，孩子应该会喜欢。世纪公园确实偏常规，我理解你想换成能看黄浦江、又能碰点科技的地方。我先按这个方向把后半段调一调，前面博物馆部分尽量不动，具体点位让算法找找看。",
+          "stops": [
+            "国际乒联博物馆",
+            "上海世博会博物馆",
+            "上海科技馆",
+            "滨江大道",
+            "外滩"
+          ],
+          "passed": true,
+          "overall": 1.0,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=398.7 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/4 max=79.5"
+            },
+            "density": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "stops=5 expected~5"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "亲子研学游",
+          "mode": "deep",
+          "want_places": [
+            "科技类场馆"
+          ]
+        },
+        {
+          "turn": 4,
+          "user": "上海中心大厦很好！不过我们住在浦东，上午去自然博物馆在静安区，路上会不会太赶？有没有浦东的博物馆推荐，这样一天都在浦东，省时间。",
+          "assistant": "理解，住浦东确实没必要上午跨到静安。自然博物馆先不排了，浦东这边博物馆不少，我按你现在的路线往浦东收一收，尽量一天不跨江。上海中心大厦保留，具体替换哪几站我们看排出来的版本再商量。",
+          "stops": [
+            "国际乒联博物馆",
+            "上海世博会博物馆",
+            "上海潜艇展览馆(中国航海博物馆黄浦分馆)"
+          ],
+          "passed": true,
+          "overall": 0.96,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=230.7 safe=403.1 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/2 max=13.9"
+            },
+            "density": {
+              "score": 0.6,
+              "passed": true,
+              "detail": "stops=3 expected~5 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "亲子研学游",
+          "mode": "deep",
+          "want_places": []
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "syn-002",
+      "city": "shanghai",
+      "style_scene": "亲子研学游",
+      "difficulty": "high",
+      "tags": [
+        "shorten",
+        "state_change",
+        "add_stop"
+      ],
+      "overall": 0.8966666666666667,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=144.5 safe=182.3 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 0.65,
+          "passed": true,
+          "detail": "shorten_not_reflected"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=亲子研学游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/1 max=4.5"
+        },
+        {
+          "name": "density",
+          "score": 0.6666666666666667,
+          "passed": true,
+          "detail": "stops=2 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 2,
+        "planned_minutes": 144.5,
+        "safe_budget_minutes": 182.3,
+        "chance_constraint_satisfied": true,
+        "scene": "亲子研学游",
+        "mode": "relaxed",
+        "stops": [
+          "上海自然博物馆",
+          "静安雕塑公园"
+        ]
+      },
+      "turn_trace": [
+        {
+          "turn": 1,
+          "user": "我们一家带4岁小孩，上海玩半天，要轻松亲子路线，别太累。",
+          "assistant": "你们一家带4岁小朋友，想在上海轻松玩半天，我会按亲子、慢节奏来排一版，少走路、多能歇脚的地方，不合适我们再调。",
+          "stops": [
+            "上海自然博物馆",
+            "静安雕塑公园"
+          ],
+          "passed": true,
+          "overall": 0.9666666666666667,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=144.5 safe=182.3 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=4.5"
+            },
+            "density": {
+              "score": 0.6666666666666667,
+              "passed": true,
+              "detail": "stops=2 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "亲子研学游",
+          "mode": "relaxed",
+          "want_places": []
+        },
+        {
+          "turn": 2,
+          "user": "下午可能下雨，尽量多安排室内，时间再缩短一点。",
+          "assistant": "下午可能下雨，那我们把室内多排一些，时间也收一收。自然博物馆先留着，雕塑公园这类户外的先不硬塞，后面往博物馆方向靠。要不要我按这个方向先排一版？",
+          "stops": [
+            "上海自然博物馆",
+            "静安雕塑公园"
+          ],
+          "passed": true,
+          "overall": 0.9666666666666667,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=144.5 safe=182.3 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=4.5"
+            },
+            "density": {
+              "score": 0.6666666666666667,
+              "passed": true,
+              "detail": "stops=2 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": false,
+          "needs_clarification": true,
+          "scene": "亲子研学游",
+          "mode": "relaxed",
+          "want_places": []
+        },
+        {
+          "turn": 3,
+          "user": "能不能再加一个适合小朋友的互动展，但整体还是半天走完。",
+          "assistant": "好，半天走完没问题。自然博物馆和静安雕塑公园先留着，我在这附近找找适合小朋友的互动展，尽量不绕远。找到合适的就补进来，整体节奏还是轻松的。",
+          "stops": [
+            "上海自然博物馆",
+            "静安雕塑公园"
+          ],
+          "passed": true,
+          "overall": 0.8966666666666667,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=144.5 safe=182.3 flag=True"
+            },
+            "adjust": {
+              "score": 0.65,
+              "passed": true,
+              "detail": "shorten_not_reflected"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/1 max=4.5"
+            },
+            "density": {
+              "score": 0.6666666666666667,
+              "passed": true,
+              "detail": "stops=2 expected~3"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": false,
+          "needs_clarification": false,
+          "scene": "亲子研学游",
+          "mode": "relaxed",
+          "want_places": [
+            "适合小朋友的互动展"
+          ]
+        }
+      ],
+      "error": null
+    },
+    {
+      "case_id": "syn-007",
+      "city": "beijing",
+      "style_scene": "亲子研学游",
+      "difficulty": "medium",
+      "tags": [
+        "replace"
+      ],
+      "overall": 0.8,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=223.2 safe=321.5 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=亲子研学游"
+        },
+        {
+          "name": "geo",
+          "score": 0.0,
+          "passed": false,
+          "detail": "anomalies=1/1 max=108.2"
+        },
+        {
+          "name": "density",
+          "score": 0.5,
+          "passed": true,
+          "detail": "stops=2 expected~4 too_sparse"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        }
+      ],
+      "failures": [
+        {
+          "case_id": "syn-007",
+          "turn": 2,
+          "failed_metrics": [
+            "geo"
+          ],
+          "failure_codes": [
+            "geo_jump"
+          ],
+          "stage": "replan",
+          "evidence": {
+            "planned_minutes": 223.2,
+            "safe_budget_minutes": 321.5,
+            "n_stops": 2,
+            "stop_names": [
+              "北京古代建筑博物馆",
+              "互动体验展馆"
+            ],
+            "user_utterance": "孩子对那个点没兴趣，换成更互动的展馆。",
+            "scene": "亲子研学游",
+            "mode": "deep",
+            "llm_enabled": true
+          },
+          "hypothesis": "[soft] anomalies=1/1 max=108.2",
+          "suggested_fix_area": "planner",
+          "regression": false,
+          "primary_cause": "algorithm",
+          "secondary_cause": ""
+        }
+      ],
+      "plan_summary": {
+        "n_stops": 2,
+        "planned_minutes": 223.2,
+        "safe_budget_minutes": 321.5,
+        "chance_constraint_satisfied": true,
+        "scene": "亲子研学游",
+        "mode": "deep",
+        "stops": [
+          "北京古代建筑博物馆",
+          "互动体验展馆"
+        ]
+      },
+      "turn_trace": [
+        {
+          "turn": 1,
+          "user": "带10岁孩子在北京做亲子研学，喜欢科普和博物馆，安排大约六小时。",
+          "assistant": "你想带10岁孩子在北京做约六小时的亲子研学，重点放在科普和博物馆，我先按偏知识、节奏适中的方向整理一版；孩子状态和兴趣点我们随时再调。",
+          "stops": [
+            "北京古代建筑博物馆",
+            "国家自然博物馆",
+            "天坛公园",
+            "天坛公园-祈年殿"
+          ],
+          "passed": true,
+          "overall": 1.0,
+          "failure_codes": [],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=282.9 safe=321.5 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "first_turn_or_no_tags"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "anomalies=0/3 max=22.9"
+            },
+            "density": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "stops=4 expected~4"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "亲子研学游",
+          "mode": "deep",
+          "want_places": []
+        },
+        {
+          "turn": 2,
+          "user": "孩子对那个点没兴趣，换成更互动的展馆。",
+          "assistant": "明白，孩子对某个点提不起劲，那就换个更能动手参与的展馆。前面还顺的博物馆先留着，把不太合适的那站换掉，后半段往互动体验方向调一版。",
+          "stops": [
+            "北京古代建筑博物馆",
+            "互动体验展馆"
+          ],
+          "passed": true,
+          "overall": 0.8,
+          "failure_codes": [
+            "geo_jump"
+          ],
+          "metrics": {
+            "ccp": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "planned=223.2 safe=321.5 flag=True"
+            },
+            "adjust": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            },
+            "theme": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "hit_ratio=1.00 scene=亲子研学游"
+            },
+            "geo": {
+              "score": 0.0,
+              "passed": false,
+              "detail": "anomalies=1/1 max=108.2"
+            },
+            "density": {
+              "score": 0.5,
+              "passed": true,
+              "detail": "stops=2 expected~4 too_sparse"
+            },
+            "retain": {
+              "score": 1.0,
+              "passed": true,
+              "detail": "ok"
+            }
+          },
+          "plan_updated": true,
+          "needs_clarification": false,
+          "scene": "亲子研学游",
+          "mode": "deep",
+          "want_places": [
+            "互动体验展馆"
+          ]
+        }
+      ],
+      "error": null
+    }
+  ]
+}

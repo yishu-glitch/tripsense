@@ -1,0 +1,3777 @@
+[
+  {
+    "site_id": "AUTO_B00155L7QF",
+    "site_name": "七宝古镇",
+    "parent_poi_id": "B00155L7QF",
+    "children": [
+      {
+        "poi_id": "B0FFGFAU1D",
+        "name": "七宝古镇游船码头",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 259.2,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0MG4UXVAJ",
+        "name": "七宝古镇-街道灯笼装饰夜景打卡位",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 590.3,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00154SLJR",
+    "site_name": "七宝教寺",
+    "parent_poi_id": "B00154SLJR",
+    "children": [
+      {
+        "poi_id": "B0FFG1OQ54",
+        "name": "七宝教寺-飞来佛殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 11.7,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFG1OWEA",
+        "name": "七宝教寺-大雄宝殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 29.0,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFG1JEGF",
+        "name": "七宝教寺-观音殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 40.5,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0GKKSXBLF",
+        "name": "七宝教寺-天王殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 5.8,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFG20LT7",
+        "name": "七宝教寺-显通宝殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 26.0,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFGFB0FD",
+    "site_name": "七宝老街",
+    "parent_poi_id": "B0FFGFB0FD",
+    "children": [
+      {
+        "poi_id": "B0FFHID3WZ",
+        "name": "七宝老街-闵行市民文化广场",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 231.6,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFF00HE2",
+        "name": "七宝老街-张充仁纪念馆",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 84.8,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFGYU4BC",
+        "name": "七宝老街-蒲溪广场",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 110.3,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFH83ZUB",
+        "name": "七宝老街-钟楼广场",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 273.3,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00154DUI6",
+    "site_name": "上海世纪公园",
+    "parent_poi_id": "B00154DUI6",
+    "children": [
+      {
+        "poi_id": "B00156YL6R",
+        "name": "世纪公园-湖滨区",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 531.0,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFF5QXQO",
+        "name": "世纪公园-观星广场",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 719.3,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00156CLWX",
+    "site_name": "上海东滩湿地公园",
+    "parent_poi_id": "B00156CLWX",
+    "children": [
+      {
+        "poi_id": "B0KUFCWY2H",
+        "name": "湿地花岛",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 715.8,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFG8C3Q7",
+    "site_name": "上海之鱼",
+    "parent_poi_id": "B0FFG8C3Q7",
+    "children": [
+      {
+        "poi_id": "B0FFIUFP8V",
+        "name": "上海之鱼-年丰公园",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 383.8,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0G325GJAW",
+        "name": "上海之鱼-粉黛乱子草园",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 548.2,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFMGQDDY",
+        "name": "青年艺术公园",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 655.4,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00156GEHX",
+    "site_name": "上海人文纪念公园",
+    "parent_poi_id": "B00156GEHX",
+    "children": [
+      {
+        "poi_id": "B0015750E8",
+        "name": "福寿园新四军广场",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 131.3,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155IWT7",
+    "site_name": "上海佘山国家森林公园",
+    "parent_poi_id": "B00155IWT7",
+    "children": [
+      {
+        "poi_id": "B001571GJX",
+        "name": "佘山国家森林公园-佘山秀化寺",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 215.4,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0015725P1",
+        "name": "佘山国家森林公园-观光塔",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 482.6,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0015274AA",
+        "name": "上海佘山国家森林公园-西佘山园",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 454.7,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0015211C2",
+    "site_name": "上海共青森林公园",
+    "parent_poi_id": "B0015211C2",
+    "children": [
+      {
+        "poi_id": "B0MG45XGZG",
+        "name": "上海共青森林公园-红杉林打卡位",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 8.2,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_ZOO",
+    "site_name": "上海动物园",
+    "parent_poi_id": "B0015397C9",
+    "children": [
+      {
+        "poi_id": "B0J1GS8Y0B",
+        "name": "上海动物园河马馆",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 237.3,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFS32K1",
+        "name": "上海动物园-亚洲象馆",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 298.8,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFI52TL9",
+        "name": "上海动物园-袋鼠馆",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 380.9,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0H33CWSSR",
+        "name": "上海动物园-东北马鹿",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 483.5,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0MG45XEY7",
+        "name": "上海动物园-网红梦核鱼缸打卡位",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 564.3,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B00156YL4F",
+        "name": "上海儿童动物园",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 83.8,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFHMT05D",
+        "name": "鹈鹕",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 188.9,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFS33ID",
+        "name": "狼馆",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 219.3,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFS32I8",
+        "name": "大猩猩馆",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 238.8,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFZKG49",
+        "name": "红肩金刚鹦鹉",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 246.8,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFDKWMD",
+        "name": "南非海狮",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 252.3,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0GD2ZRND0",
+        "name": "白眉长臂猿",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 284.6,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0GD2ASW4C",
+        "name": "熊猫岭馆",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 294.5,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0L3OLZ631",
+        "name": "小熊猫",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 297.8,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0GD2ATLRK",
+        "name": "孟加拉虎",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 331.4,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFEK7RU",
+        "name": "两栖爬行动物区域",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 545.3,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFH18766",
+    "site_name": "上海大宁公园",
+    "parent_poi_id": "B0FFH18766",
+    "children": [
+      {
+        "poi_id": "B0FFFS4SHQ",
+        "name": "上海大宁公园-北海",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 183.6,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B00156YKTL",
+        "name": "上海大宁公园-白沙滩",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 337.5,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFFS4UPZ",
+        "name": "上海大宁公园-雕塑",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 497.0,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00152289C",
+    "site_name": "上海大观园",
+    "parent_poi_id": "B00152289C",
+    "children": [
+      {
+        "poi_id": "B0015725GH",
+        "name": "栊翠庵",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 441.6,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00150744F",
+    "site_name": "上海影视乐园",
+    "parent_poi_id": "B00150744F",
+    "children": [
+      {
+        "poi_id": "B00155M0V8",
+        "name": "上海影视乐园-车墩影视基地",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 4.1,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFG963ZO",
+        "name": "上海影视乐园-和平广场",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 162.0,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFG951UB",
+        "name": "外滩公园",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 187.7,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFG962SG",
+        "name": "上海影视乐园-圣德教堂",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 165.1,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFH6RLXF",
+    "site_name": "上海月湖雕塑公园",
+    "parent_poi_id": "B0FFH6RLXF",
+    "children": [
+      {
+        "poi_id": "B0FFG1YKPL",
+        "name": "上海月湖雕塑公园-表演广场",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 108.2,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFJA4MJ9",
+        "name": "上海月湖雕塑公园-佘山林荫广场",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 710.0,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_ZHUJIAJIAO",
+    "site_name": "上海朱家角古镇旅游区",
+    "parent_poi_id": "B001558F5I",
+    "children": [
+      {
+        "poi_id": "B0MBSADUP2",
+        "name": "朱家角光影幻境服务中心",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 71.4,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "address_alias_match",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0MG45XGZ8",
+        "name": "朱家角古镇-摇橹船与仿古建筑打卡位",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 335.6,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGFFPBU",
+        "name": "上海朱家角古镇旅游区-水乐堂",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 509.6,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B00156R4WJ",
+        "name": "朱家角古镇-三圣殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 599.9,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "address_alias_match",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B00156R3PL",
+        "name": "上海朱家角古镇旅游区-猛将殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 679.6,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0015725M2",
+        "name": "上海朱家角古镇旅游区-慈航殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 681.5,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0015725MD",
+        "name": "上海朱家角古镇旅游区-二太子殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 691.5,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B00156R51S",
+        "name": "上海朱家角古镇旅游区-财神殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 710.6,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFDGMNE",
+        "name": "朱家角古镇-六十甲子殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 714.3,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B001556RCN",
+        "name": "上海朱家角古镇旅游区-慈门街",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 736.1,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGGW1II",
+        "name": "朱家角古镇-四百年银杏树",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 758.9,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0I1Y55ZG3",
+        "name": "朱家角课植园实景园林昆曲牡丹亭",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.9,
+        "distance_m": 294.2,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFD23VO",
+        "name": "朱家角天主堂",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.9,
+        "distance_m": 558.7,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFL33VHF",
+        "name": "朱家角基督堂",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.9,
+        "distance_m": 569.2,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFHX6WYC",
+        "name": "朱家角古镇-城隍殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.9,
+        "distance_m": 704.8,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B00157950W",
+        "name": "朱家角城隍庙",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.9,
+        "distance_m": 707.4,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGXSYL2",
+        "name": "上海朱家角古镇旅游区-银杏树广场",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.9,
+        "distance_m": 785.7,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGBBW1E",
+        "name": "朱家角镇市民广场体育公园",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.9,
+        "distance_m": 995.3,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFT7YCH",
+        "name": "涌泉桥饭店",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.65,
+        "distance_m": 296.3,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFF2FTGL",
+        "name": "放生桥",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.65,
+        "distance_m": 631.8,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFDG9LV",
+        "name": "放生桥码头",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.65,
+        "distance_m": 632.7,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B00156OAXN",
+        "name": "王昶纪念馆",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.65,
+        "distance_m": 839.5,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFT8BF1",
+        "name": "中市河桥",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.65,
+        "distance_m": 944.1,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B001558F4P",
+        "name": "上海珠溪园",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.65,
+        "distance_m": 1094.9,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_BOTANICAL_GARDEN",
+    "site_name": "上海植物园",
+    "parent_poi_id": "B00154DWH8",
+    "children": [
+      {
+        "poi_id": "B0IGZDYZPW",
+        "name": "上海植物园盆景博物馆",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 111.6,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFDPYX9",
+        "name": "上海植物园-兰室",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 200.9,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B00156YL2O",
+        "name": "上海植物园-松柏园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 217.0,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFG280CQ",
+        "name": "上海植物园-蕨类园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 232.3,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFG2D2GC",
+        "name": "上海植物园-木兰园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 240.2,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGMD2DF",
+        "name": "上海植物园展览温室",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 292.4,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFF36A4Z",
+        "name": "上海植物园-热带植物馆",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 303.1,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0LDT6NY7D",
+        "name": "上海植物园-北区",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 309.3,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFK7OEWY",
+        "name": "上海植物园-瀑布",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 328.2,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFGYUPR",
+        "name": "上海植物园-四季花卉温室",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 333.4,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGM2163",
+        "name": "上海植物园-月季园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 371.4,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGM20BF",
+        "name": "上海植物园-牡丹园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 385.0,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGMRORM",
+        "name": "上海植物园-银杏林",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 443.7,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFDHTEY",
+        "name": "上海植物园-杜鹃园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 453.1,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGM2164",
+        "name": "上海植物园-蔷薇园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 508.9,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGM2379",
+        "name": "上海植物园-梅林",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 557.7,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFG1PC7Z",
+        "name": "上海植物园-槭树园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 676.8,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGM1ZV4",
+        "name": "竹园",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 398.0,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFKCWP49",
+        "name": "球宿根植物园",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 406.5,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGMBRFV",
+        "name": "游船码头",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 481.7,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155KS2F",
+    "site_name": "上海汽车博览公园",
+    "parent_poi_id": "B00155KS2F",
+    "children": [
+      {
+        "poi_id": "B0JD5CAN92",
+        "name": "上海汽车博览公园-日本园",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 389.7,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFGE2F10",
+    "site_name": "上海浦江郊野公园",
+    "parent_poi_id": "B0FFGE2F10",
+    "children": [
+      {
+        "poi_id": "B0FFI7RAE1",
+        "name": "上海浦江郊野公园奇迹花园-莫奈花园",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 1215.2,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFG954E8",
+    "site_name": "上海海昌海洋公园",
+    "parent_poi_id": "B0FFG954E8",
+    "children": [
+      {
+        "poi_id": "B0LDYU30KY",
+        "name": "上海海昌海洋公园-极速企鹅",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 74.4,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155LYLB",
+    "site_name": "上海海湾国家森林公园",
+    "parent_poi_id": "B00155LYLB",
+    "children": [
+      {
+        "poi_id": "B0JGRR8QGI",
+        "name": "楚梅阁",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 680.8,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFGCUL7V",
+        "name": "禅修园",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 2113.1,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155FF41",
+    "site_name": "上海淞沪抗战纪念公园",
+    "parent_poi_id": "B00155FF41",
+    "children": [
+      {
+        "poi_id": "B0H3TDHIMA",
+        "name": "上海淞沪抗战纪念馆-胜利广场",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 136.9,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B001541BAB",
+        "name": "上海淞沪抗战纪念公园-陈化成纪念馆",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 52.9,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFHI9PMH",
+        "name": "上海淞沪抗战纪念公园-宝山孔庙大成殿",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 93.3,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0G3OUAOVF",
+    "site_name": "上海淞沪抗战纪念馆",
+    "parent_poi_id": "B0G3OUAOVF",
+    "children": [
+      {
+        "poi_id": "B0H3TDHIMA",
+        "name": "上海淞沪抗战纪念馆-胜利广场",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 22.6,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155FHMD",
+    "site_name": "上海滨江森林公园",
+    "parent_poi_id": "B00155FHMD",
+    "children": [
+      {
+        "poi_id": "B0FFG40U8U",
+        "name": "上海滨江森林公园-特色植物观赏区",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 355.0,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFG2BRUC",
+        "name": "上海滨江森林公园-湿生植物观赏区",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 619.3,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFFOZWYW",
+        "name": "滨江森林公园-滨江岸线观景区",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 452.4,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0KADCVRQB",
+        "name": "田埂花海",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 711.4,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFINHR7V",
+        "name": "滨江森林公园-滨江岸线观景台",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 737.5,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0L2MMYYNO",
+        "name": "滨江森林公园1期",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 759.8,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFFOZ4NX",
+        "name": "上海滨江森林公园东南区-游客阅览室",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 297.8,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155KFXH",
+    "site_name": "上海犹太难民纪念馆",
+    "parent_poi_id": "B00155KFXH",
+    "children": [
+      {
+        "poi_id": "B00155LXII",
+        "name": "上海犹太难民纪念馆-摩西会堂",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 19.9,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155KPTS",
+    "site_name": "上海申隆生态园",
+    "parent_poi_id": "B00155KPTS",
+    "children": [
+      {
+        "poi_id": "B0FFIVOQS4",
+        "name": "上海申隆生态园-天鹅湖",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 217.8,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00156ECI5",
+    "site_name": "上海财神庙",
+    "parent_poi_id": "B00156ECI5",
+    "children": [
+      {
+        "poi_id": "B0G256R1NF",
+        "name": "上海财神庙-东岳殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 59.4,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_CHENSHAN_BOTANICAL_GARDEN",
+    "site_name": "上海辰山植物园",
+    "parent_poi_id": "B00156DYI3",
+    "children": [
+      {
+        "poi_id": "B0FFJYV16Y",
+        "name": "上海辰山植物园-旱生植物园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 183.0,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFOK0ZS",
+        "name": "上海辰山植物园-岩石和药用植物园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 230.1,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFOJ4BH",
+        "name": "上海辰山植物园-球宿根园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 278.1,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFPLJSE",
+        "name": "上海辰山植物园-木兰园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 352.2,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFOM7SG",
+        "name": "上海辰山植物园-月季园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 360.0,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFG0AHOH",
+        "name": "上海辰山植物园-春景园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 427.4,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFOLJ3Y",
+        "name": "上海辰山植物园-湿地植物园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 536.8,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFP001P",
+        "name": "上海辰山植物园-鸢尾园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 619.2,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFG1FUGA",
+        "name": "上海辰山植物园-沙生植物馆",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 691.8,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGGW9UV",
+        "name": "矿坑花园",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 229.5,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0KRJO6ARD",
+        "name": "岩生植物园",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 247.9,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFG214AB",
+        "name": "珍稀植物园",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 337.1,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFL6EBGT",
+        "name": "小小动物园",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 515.1,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFG1S0J1",
+        "name": "儿童植物园",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 556.6,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_DISNEY_RESORT",
+    "site_name": "上海迪士尼度假区",
+    "parent_poi_id": "B0FFGYMCF9",
+    "children": [
+      {
+        "poi_id": "B0FFGUCVD6",
+        "name": "迪士尼小镇湖畔区",
+        "relation_type": "inside_resort",
+        "confidence": 1.0,
+        "distance_m": 276.3,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0MG45XEY4",
+        "name": "上海迪士尼度假区-城堡顶仰拍打卡位",
+        "relation_type": "inside_resort",
+        "confidence": 1.0,
+        "distance_m": 476.0,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGXQ0VD",
+        "name": "百食香街区",
+        "relation_type": "inside_resort",
+        "confidence": 0.65,
+        "distance_m": 45.0,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGXQ0M8",
+        "name": "蒸汽船米奇喷泉",
+        "relation_type": "inside_resort",
+        "confidence": 0.65,
+        "distance_m": 208.0,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGVSSB8",
+        "name": "彩虹桥",
+        "relation_type": "inside_resort",
+        "confidence": 0.65,
+        "distance_m": 678.7,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFK1UZ9F",
+        "name": "光明生态园广场",
+        "relation_type": "inside_resort",
+        "confidence": 0.65,
+        "distance_m": 1196.8,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFII5WHM",
+        "name": "光明生态园",
+        "relation_type": "inside_resort",
+        "confidence": 0.65,
+        "distance_m": 1208.7,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFGW0KYP",
+        "name": "莫斯利安香草园",
+        "relation_type": "inside_resort",
+        "confidence": 0.65,
+        "distance_m": 1281.6,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00151CDD0",
+    "site_name": "上海醉白池公园",
+    "parent_poi_id": "B00151CDD0",
+    "children": [
+      {
+        "poi_id": "B00156LTU8",
+        "name": "醉白清荷",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 39.0,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_WILD_ANIMAL_PARK",
+    "site_name": "上海野生动物园",
+    "parent_poi_id": "B00152F15F",
+    "children": [
+      {
+        "poi_id": "B0HGYZVXE9",
+        "name": "上海野生动物园-太阳广场",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 199.7,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B00156R4GN",
+        "name": "上海野生动物园大熊猫馆",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 312.6,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFOG1DI",
+        "name": "上海野生动物园-松鼠猴",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 333.5,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0JAPH60HD",
+        "name": "上海野生动物园-中美貘",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 359.3,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0JAPHYCNI",
+        "name": "上海野生动物园-优雅长颈鹿",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 397.9,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0JAPHXBUI",
+        "name": "上海野生动物园-非洲旷野",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 422.1,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFFCYA43",
+        "name": "上海野生动物园-广场鸽",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 424.9,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0JAPHW9GP",
+        "name": "上海野生动物园-大食蚁兽",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 451.8,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0JAPHW1S8",
+        "name": "上海野生动物园-荒野大力熊",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 494.4,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B00156YL10",
+        "name": "上海野生动物园金丝猴岛",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 515.1,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0JAPH3VD7",
+        "name": "上海野生动物园-森林之王",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 523.0,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0HGYZWT34",
+        "name": "上海野生动物园-热带鸟园",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 573.5,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B00156YL23",
+        "name": "上海野生动物园老虎扑食",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 582.0,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0L05ZSVA5",
+        "name": "上海野生动物园-棕熊水世界",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 629.7,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0MG45XGZ7",
+        "name": "上海野生动物园-摩天轮打卡位",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 667.8,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0JAPH021A",
+        "name": "上海野生动物园-草原霸主",
+        "relation_type": "inside_park",
+        "confidence": 0.9,
+        "distance_m": 763.0,
+        "evidence": [
+          "name_alias_match",
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0HR9L8PHZ",
+        "name": "马来熊王国",
+        "relation_type": "inside_park",
+        "confidence": 0.65,
+        "distance_m": 310.0,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155FHN3",
+    "site_name": "上海长风海洋世界",
+    "parent_poi_id": "B00155FHN3",
+    "children": [
+      {
+        "poi_id": "B0FFM9SREY",
+        "name": "上海长风海洋世界-水族馆",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 38.5,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155KZKW",
+    "site_name": "上海鲁迅公园",
+    "parent_poi_id": "B00155KZKW",
+    "children": [
+      {
+        "poi_id": "B0FFHR8NHA",
+        "name": "世界文豪广场",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 295.9,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155G3HG",
+    "site_name": "上海鲜花港",
+    "parent_poi_id": "B00155G3HG",
+    "children": [
+      {
+        "poi_id": "B0FFG2CPOM",
+        "name": "盛彩广场",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 336.4,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFFDK7VB",
+        "name": "上海四季花港-郁金香女神",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 427.9,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFKTGH5N",
+    "site_name": "世博文化公园",
+    "parent_poi_id": "B0FFKTGH5N",
+    "children": [
+      {
+        "poi_id": "B0MG4UXOGX",
+        "name": "世博文化公园-水底森林打卡位",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 344.0,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0IB17DOMI",
+        "name": "申园",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 205.2,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_ORIENTAL_PEARL",
+    "site_name": "东方明珠广播电视塔",
+    "parent_poi_id": "B00150F6D6",
+    "children": [
+      {
+        "poi_id": "B0L1R5BU0P",
+        "name": "东方明珠零米大厅",
+        "relation_type": "inside_or_attached_facility",
+        "confidence": 0.9,
+        "distance_m": 28.1,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B00151E2D4",
+        "name": "东方明珠旅游码头",
+        "relation_type": "inside_or_attached_facility",
+        "confidence": 0.9,
+        "distance_m": 282.0,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "within_accept_radius"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155IPXY",
+    "site_name": "东方绿舟",
+    "parent_poi_id": "B00155IPXY",
+    "children": [
+      {
+        "poi_id": "B0015725T4",
+        "name": "秦始皇雕像",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 9.2,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0HKO5GSWB",
+        "name": "红军足印纪念园",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 191.2,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0HG57C0NR",
+        "name": "索道桥",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 803.1,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0MGOCVX94",
+    "site_name": "中国共产党第一次全国代表大会纪念馆",
+    "parent_poi_id": "B0MGOCVX94",
+    "children": [
+      {
+        "poi_id": "B0MGOCVPM4",
+        "name": "中国共产党第一次全国代表大会纪念馆-报告厅",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 73.4,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00157G053",
+    "site_name": "中山公园",
+    "parent_poi_id": "B00157G053",
+    "children": [
+      {
+        "poi_id": "B0MG45XEYF",
+        "name": "中山公园-与草地和大树打卡位",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 4.4,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFH10Z44",
+        "name": "荷花池",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 79.1,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0LG97X3OH",
+        "name": "露天音乐广场",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 191.3,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B00156YKQ5",
+        "name": "天山公园-水杉林",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 1244.2,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B00156YKZF",
+        "name": "月季苑",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 1890.5,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFHX6W3H",
+        "name": "中山公园-米兰广场",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 241.2,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B001577IAR",
+    "site_name": "九亭文化广场",
+    "parent_poi_id": "B001577IAR",
+    "children": [
+      {
+        "poi_id": "B0FFHED7N9",
+        "name": "九亭文化广场-双拥广场",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 100.4,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155IOKX",
+    "site_name": "书院人家",
+    "parent_poi_id": "B00155IOKX",
+    "children": [
+      {
+        "poi_id": "B0FFLA97D7",
+        "name": "书院厅",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 236.1,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFFGQ0HS",
+    "site_name": "亩中山水园",
+    "parent_poi_id": "B0FFFGQ0HS",
+    "children": [
+      {
+        "poi_id": "B0KUFC5F8J",
+        "name": "静思峰",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 74.6,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155KKQJ",
+    "site_name": "人民公园",
+    "parent_poi_id": "B00155KKQJ",
+    "children": [
+      {
+        "poi_id": "B0FFFEPU7R",
+        "name": "湖心亭(豫园店)",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 177.1,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFG0ZN57",
+    "site_name": "儿童公园",
+    "parent_poi_id": "B0FFG0ZN57",
+    "children": [
+      {
+        "poi_id": "B00155LIHN",
+        "name": "儿童公园-梅园广场",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 86.9,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFHC9R74",
+    "site_name": "前卫生态村",
+    "parent_poi_id": "B0FFHC9R74",
+    "children": [
+      {
+        "poi_id": "B001572IFX",
+        "name": "前卫生态村-上海雷锋纪念馆",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 101.8,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFGZR766",
+    "site_name": "北蔡消防主题公园",
+    "parent_poi_id": "B0FFGZR766",
+    "children": [
+      {
+        "poi_id": "B00155HQJC",
+        "name": "北蔡消防主题公园-联勤广场",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 45.1,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFGXKK7E",
+    "site_name": "北郊公园",
+    "parent_poi_id": "B0FFGXKK7E",
+    "children": [
+      {
+        "poi_id": "B0FFJWW24G",
+        "name": "北郊公园-外冈法治文化公园",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 45.9,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0H1SUJKH4",
+    "site_name": "半马苏河公园",
+    "parent_poi_id": "B0H1SUJKH4",
+    "children": [
+      {
+        "poi_id": "B0J0CDBE5Q",
+        "name": "半马苏河广场",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 604.6,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFILJJDN",
+    "site_name": "南汇新城春花秋色公园",
+    "parent_poi_id": "B0FFILJJDN",
+    "children": [
+      {
+        "poi_id": "B0K229827J",
+        "name": "雨水花园",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 456.9,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155LZBN",
+    "site_name": "南翔古镇",
+    "parent_poi_id": "B00155LZBN",
+    "children": [
+      {
+        "poi_id": "B0MG45XGZH",
+        "name": "南翔古镇-河道和古镇建筑打卡位",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 146.1,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155QGG9",
+    "site_name": "南门景观大堤",
+    "parent_poi_id": "B00155QGG9",
+    "children": [
+      {
+        "poi_id": "B0FFILI1TQ",
+        "name": "南门景观大堤-崇明沿江观光大堤",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 213.3,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0IKJC7KOC",
+    "site_name": "启动林公园",
+    "parent_poi_id": "B0IKJC7KOC",
+    "children": [
+      {
+        "poi_id": "B0LB9DXRNA",
+        "name": "上海市外环环城林带启动石",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 55.5,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFGD82MA",
+    "site_name": "嘉北郊野公园",
+    "parent_poi_id": "B0FFGD82MA",
+    "children": [
+      {
+        "poi_id": "B0GUASATS1",
+        "name": "嘉北郊野公园-魔力谷",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 1620.2,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155L2QO",
+    "site_name": "四平科技公园",
+    "parent_poi_id": "B00155L2QO",
+    "children": [
+      {
+        "poi_id": "B0FFFS7CLJ",
+        "name": "四平科技公园-中心广场",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 115.4,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00156YKYG",
+    "site_name": "圆津禅院",
+    "parent_poi_id": "B00156YKYG",
+    "children": [
+      {
+        "poi_id": "B00156R4WJ",
+        "name": "朱家角古镇-三圣殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 23.6,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155KTVH",
+    "site_name": "复兴公园",
+    "parent_poi_id": "B00155KTVH",
+    "children": [
+      {
+        "poi_id": "B0FFIK0Y68",
+        "name": "复兴公园-大草坪",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 55.5,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B00157HYSM",
+        "name": "复兴公园-马恩雕像",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 119.4,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155KCC9",
+    "site_name": "复旦大学博物馆",
+    "parent_poi_id": "B00155KCC9",
+    "children": [
+      {
+        "poi_id": "B00156R4ID",
+        "name": "复旦大学博物馆-蔡冠深人文馆",
+        "relation_type": "inside_venue",
+        "confidence": 0.7,
+        "distance_m": 50.6,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_BUND",
+    "site_name": "外滩",
+    "parent_poi_id": "ZTRIP_SH_004",
+    "children": [
+      {
+        "poi_id": "B0FFF59QKI",
+        "name": "外滩观光隧道",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.9,
+        "distance_m": 667.9,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFL0G26V",
+        "name": "BUND22外滩二十二号",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.9,
+        "distance_m": 1127.6,
+        "evidence": [
+          "raw_parent_match",
+          "name_alias_match",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0H25OORPF",
+        "name": "浦江游轮",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.65,
+        "distance_m": 1530.6,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155L3HB",
+    "site_name": "天原公园",
+    "parent_poi_id": "B00155L3HB",
+    "children": [
+      {
+        "poi_id": "B00155IPKZ",
+        "name": "天原公园-长宁老年公园",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 67.0,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00154DIBB",
+    "site_name": "天山公园",
+    "parent_poi_id": "B00154DIBB",
+    "children": [
+      {
+        "poi_id": "B0M6RH1DWZ",
+        "name": "天山公园-南区",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 107.1,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B00156YKQ5",
+        "name": "天山公园-水杉林",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 65.1,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00156D593",
+    "site_name": "小普陀寺",
+    "parent_poi_id": "B00156D593",
+    "children": [
+      {
+        "poi_id": "B0KBF5R6RA",
+        "name": "财神殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 36.1,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0KBFST7M1",
+        "name": "文殊殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 46.4,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0KGGU7GNZ",
+        "name": "弥陀殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 118.8,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0KB7MHPEO",
+    "site_name": "小普陀寺洛迦山",
+    "parent_poi_id": "B0KB7MHPEO",
+    "children": [
+      {
+        "poi_id": "B0KBTZYKQY",
+        "name": "药师殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 9.1,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0KBTZW9DG",
+        "name": "大雄宝殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 30.9,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFGYRICS",
+    "site_name": "崇明区三佛讲寺",
+    "parent_poi_id": "B0FFGYRICS",
+    "children": [
+      {
+        "poi_id": "B0FFLG77YH",
+        "name": "大雄宝殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 66.6,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155G075",
+    "site_name": "川沙公园",
+    "parent_poi_id": "B00155G075",
+    "children": [
+      {
+        "poi_id": "B00155FHYG",
+        "name": "川沙公园-鹤鸣楼",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 52.5,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFF9E7QI",
+    "site_name": "平安广场",
+    "parent_poi_id": "B0FFF9E7QI",
+    "children": [
+      {
+        "poi_id": "B0FFKEKTZO",
+        "name": "上海市见义勇为纪念广场",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 52.1,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B001519846",
+    "site_name": "延虹绿地",
+    "parent_poi_id": "B001519846",
+    "children": [
+      {
+        "poi_id": "B00156LU0F",
+        "name": "天地合欢",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 60.1,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00153099F",
+    "site_name": "思贤公园",
+    "parent_poi_id": "B00153099F",
+    "children": [
+      {
+        "poi_id": "B0KUBROLBE",
+        "name": "天鹅野鸭景观",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 148.1,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0KUB7WUVT",
+        "name": "假山瀑布",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 167.4,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155LZNL",
+    "site_name": "新场古镇",
+    "parent_poi_id": "B00155LZNL",
+    "children": [
+      {
+        "poi_id": "B0MG45XGZF",
+        "name": "新场古镇-灯笼街道打卡位",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 3.1,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFGCER7G",
+        "name": "中国锣鼓书艺术馆",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 624.1,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00156E2YG",
+    "site_name": "月浦公园",
+    "parent_poi_id": "B00156E2YG",
+    "children": [
+      {
+        "poi_id": "B0FFFWQ50H",
+        "name": "上海战役月浦攻坚战纪念碑",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 102.4,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155L2WJ",
+    "site_name": "杨浦公园",
+    "parent_poi_id": "B00155L2WJ",
+    "children": [
+      {
+        "poi_id": "B0FFHIXQWW",
+        "name": "杨浦公园-老苗水族馆",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 234.7,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B001556VY1",
+    "site_name": "枫泾古镇",
+    "parent_poi_id": "B001556VY1",
+    "children": [
+      {
+        "poi_id": "B0FFFDLY4A",
+        "name": "枫泾古镇-三桥里",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 154.9,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B00155L1W4",
+        "name": "枫泾古镇-施王庙",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 390.8,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFFDLCGL",
+        "name": "桥湾亭",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 357.7,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFFF0QNL",
+    "site_name": "槎浦公园",
+    "parent_poi_id": "B0FFFF0QNL",
+    "children": [
+      {
+        "poi_id": "B00156CUTR",
+        "name": "槎浦公园-东区",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 154.2,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155L7QH",
+    "site_name": "汇龙潭公园",
+    "parent_poi_id": "B00155L7QH",
+    "children": [
+      {
+        "poi_id": "B0L1TL5D7D",
+        "name": "汇龙潭公园-嘉定州桥",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 155.0,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFHMR0PZ",
+    "site_name": "沔青公园",
+    "parent_poi_id": "B0FFHMR0PZ",
+    "children": [
+      {
+        "poi_id": "B0H336OAYF",
+        "name": "沔青公园-梦泽飞鹭",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 324.5,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0H3DDPWNJ",
+        "name": "主入口广场",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 461.3,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155KIQQ",
+    "site_name": "济阳公园",
+    "parent_poi_id": "B00155KIQQ",
+    "children": [
+      {
+        "poi_id": "B0I6RMV3FN",
+        "name": "杜鹃花园中园",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 152.3,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFKMT7T6",
+    "site_name": "浦江第一湾公园",
+    "parent_poi_id": "B0FFKMT7T6",
+    "children": [
+      {
+        "poi_id": "B0K229A6ED",
+        "name": "浦江第一湾公园-景观台",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 227.8,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00156GT3G",
+    "site_name": "海天湖公园",
+    "parent_poi_id": "B00156GT3G",
+    "children": [
+      {
+        "poi_id": "B0FFILI2ZJ",
+        "name": "雷锋广场",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 213.0,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B001533722",
+    "site_name": "滨江大道",
+    "parent_poi_id": "B001533722",
+    "children": [
+      {
+        "poi_id": "B00156GWVK",
+        "name": "滨江大道-曲涧通江",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 335.2,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155QNYS",
+    "site_name": "滨海公园",
+    "parent_poi_id": "B00155QNYS",
+    "children": [
+      {
+        "poi_id": "B0FFG1OVOX",
+        "name": "滨海公园-动物园",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 206.9,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B001537817",
+    "site_name": "瀛洲公园",
+    "parent_poi_id": "B001537817",
+    "children": [
+      {
+        "poi_id": "B0FFILI1TQ",
+        "name": "南门景观大堤-崇明沿江观光大堤",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 127.0,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B001576YTR",
+        "name": "杏壇",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 143.6,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00156R4YE",
+    "site_name": "生态公园",
+    "parent_poi_id": "B00156R4YE",
+    "children": [
+      {
+        "poi_id": "B0FFLG12Y1",
+        "name": "生态公园-马陆葡萄主题公园",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 0.0,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B001556OB7",
+    "site_name": "碧云净院",
+    "parent_poi_id": "B001556OB7",
+    "children": [
+      {
+        "poi_id": "B0G36UMKF6",
+        "name": "碧云净院-大雄宝殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 2.2,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0G36UMD48",
+        "name": "碧云净院-念佛堂",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 53.5,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00154D7AX",
+    "site_name": "福泉古寺",
+    "parent_poi_id": "B00154D7AX",
+    "children": [
+      {
+        "poi_id": "B0FFIY3426",
+        "name": "福泉古寺-观音殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 13.7,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFKD9GDX",
+    "site_name": "米市渡松南郊野公园",
+    "parent_poi_id": "B0FFKD9GDX",
+    "children": [
+      {
+        "poi_id": "B0H3N51YK0",
+        "name": "帐篷搭建点郊野公园",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 1086.4,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00156GL01",
+    "site_name": "罗泾公园(北区)",
+    "parent_poi_id": "B00156GL01",
+    "children": [
+      {
+        "poi_id": "B0FFGPRSPS",
+        "name": "罗泾镇健康主题公园",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 60.3,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00156GN39",
+    "site_name": "老白渡滨江绿地",
+    "parent_poi_id": "B00156GN39",
+    "children": [
+      {
+        "poi_id": "B00156GMMO",
+        "name": "老白渡滨江绿地-煤仓广场",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 295.0,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B00156GN6W",
+        "name": "老白渡滨江绿地-烟囱广场",
+        "relation_type": "inside_park",
+        "confidence": 0.7,
+        "distance_m": 311.7,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155Q88P",
+    "site_name": "菩提禅寺",
+    "parent_poi_id": "B00155Q88P",
+    "children": [
+      {
+        "poi_id": "B0FFKWO02P",
+        "name": "菩提禅寺-财神殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 2.1,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFL78MMP",
+        "name": "菩提禅寺-般若",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 24.3,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFKWOJG3",
+        "name": "大雄宝殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 41.3,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155G2UQ",
+    "site_name": "西岸自然艺术公园",
+    "parent_poi_id": "B00155G2UQ",
+    "children": [
+      {
+        "poi_id": "B00156R4X5",
+        "name": "西岸自然艺术公园-刘三故居",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 277.1,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0L2JM65LO",
+        "name": "浸想宅院",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 124.4,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B001509B96",
+    "site_name": "西林禅寺",
+    "parent_poi_id": "B001509B96",
+    "children": [
+      {
+        "poi_id": "B0FFGR6XGC",
+        "name": "西林禅寺-圆应塔",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 12.3,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155R3U3",
+    "site_name": "西沙明珠湖景区",
+    "parent_poi_id": "B00155R3U3",
+    "children": [
+      {
+        "poi_id": "B0H6GL3BIU",
+        "name": "西沙明珠湖景区-明珠湖公园",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 1334.2,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B001546A5F",
+    "site_name": "诸翟公园",
+    "parent_poi_id": "B001546A5F",
+    "children": [
+      {
+        "poi_id": "B0FFG95JGM",
+        "name": "诸翟公园-闵行市民文化广场",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 60.5,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_YUYUAN",
+    "site_name": "豫园",
+    "parent_poi_id": "ZTRIP_SH_005",
+    "children": [
+      {
+        "poi_id": "B00156R51K",
+        "name": "可以观",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.65,
+        "distance_m": 14.2,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B00156R50S",
+        "name": "别有天",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.65,
+        "distance_m": 25.3,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0FFKXKRCQ",
+        "name": "月老殿",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.65,
+        "distance_m": 67.0,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      },
+      {
+        "poi_id": "B0L0XSKCL7",
+        "name": "童涵春堂中药博物馆",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.65,
+        "distance_m": 192.8,
+        "evidence": [
+          "address_alias_match",
+          "explicit_inside_address",
+          "within_accept_radius"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFGLM9BO",
+    "site_name": "赵巷公园",
+    "parent_poi_id": "B0FFGLM9BO",
+    "children": [
+      {
+        "poi_id": "B0K2AMWGOJ",
+        "name": "总体国家安全观赵巷镇网络安全主题公园",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 104.5,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0FFG8TU6G",
+    "site_name": "车墩人口文化广场",
+    "parent_poi_id": "B0FFG8TU6G",
+    "children": [
+      {
+        "poi_id": "B0FFLET355",
+        "name": "健康主题公园",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.8,
+        "distance_m": 53.3,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00155D6FY",
+    "site_name": "金山城市沙滩",
+    "parent_poi_id": "B00155D6FY",
+    "children": [
+      {
+        "poi_id": "B0FFKCWTY2",
+        "name": "金山城市沙滩-观景台",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 349.2,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00154DWCM",
+    "site_name": "闸北公园",
+    "parent_poi_id": "B00154DWCM",
+    "children": [
+      {
+        "poi_id": "B0FFHG9733",
+        "name": "闸北公园-宋教仁先生之墓",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 250.4,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00154EXYV",
+    "site_name": "陈云纪念馆",
+    "parent_poi_id": "B00154EXYV",
+    "children": [
+      {
+        "poi_id": "B0JUTXV5FW",
+        "name": "陈云纪念馆-陈云故里",
+        "relation_type": "inside_scenic_area",
+        "confidence": 0.7,
+        "distance_m": 34.8,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B0LB7K2UTG",
+    "site_name": "青西郊野公园",
+    "parent_poi_id": "B0LB7K2UTG",
+    "children": [
+      {
+        "poi_id": "B00156R4PT",
+        "name": "上海西郊淀山湖湿地",
+        "relation_type": "inside_park",
+        "confidence": 0.8,
+        "distance_m": 1088.2,
+        "evidence": [
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B001559IL3",
+    "site_name": "高东公园",
+    "parent_poi_id": "B001559IL3",
+    "children": [
+      {
+        "poi_id": "B0I64RX6YL",
+        "name": "高东公园-北园",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 41.6,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      },
+      {
+        "poi_id": "B0FFM80PNZ",
+        "name": "高东公园-南园",
+        "relation_type": "inside_park",
+        "confidence": 1.0,
+        "distance_m": 552.9,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "AUTO_B00156EOP9",
+    "site_name": "高东生态园",
+    "parent_poi_id": "B00156EOP9",
+    "children": [
+      {
+        "poi_id": "B0FFKPEVV8",
+        "name": "高东生态园-高东体育主题公园",
+        "relation_type": "inside_scenic_area",
+        "confidence": 1.0,
+        "distance_m": 303.6,
+        "evidence": [
+          "full_parent_prefix_in_name",
+          "full_parent_name_in_address",
+          "explicit_inside_address",
+          "geographically_consistent"
+        ]
+      }
+    ]
+  }
+]

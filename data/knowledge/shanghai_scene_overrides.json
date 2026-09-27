@@ -1,0 +1,120 @@
+{
+  "ZTRIP_SH_001": {
+    "primary_scene": "urban_walk",
+    "scene_tags": ["citywalk", "history", "street_life", "food", "photo"],
+    "confidence": "high"
+  },
+  "ZTRIP_SH_002": {
+    "primary_scene": "urban_walk",
+    "scene_tags": ["citywalk", "architecture", "history", "photo"],
+    "confidence": "high"
+  },
+  "ZTRIP_SH_003": {
+    "primary_scene": "urban_walk",
+    "scene_tags": ["citywalk", "shopping", "night", "street_life"],
+    "confidence": "high"
+  },
+  "ZTRIP_SH_004": {
+    "primary_scene": "landmark_sightseeing",
+    "scene_tags": ["landmark", "architecture", "history", "waterfront", "night", "photo"],
+    "confidence": "high"
+  },
+  "ZTRIP_SH_005": {
+    "primary_scene": "urban_walk",
+    "scene_tags": ["citywalk", "history", "food", "shopping", "night"],
+    "confidence": "high"
+  },
+  "ZTRIP_SH_006": {
+    "primary_scene": "urban_walk",
+    "scene_tags": ["citywalk", "architecture", "history", "photo"],
+    "confidence": "high"
+  },
+  "ZTRIP_SH_007": {
+    "primary_scene": "urban_walk",
+    "scene_tags": ["citywalk", "architecture", "cafe", "photo"],
+    "confidence": "high"
+  },
+  "ZTRIP_SH_008": {
+    "primary_scene": "urban_walk",
+    "scene_tags": ["citywalk", "architecture", "history", "art", "photo"],
+    "confidence": "high"
+  },
+  "B0JK6D3SJM": {
+    "primary_scene": "uncertain",
+    "scene_tags": [],
+    "confidence": "low",
+    "service_action": "exclude"
+  },
+  "B0KKM554KT": {
+    "service_action": "exclude"
+  },
+  "B00156YKRG": {
+    "service_action": "exclude"
+  },
+  "B0L3MRNSPK": {
+    "service_action": "exclude"
+  },
+  "B0FFJ2JI6R": {
+    "primary_scene": "urban_walk",
+    "scene_tags": ["citywalk", "architecture", "history", "art", "cafe", "photo"],
+    "confidence": "high"
+  },
+  "B00155L7QD": {
+    "primary_scene": "park_nature",
+    "scene_tags": ["nature", "outdoor", "hiking", "family"],
+    "confidence": "high",
+    "poi_type_en": "park"
+  },
+  "B00156EP9N": {
+    "primary_scene": "family_entertainment",
+    "scene_tags": ["entertainment", "performance", "family", "indoor"],
+    "confidence": "high",
+    "poi_type_en": "attraction"
+  },
+  "B00150F6D6": {
+    "primary_scene": "landmark_sightseeing",
+    "scene_tags": ["landmark", "city_view", "photo", "night", "family"],
+    "confidence": "high",
+    "poi_type_en": "attraction"
+  },
+  "B00151E2D4": {
+    "primary_scene": "commercial_support",
+    "scene_tags": ["waterfront", "cruise", "transport", "photo"],
+    "confidence": "high"
+  },
+  "B0FFL0G26V": {
+    "primary_scene": "history_architecture",
+    "scene_tags": ["architecture", "history", "indoor", "food", "photo", "night"],
+    "confidence": "high"
+  },
+  "B0LKMA4HPY": {
+    "primary_scene": "indoor_leisure",
+    "scene_tags": ["landmark", "exhibition", "architecture", "shopping", "food", "photo", "rainy_day", "reservation_required"],
+    "confidence": "high",
+    "poi_type_en": "leisure"
+  },
+  "B00155LYLW": {
+    "primary_scene": "park_nature",
+    "scene_tags": ["nature", "outdoor", "low_energy"],
+    "confidence": "high",
+    "poi_type_en": "park"
+  },
+  "B0FFF2V6XW": {
+    "primary_scene": "park_nature",
+    "scene_tags": ["nature", "outdoor", "low_energy"],
+    "confidence": "high",
+    "poi_type_en": "park"
+  },
+  "B0FFGMS7VI": {
+    "primary_scene": "park_nature",
+    "scene_tags": ["nature", "outdoor", "low_energy"],
+    "confidence": "high",
+    "poi_type_en": "park"
+  },
+  "B001533722": {
+    "primary_scene": "urban_walk",
+    "scene_tags": ["citywalk", "photo", "street_life", "waterfront"],
+    "confidence": "high",
+    "poi_type_en": "attraction"
+  }
+}

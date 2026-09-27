@@ -1,0 +1,919 @@
+{
+  "total": 12,
+  "passed": 12,
+  "pass_rate": 1.0,
+  "metric_pass_rates": {
+    "adjust": 1.0,
+    "ccp": 1.0,
+    "density": 0.9166666666666666,
+    "geo": 1.0,
+    "retain": 1.0,
+    "theme": 1.0
+  },
+  "by_scene": {
+    "历史文化游": {
+      "n": 9,
+      "pass_rate": 1.0
+    },
+    "城市漫游": {
+      "n": 3,
+      "pass_rate": 1.0
+    }
+  },
+  "by_difficulty": {
+    "high": {
+      "n": 5,
+      "pass_rate": 1.0
+    },
+    "medium": {
+      "n": 7,
+      "pass_rate": 1.0
+    }
+  },
+  "by_op": {
+    "add_stop": {
+      "n": 12,
+      "pass_rate": 1.0
+    },
+    "replace": {
+      "n": 12,
+      "pass_rate": 1.0
+    },
+    "shorten": {
+      "n": 12,
+      "pass_rate": 1.0
+    },
+    "state_change": {
+      "n": 12,
+      "pass_rate": 1.0
+    }
+  },
+  "failure_code_counts": {
+    "too_sparse": 1
+  },
+  "attribution": {
+    "taxonomy": [
+      "prompt",
+      "algorithm",
+      "knowledge_data",
+      "rag_architecture",
+      "case_design",
+      "other"
+    ],
+    "hard_primary_counts": {
+      "prompt": 0,
+      "algorithm": 0,
+      "knowledge_data": 0,
+      "rag_architecture": 0,
+      "case_design": 0,
+      "other": 0
+    },
+    "soft_primary_counts": {
+      "prompt": 0,
+      "algorithm": 1,
+      "knowledge_data": 0,
+      "rag_architecture": 0,
+      "case_design": 0,
+      "other": 0
+    },
+    "examples": {
+      "algorithm": [
+        {
+          "case_id": "dlg-0325",
+          "kind": "soft",
+          "codes": "too_sparse",
+          "hypothesis": "[soft] stops=1 expected~5 too_sparse",
+          "secondary": ""
+        }
+      ]
+    },
+    "note": "hard= case overall fail; soft= metric miss while overall still passes. Offline (no --llm) rarely attributes to prompt."
+  },
+  "results": [
+    {
+      "case_id": "dlg-0111",
+      "city": "shanghai",
+      "style_scene": "历史文化游",
+      "difficulty": "high",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.8966666666666667,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=183.8 safe=188.7 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 0.65,
+          "passed": true,
+          "detail": "shorten_not_reflected"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=历史文化游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/3 max=16.0"
+        },
+        {
+          "name": "density",
+          "score": 0.6666666666666667,
+          "passed": true,
+          "detail": "stops=4 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "no_hard_constraints"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 4,
+        "planned_minutes": 183.8,
+        "safe_budget_minutes": 188.7,
+        "chance_constraint_satisfied": true,
+        "scene": "历史文化游",
+        "mode": "full",
+        "stops": [
+          "外滩源",
+          "豫园商城",
+          "思南路",
+          "武康路"
+        ]
+      },
+      "error": null
+    },
+    {
+      "case_id": "dlg-0448",
+      "city": "shanghai",
+      "style_scene": "历史文化游",
+      "difficulty": "medium",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.9666666666666667,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=163.6 safe=188.7 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=历史文化游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/1 max=6.8"
+        },
+        {
+          "name": "density",
+          "score": 0.6666666666666667,
+          "passed": true,
+          "detail": "stops=2 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "no_hard_constraints"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 2,
+        "planned_minutes": 163.6,
+        "safe_budget_minutes": 188.7,
+        "chance_constraint_satisfied": true,
+        "scene": "历史文化游",
+        "mode": "deep",
+        "stops": [
+          "上海世博会博物馆",
+          "国际乒联博物馆"
+        ]
+      },
+      "error": null
+    },
+    {
+      "case_id": "dlg-0588",
+      "city": "beijing",
+      "style_scene": "历史文化游",
+      "difficulty": "high",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.8966666666666667,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=139.5 safe=188.7 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 0.65,
+          "passed": true,
+          "detail": "shorten_not_reflected"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=历史文化游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/1 max=10.7"
+        },
+        {
+          "name": "density",
+          "score": 0.6666666666666667,
+          "passed": true,
+          "detail": "stops=2 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 2,
+        "planned_minutes": 139.5,
+        "safe_budget_minutes": 188.7,
+        "chance_constraint_satisfied": true,
+        "scene": "历史文化游",
+        "mode": "relaxed",
+        "stops": [
+          "天安门广场",
+          "中国国家博物馆"
+        ]
+      },
+      "error": null
+    },
+    {
+      "case_id": "dlg-0722",
+      "city": "beijing",
+      "style_scene": "历史文化游",
+      "difficulty": "high",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.8866666666666667,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=107.5 safe=188.7 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 0.6,
+          "passed": true,
+          "detail": "replace_noop"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=历史文化游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/1 max=6.7"
+        },
+        {
+          "name": "density",
+          "score": 0.6666666666666667,
+          "passed": true,
+          "detail": "stops=2 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 2,
+        "planned_minutes": 107.5,
+        "safe_budget_minutes": 188.7,
+        "chance_constraint_satisfied": true,
+        "scene": "历史文化游",
+        "mode": "balanced",
+        "stops": [
+          "中国人民抗日战争纪念馆",
+          "卢沟桥"
+        ]
+      },
+      "error": null
+    },
+    {
+      "case_id": "dlg-0299",
+      "city": "beijing",
+      "style_scene": "历史文化游",
+      "difficulty": "medium",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.8866666666666667,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=133.2 safe=188.7 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 0.6,
+          "passed": true,
+          "detail": "replace_noop"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=历史文化游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/1 max=1.0"
+        },
+        {
+          "name": "density",
+          "score": 0.6666666666666667,
+          "passed": true,
+          "detail": "stops=2 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "no_hard_constraints"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 2,
+        "planned_minutes": 133.2,
+        "safe_budget_minutes": 188.7,
+        "chance_constraint_satisfied": true,
+        "scene": "历史文化游",
+        "mode": "deep",
+        "stops": [
+          "先农坛",
+          "北京古代建筑博物馆"
+        ]
+      },
+      "error": null
+    },
+    {
+      "case_id": "dlg-0435",
+      "city": "shanghai",
+      "style_scene": "历史文化游",
+      "difficulty": "medium",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 1.0,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=121.2 safe=188.7 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "add_stop_but_shrunk_for_ccp"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=历史文化游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/2 max=10.6"
+        },
+        {
+          "name": "density",
+          "score": 1.0,
+          "passed": true,
+          "detail": "stops=3 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "no_hard_constraints"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 3,
+        "planned_minutes": 121.2,
+        "safe_budget_minutes": 188.7,
+        "chance_constraint_satisfied": true,
+        "scene": "历史文化游",
+        "mode": "deep",
+        "stops": [
+          "田子坊",
+          "思南路",
+          "上海新天地"
+        ]
+      },
+      "error": null
+    },
+    {
+      "case_id": "dlg-0734",
+      "city": "beijing",
+      "style_scene": "历史文化游",
+      "difficulty": "medium",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.8966666666666667,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=127.4 safe=188.7 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 0.65,
+          "passed": true,
+          "detail": "shorten_not_reflected"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=历史文化游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/1 max=1.0"
+        },
+        {
+          "name": "density",
+          "score": 0.6666666666666667,
+          "passed": true,
+          "detail": "stops=2 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "no_hard_constraints"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 2,
+        "planned_minutes": 127.4,
+        "safe_budget_minutes": 188.7,
+        "chance_constraint_satisfied": true,
+        "scene": "历史文化游",
+        "mode": "deep",
+        "stops": [
+          "北京古代建筑博物馆",
+          "先农坛"
+        ]
+      },
+      "error": null
+    },
+    {
+      "case_id": "dlg-0325",
+      "city": "beijing",
+      "style_scene": "历史文化游",
+      "difficulty": "medium",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.92,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=42.2 safe=403.1 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "add_stop_but_shrunk_for_ccp"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=历史文化游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "single_or_missing_travel"
+        },
+        {
+          "name": "density",
+          "score": 0.19999999999999996,
+          "passed": false,
+          "detail": "stops=1 expected~5 too_sparse"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "no_hard_constraints"
+        }
+      ],
+      "failures": [
+        {
+          "case_id": "dlg-0325",
+          "turn": 3,
+          "failed_metrics": [
+            "density"
+          ],
+          "failure_codes": [
+            "too_sparse"
+          ],
+          "stage": "replan",
+          "evidence": {
+            "planned_minutes": 42.2,
+            "safe_budget_minutes": 403.1,
+            "n_stops": 1,
+            "stop_names": [
+              "广济寺"
+            ],
+            "user_utterance": "嗯，不过我还是想多去几个地方，比如798艺术区听说有很多工业建筑改造，也很酷。能不能把前门去掉，换成798？这样一天能逛几个？",
+            "scene": "综合观光游",
+            "mode": "balanced",
+            "llm_enabled": true
+          },
+          "hypothesis": "[soft] stops=1 expected~5 too_sparse",
+          "suggested_fix_area": "planner",
+          "regression": false,
+          "primary_cause": "algorithm",
+          "secondary_cause": ""
+        }
+      ],
+      "plan_summary": {
+        "n_stops": 1,
+        "planned_minutes": 42.2,
+        "safe_budget_minutes": 403.1,
+        "chance_constraint_satisfied": true,
+        "scene": "综合观光游",
+        "mode": "balanced",
+        "stops": [
+          "广济寺"
+        ]
+      },
+      "error": null
+    },
+    {
+      "case_id": "dlg-0621",
+      "city": "shanghai",
+      "style_scene": "历史文化游",
+      "difficulty": "medium",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.92,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=183.5 safe=188.7 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 0.6,
+          "passed": true,
+          "detail": "replace_noop"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=历史文化游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/2 max=13.3"
+        },
+        {
+          "name": "density",
+          "score": 1.0,
+          "passed": true,
+          "detail": "stops=3 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 3,
+        "planned_minutes": 183.5,
+        "safe_budget_minutes": 188.7,
+        "chance_constraint_satisfied": true,
+        "scene": "历史文化游",
+        "mode": "relaxed",
+        "stops": [
+          "田子坊",
+          "思南路",
+          "上海自然博物馆"
+        ]
+      },
+      "error": null
+    },
+    {
+      "case_id": "dlg-0187",
+      "city": "beijing",
+      "style_scene": "城市漫游",
+      "difficulty": "high",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.8866666666666667,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=82.0 safe=188.7 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 0.6,
+          "passed": true,
+          "detail": "replace_noop"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=城市漫游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/1 max=2.8"
+        },
+        {
+          "name": "density",
+          "score": 0.6666666666666667,
+          "passed": true,
+          "detail": "stops=2 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "no_hard_constraints"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 2,
+        "planned_minutes": 82.0,
+        "safe_budget_minutes": 188.7,
+        "chance_constraint_satisfied": true,
+        "scene": "综合观光游",
+        "mode": "photo",
+        "stops": [
+          "烟袋斜街",
+          "后海酒吧街"
+        ]
+      },
+      "error": null
+    },
+    {
+      "case_id": "dlg-0449",
+      "city": "shanghai",
+      "style_scene": "城市漫游",
+      "difficulty": "high",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 1.0,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=146.9 safe=188.7 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "add_stop_but_shrunk_for_ccp"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=城市漫游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/2 max=12.3"
+        },
+        {
+          "name": "density",
+          "score": 1.0,
+          "passed": true,
+          "detail": "stops=3 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "no_hard_constraints"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 3,
+        "planned_minutes": 146.9,
+        "safe_budget_minutes": 188.7,
+        "chance_constraint_satisfied": true,
+        "scene": "历史文化游",
+        "mode": "deep",
+        "stops": [
+          "外滩源",
+          "外滩",
+          "豫园商城"
+        ]
+      },
+      "error": null
+    },
+    {
+      "case_id": "dlg-0620",
+      "city": "beijing",
+      "style_scene": "城市漫游",
+      "difficulty": "medium",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.9666666666666667,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=119.0 safe=188.7 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=0.50 scene=城市漫游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/1 max=1.0"
+        },
+        {
+          "name": "density",
+          "score": 0.6666666666666667,
+          "passed": true,
+          "detail": "stops=2 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 2,
+        "planned_minutes": 119.0,
+        "safe_budget_minutes": 188.7,
+        "chance_constraint_satisfied": true,
+        "scene": "综合观光游",
+        "mode": "balanced",
+        "stops": [
+          "北京古代建筑博物馆",
+          "先农坛"
+        ]
+      },
+      "error": null
+    }
+  ]
+}

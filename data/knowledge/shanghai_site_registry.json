@@ -1,0 +1,174 @@
+[
+  {
+    "site_id": "SITE_SH_YUYUAN",
+    "name": "豫园",
+    "anchor_poi_id": "ZTRIP_SH_005",
+    "aliases": ["豫园商城", "豫园景区"],
+    "relation_type": "inside_scenic_area",
+    "auto_accept_radius_m": 650,
+    "review_radius_m": 1000,
+    "sources": [
+      {
+        "title": "豫园官方网站：景区介绍",
+        "url": "https://www.yugarden.com.cn/page/articleview/introduce-01.html",
+        "authority": "official"
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_ZHUJIAJIAO",
+    "name": "上海朱家角古镇旅游区",
+    "anchor_poi_id": "B001558F5I",
+    "aliases": ["朱家角", "朱家角古镇"],
+    "relation_type": "inside_scenic_area",
+    "auto_accept_radius_m": 1200,
+    "review_radius_m": 1800,
+    "sources": [
+      {
+        "title": "朱家角古镇旅游区官网：放生桥",
+        "url": "https://www.zhujiajiao.com/cn/scenic/bridge/57_1120_666.html",
+        "authority": "official"
+      },
+      {
+        "title": "上海市文化和旅游局：上海古镇介绍",
+        "url": "https://whlyj.sh.gov.cn/cysc/20240418/eeb7bb78799e4f1293ed326d1c5a5666.html",
+        "authority": "government"
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_ORIENTAL_PEARL",
+    "name": "东方明珠广播电视塔",
+    "anchor_poi_id": "B00150F6D6",
+    "aliases": ["东方明珠", "东方明珠电视塔"],
+    "relation_type": "inside_or_attached_facility",
+    "auto_accept_radius_m": 450,
+    "review_radius_m": 800
+  },
+  {
+    "site_id": "SITE_SH_BUND",
+    "name": "外滩",
+    "anchor_poi_id": "ZTRIP_SH_004",
+    "aliases": ["上海外滩"],
+    "relation_type": "inside_scenic_area",
+    "auto_accept_radius_m": 1600,
+    "review_radius_m": 2600,
+    "sources": [
+      {
+        "title": "上海市人民政府：外滩风景区",
+        "url": "https://www.shanghai.gov.cn/citywalk/20260625/9dfb6f86b9664e018607b5cc9ec9a53c.html",
+        "authority": "government"
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_MUSEUM_EAST",
+    "name": "上海博物馆东馆",
+    "anchor_poi_id": "B0FFIFP90V",
+    "aliases": ["上海博物馆(东馆)", "上博东馆"],
+    "relation_type": "inside_venue",
+    "auto_accept_radius_m": 300,
+    "review_radius_m": 500,
+    "sources": [
+      {
+        "title": "上海博物馆：场馆与展厅介绍",
+        "url": "https://www.shanghaimuseum.net/mu/frontend/pg/infomation/about",
+        "authority": "official"
+      },
+      {
+        "title": "上海博物馆东馆导览折页",
+        "url": "https://www.shanghaimuseum.net/mu/upload/202508/e303e216-d767-4bec-bc72-39d26c05f899.pdf",
+        "authority": "official"
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_NATURAL_HISTORY_MUSEUM",
+    "name": "上海自然博物馆",
+    "anchor_poi_id": "B00156NVZG",
+    "aliases": ["上海自然博物馆（上海科技馆分馆）", "自然博物馆"],
+    "relation_type": "inside_venue",
+    "auto_accept_radius_m": 250,
+    "review_radius_m": 450
+  },
+  {
+    "site_id": "SITE_SH_DISNEY_RESORT",
+    "name": "上海迪士尼度假区",
+    "anchor_poi_id": "B0FFGYMCF9",
+    "aliases": ["迪士尼", "上海迪士尼", "迪士尼小镇"],
+    "relation_type": "inside_resort",
+    "auto_accept_radius_m": 1800,
+    "review_radius_m": 2500,
+    "sources": [
+      {
+        "title": "上海迪士尼度假区官方网站：迪士尼小镇",
+        "url": "https://www.shanghaidisneyresort.com/zh-cn/experience?group=disneytown",
+        "authority": "official"
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_BOTANICAL_GARDEN",
+    "name": "上海植物园",
+    "anchor_poi_id": "B00154DWH8",
+    "aliases": ["上海市植物园"],
+    "relation_type": "inside_park",
+    "auto_accept_radius_m": 1200,
+    "review_radius_m": 1800,
+    "sources": [
+      {
+        "title": "上海市绿化和市容管理局：上海植物园介绍",
+        "url": "https://lhsr.sh.gov.cn/xsdw/20200721/5a04a690ffa343d38202ee8941a457d8.html",
+        "authority": "government"
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_ZOO",
+    "name": "上海动物园",
+    "anchor_poi_id": "B0015397C9",
+    "aliases": ["上海市动物园"],
+    "relation_type": "inside_park",
+    "auto_accept_radius_m": 1200,
+    "review_radius_m": 1800,
+    "sources": [
+      {
+        "title": "上海动物园官网",
+        "url": "https://www.shanghaizoo.cn/",
+        "authority": "official"
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_WILD_ANIMAL_PARK",
+    "name": "上海野生动物园",
+    "anchor_poi_id": "B00152F15F",
+    "aliases": ["上野"],
+    "relation_type": "inside_park",
+    "auto_accept_radius_m": 2500,
+    "review_radius_m": 3500,
+    "sources": [
+      {
+        "title": "上海野生动物园官网：园区导览",
+        "url": "https://www.shwzoo.com/index.do?id=4844&newsDetail=",
+        "authority": "official"
+      }
+    ]
+  },
+  {
+    "site_id": "SITE_SH_CHENSHAN_BOTANICAL_GARDEN",
+    "name": "上海辰山植物园",
+    "anchor_poi_id": "B00156DYI3",
+    "aliases": ["辰山植物园"],
+    "relation_type": "inside_park",
+    "auto_accept_radius_m": 2400,
+    "review_radius_m": 3200,
+    "sources": [
+      {
+        "title": "上海辰山植物园官网：专类园区",
+        "url": "https://www.csnbgsh.cn/sites/chenshan2020/static/zl-content.ashx?ctgid=11d6e44d-c699-46b6-8844-bece107bf214&infid=6753fe0a-8899-47da-8555-6475df95427e&leftbarid=ebb74948-734c-4b3e-80fa-3b6b71b90ac2",
+        "authority": "official"
+      }
+    ]
+  }
+]

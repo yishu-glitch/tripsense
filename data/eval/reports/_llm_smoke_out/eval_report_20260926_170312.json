@@ -1,0 +1,250 @@
+{
+  "total": 2,
+  "passed": 2,
+  "pass_rate": 1.0,
+  "metric_pass_rates": {
+    "adjust": 1.0,
+    "ccp": 1.0,
+    "density": 1.0,
+    "geo": 1.0,
+    "retain": 1.0,
+    "theme": 0.5
+  },
+  "by_scene": {
+    "亲子研学游": {
+      "n": 2,
+      "pass_rate": 1.0
+    }
+  },
+  "by_difficulty": {
+    "medium": {
+      "n": 2,
+      "pass_rate": 1.0
+    }
+  },
+  "by_op": {
+    "add_stop": {
+      "n": 2,
+      "pass_rate": 1.0
+    },
+    "replace": {
+      "n": 2,
+      "pass_rate": 1.0
+    },
+    "shorten": {
+      "n": 2,
+      "pass_rate": 1.0
+    },
+    "state_change": {
+      "n": 2,
+      "pass_rate": 1.0
+    }
+  },
+  "failure_code_counts": {
+    "theme_mismatch": 1
+  },
+  "attribution": {
+    "taxonomy": [
+      "prompt",
+      "algorithm",
+      "knowledge_data",
+      "rag_architecture",
+      "case_design",
+      "other"
+    ],
+    "hard_primary_counts": {
+      "prompt": 0,
+      "algorithm": 0,
+      "knowledge_data": 0,
+      "rag_architecture": 0,
+      "case_design": 0,
+      "other": 0
+    },
+    "soft_primary_counts": {
+      "prompt": 0,
+      "algorithm": 1,
+      "knowledge_data": 0,
+      "rag_architecture": 0,
+      "case_design": 0,
+      "other": 0
+    },
+    "examples": {
+      "algorithm": [
+        {
+          "case_id": "dlg-0534",
+          "kind": "soft",
+          "codes": "theme_mismatch",
+          "hypothesis": "[soft] hit_ratio=0.33 scene=亲子研学游",
+          "secondary": "knowledge_data"
+        }
+      ]
+    },
+    "note": "hard= case overall fail; soft= metric miss while overall still passes. Offline (no --llm) rarely attributes to prompt."
+  },
+  "results": [
+    {
+      "case_id": "dlg-0534",
+      "city": "shanghai",
+      "style_scene": "亲子研学游",
+      "difficulty": "medium",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.9333333333333333,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=172.9 safe=188.7 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        },
+        {
+          "name": "theme",
+          "score": 0.6666666666666666,
+          "passed": false,
+          "detail": "hit_ratio=0.33 scene=亲子研学游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/2 max=13.3"
+        },
+        {
+          "name": "density",
+          "score": 1.0,
+          "passed": true,
+          "detail": "stops=3 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        }
+      ],
+      "failures": [
+        {
+          "case_id": "dlg-0534",
+          "turn": 4,
+          "failed_metrics": [
+            "theme"
+          ],
+          "failure_codes": [
+            "theme_mismatch"
+          ],
+          "stage": "replan",
+          "evidence": {
+            "planned_minutes": 172.9,
+            "safe_budget_minutes": 188.7,
+            "n_stops": 3,
+            "stop_names": [
+              "上海自然博物馆",
+              "思南路",
+              "豫园商城"
+            ],
+            "user_utterance": "感觉博物馆太多了，孩子可能会累。要不把科技馆去掉，换成田子坊？那里有特色小店和拍照点，孩子也能放松。但其他点不要太远。",
+            "scene": "历史文化游",
+            "mode": "relaxed",
+            "llm_enabled": true
+          },
+          "hypothesis": "[soft] hit_ratio=0.33 scene=亲子研学游",
+          "suggested_fix_area": "scoring|poi_metadata",
+          "regression": false,
+          "primary_cause": "algorithm",
+          "secondary_cause": "knowledge_data"
+        }
+      ],
+      "plan_summary": {
+        "n_stops": 3,
+        "planned_minutes": 172.9,
+        "safe_budget_minutes": 188.7,
+        "chance_constraint_satisfied": true,
+        "scene": "历史文化游",
+        "mode": "relaxed",
+        "stops": [
+          "上海自然博物馆",
+          "思南路",
+          "豫园商城"
+        ]
+      },
+      "error": null
+    },
+    {
+      "case_id": "dlg-0647",
+      "city": "beijing",
+      "style_scene": "亲子研学游",
+      "difficulty": "medium",
+      "tags": [
+        "add_stop",
+        "shorten",
+        "replace",
+        "state_change"
+      ],
+      "overall": 0.9666666666666667,
+      "passed": true,
+      "metrics": [
+        {
+          "name": "ccp",
+          "score": 1.0,
+          "passed": true,
+          "detail": "planned=119.0 safe=188.7 flag=True"
+        },
+        {
+          "name": "adjust",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        },
+        {
+          "name": "theme",
+          "score": 1.0,
+          "passed": true,
+          "detail": "hit_ratio=1.00 scene=亲子研学游"
+        },
+        {
+          "name": "geo",
+          "score": 1.0,
+          "passed": true,
+          "detail": "anomalies=0/1 max=1.0"
+        },
+        {
+          "name": "density",
+          "score": 0.6666666666666667,
+          "passed": true,
+          "detail": "stops=2 expected~3"
+        },
+        {
+          "name": "retain",
+          "score": 1.0,
+          "passed": true,
+          "detail": "ok"
+        }
+      ],
+      "failures": [],
+      "plan_summary": {
+        "n_stops": 2,
+        "planned_minutes": 119.0,
+        "safe_budget_minutes": 188.7,
+        "chance_constraint_satisfied": true,
+        "scene": "亲子研学游",
+        "mode": "balanced",
+        "stops": [
+          "先农坛",
+          "北京古代建筑博物馆"
+        ]
+      },
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+[
+  {
+    "turn": 1,
+    "utterance": "我想去几个有历史感的地方，大概三四个小时，不想走太多路",
+    "scene": "历史文化游",
+    "adjust_type": null,
+    "params": {
+      "time_mu": 240,
+      "time_sigma": 40,
+      "quality_a": 4.0,
+      "quality_b": 2.0,
+      "distance_a": 2.0,
+      "distance_b": 4.0,
+      "categories": [
+        "attraction",
+        "park"
+      ],
+      "risk_epsilon": 0.1,
+      "fuzzy_word": null,
+      "modification": "initial",
+      "target_poi_name": null,
+      "error": "Connection error."
+    },
+    "t_safe_drccp": 290.4,
+    "theta": [
+      0.0706514161865505,
+      -0.08535384488786368,
+      0.08693678467155755,
+      0.24093790094142548,
+      -0.15396185480936017,
+      0.17634291690314713,
+      -0.4087508615025628,
+      -0.030337295354937496
+    ],
+    "attr_weights": [
+      0.5713297330086556,
+      0.13199310582362578,
+      0.43036180017290704,
+      0.45165278022754207,
+      0.5935124874282074,
+      0.26349008929252316
+    ],
+    "trace_P": 0.2189949884691234,
+    "replan": "none",
+    "route": {
+      "route": [
+        "B000A8UIN8",
+        "B0FFFVC5E5"
+      ],
+      "route_details": [
+        {
+          "order": 1,
+          "poi_id": "B000A8UIN8",
+          "name": "故宫博物院",
+          "parent_site": "故宫",
+          "is_main_site": true,
+          "sub_spots": [],
+          "category": "博物馆",
+          "poi_type": "museum",
+          "district": "东城区",
+          "rating": 4.9,
+          "exp_dwell_min": 90,
+          "travel_to_next": 45.0,
+          "attr_score": 1.2751,
+          "attr_vector": {
+            "cultural_score": 1.0,
+            "nature_score": 0.0,
+            "commercial_score": 0.0,
+            "scenic_score": 0.8,
+            "indoor_score": 0.8,
+            "edu_score": 0.7
+          },
+          "time_slot": "上午",
+          "time_range": "09:00-12:00"
+        },
+        {
+          "order": 2,
+          "poi_id": "B0FFFVC5E5",
+          "name": "颐和园",
+          "parent_site": "颐和园",
+          "is_main_site": true,
+          "sub_spots": [],
+          "category": "公园",
+          "poi_type": "park",
+          "district": "海淀区",
+          "rating": 4.5,
+          "exp_dwell_min": 75,
+          "travel_to_next": null,
+          "attr_score": 1.1889,
+          "attr_vector": {
+            "cultural_score": 0.9,
+            "nature_score": 0.8,
+            "commercial_score": 0.3,
+            "scenic_score": 1.0,
+            "indoor_score": 0.1,
+            "edu_score": 0.6
+          },
+          "time_slot": "下午",
+          "time_range": "13:00-17:00"
+        }
+      ],
+      "total_time_min": 210.0,
+      "t_safe_min": 279.3,
+      "t_budget_mu": 240,
+      "prob_satisfy": 0.7734,
+      "constraint_ok": true,
+      "n_pois": 2,
+      "use_drccp": true,
+      "alpha": 0.5353,
+      "beta": 0.4573,
+      "attr_weights": [
+        0.5713297330086556,
+        0.13199310582362578,
+        0.43036180017290704,
+        0.45165278022754207,
+        0.5935124874282074,
+        0.26349008929252316
+      ]
+    }
+  },
+  {
+    "turn": 2,
+    "utterance": "能再加一个南锣鼓巷吗，想感受胡同文化",
+    "scene": "历史文化游",
+    "adjust_type": "add_poi",
+    "params": {
+      "time_mu": 240,
+      "time_sigma": 40,
+      "quality_a": 4.0,
+      "quality_b": 2.0,
+      "distance_a": 2.0,
+      "distance_b": 4.0,
+      "categories": [
+        "attraction",
+        "park"
+      ],
+      "risk_epsilon": 0.1,
+      "fuzzy_word": null,
+      "modification": "initial",
+      "target_poi_name": null,
+      "error": "Connection error."
+    },
+    "t_safe_drccp": 290.4,
+    "theta": [
+      0.013160702994826481,
+      0.13321396120255785,
+      0.3120680238300347,
+      0.2171196170604627,
+      0.054877965672174824,
+      0.10485884781448754,
+      -0.5418518281250968,
+      -0.19541047224143238
+    ],
+    "attr_weights": [
+      0.596756804331128,
+      0.18328618778777592,
+      0.4560221700944465,
+      0.28708894765357507,
+      0.7416199347859118,
+      0.4306131613591685
+    ],
+    "trace_P": 0.2033105236344351,
+    "replan": "local",
+    "route": {
+      "route": [
+        "B000A8UIN8",
+        "B0FFFVC5E5",
+        "ZTRIP_BJ_001"
+      ],
+      "route_details": [
+        {
+          "order": 1,
+          "poi_id": "B000A8UIN8",
+          "name": "故宫博物院",
+          "parent_site": "故宫",
+          "is_main_site": true,
+          "sub_spots": [],
+          "category": "博物馆",
+          "poi_type": "museum",
+          "district": "东城区",
+          "rating": 4.9,
+          "exp_dwell_min": 75,
+          "travel_to_next": 45.0,
+          "attr_score": 1.2751,
+          "attr_vector": {
+            "cultural_score": 1.0,
+            "nature_score": 0.0,
+            "commercial_score": 0.0,
+            "scenic_score": 0.8,
+            "indoor_score": 0.8,
+            "edu_score": 0.7
+          },
+          "time_slot": "上午",
+          "time_range": "09:00-12:00"
+        },
+        {
+          "order": 2,
+          "poi_id": "B0FFFVC5E5",
+          "name": "颐和园",
+          "parent_site": "颐和园",
+          "is_main_site": true,
+          "sub_spots": [],
+          "category": "公园",
+          "poi_type": "park",
+          "district": "海淀区",
+          "rating": 4.5,
+          "exp_dwell_min": 61,
+          "travel_to_next": 20.0,
+          "attr_score": 1.1889,
+          "attr_vector": {
+            "cultural_score": 0.9,
+            "nature_score": 0.8,
+            "commercial_score": 0.3,
+            "scenic_score": 1.0,
+            "indoor_score": 0.1,
+            "edu_score": 0.6
+          },
+          "time_slot": "下午",
+          "time_range": "13:00-17:00"
+        },
+        {
+          "order": 3,
+          "poi_id": "ZTRIP_BJ_001",
+          "name": "南锣鼓巷",
+          "parent_site": "nan",
+          "is_main_site": true,
+          "sub_spots": [],
+          "category": "历史街区",
+          "poi_type": "heritage",
+          "district": "东城区",
+          "rating": 4.6,
+          "exp_dwell_min": 90,
+          "travel_to_next": null,
+          "attr_score": 0.975,
+          "attr_vector": {
+            "cultural_score": 0.9,
+            "nature_score": 0.1,
+            "commercial_score": 0.4,
+            "scenic_score": 0.8,
+            "indoor_score": 0.0,
+            "edu_score": 0.5
+          },
+          "time_slot": "傍晚",
+          "time_range": ""
+        }
+      ],
+      "total_time_min": 291.0,
+      "t_safe_min": 290.4,
+      "t_budget_mu": 240,
+      "prob_satisfy": 0.10115462099558592,
+      "constraint_ok": false,
+      "n_pois": 3,
+      "use_drccp": true,
+      "alpha": 0.5,
+      "beta": 0.5,
+      "attr_weights": [
+        0.4343709578612004,
+        0.17655554341987903,
+        0.6396620849031972,
+        0.0,
+        0.999999982710507,
+        0.5637509269508613
+      ]
+    }
+  },
+  {
+    "turn": 3,
+    "utterance": "能不能把其中一个换成更有特色的古迹",
+    "scene": "历史文化游",
+    "adjust_type": "replace_one",
+    "params": {
+      "time_mu": 240,
+      "time_sigma": 40,
+      "quality_a": 4.0,
+      "quality_b": 2.0,
+      "distance_a": 2.0,
+      "distance_b": 4.0,
+      "categories": [
+        "attraction",
+        "park"
+      ],
+      "risk_epsilon": 0.1,
+      "fuzzy_word": null,
+      "modification": "initial",
+      "target_poi_name": null,
+      "error": "Connection error."
+    },
+    "t_safe_drccp": 290.4,
+    "theta": [
+      -0.11143014492337917,
+      0.2249506671210168,
+      0.2652522645710057,
+      0.18275848276723744,
+      0.21806249254513882,
+      -0.04487024138213269,
+      -0.5482362399581046,
+      -0.26067914588749536
+    ],
+    "attr_weights": [
+      0.6916289735987706,
+      0.2543445794324171,
+      0.32275467297160976,
+      0.23523854187074178,
+      0.7882852979707183,
+      0.5708552366839804
+    ],
+    "trace_P": 0.20145918987141395,
+    "replan": "local",
+    "route": {
+      "route": [
+        "B000A8UIN8",
+        "B0FFFVC5E5",
+        "ZTRIP_BJ_001"
+      ],
+      "route_details": [
+        {
+          "order": 1,
+          "poi_id": "B000A8UIN8",
+          "name": "故宫博物院",
+          "parent_site": "故宫",
+          "is_main_site": true,
+          "sub_spots": [],
+          "category": "博物馆",
+          "poi_type": "museum",
+          "district": "东城区",
+          "rating": 4.9,
+          "exp_dwell_min": 75,
+          "travel_to_next": 45.0,
+          "attr_score": 1.2751,
+          "attr_vector": {
+            "cultural_score": 1.0,
+            "nature_score": 0.0,
+            "commercial_score": 0.0,
+            "scenic_score": 0.8,
+            "indoor_score": 0.8,
+            "edu_score": 0.7
+          },
+          "time_slot": "上午",
+          "time_range": "09:00-12:00"
+        },
+        {
+          "order": 2,
+          "poi_id": "B0FFFVC5E5",
+          "name": "颐和园",
+          "parent_site": "颐和园",
+          "is_main_site": true,
+          "sub_spots": [],
+          "category": "公园",
+          "poi_type": "park",
+          "district": "海淀区",
+          "rating": 4.5,
+          "exp_dwell_min": 61,
+          "travel_to_next": 20.0,
+          "attr_score": 1.1889,
+          "attr_vector": {
+            "cultural_score": 0.9,
+            "nature_score": 0.8,
+            "commercial_score": 0.3,
+            "scenic_score": 1.0,
+            "indoor_score": 0.1,
+            "edu_score": 0.6
+          },
+          "time_slot": "下午",
+          "time_range": "13:00-17:00"
+        },
+        {
+          "order": 3,
+          "poi_id": "ZTRIP_BJ_001",
+          "name": "南锣鼓巷",
+          "parent_site": "nan",
+          "is_main_site": true,
+          "sub_spots": [],
+          "category": "历史街区",
+          "poi_type": "heritage",
+          "district": "东城区",
+          "rating": 4.6,
+          "exp_dwell_min": 90,
+          "travel_to_next": null,
+          "attr_score": 0.975,
+          "attr_vector": {
+            "cultural_score": 0.9,
+            "nature_score": 0.1,
+            "commercial_score": 0.4,
+            "scenic_score": 0.8,
+            "indoor_score": 0.0,
+            "edu_score": 0.5
+          },
+          "time_slot": "傍晚",
+          "time_range": ""
+        }
+      ],
+      "total_time_min": 291.0,
+      "t_safe_min": 290.4,
+      "t_budget_mu": 240,
+      "prob_satisfy": 0.10115462099558592,
+      "constraint_ok": false,
+      "n_pois": 3,
+      "use_drccp": true,
+      "alpha": 0.5,
+      "beta": 0.5,
+      "attr_weights": [
+        0.5967748856544635,
+        0.2710608240710163,
+        0.4220331314304525,
+        0.0,
+        0.9999999812417142,
+        0.7156890252233364
+      ]
+    }
+  }
+]

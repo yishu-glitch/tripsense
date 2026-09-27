@@ -1,0 +1,20 @@
+# One-click deploy on Render: https://render.com/deploy
+# After create, set secret env vars in the dashboard (never commit them):
+#   TRIPSENSE_LLM_API_KEY, AMAP_WEB_SERVICE_KEY (optional), and related LLM vars from .env.example
+services:
+  - type: web
+    name: tripsense-mvp
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: TRIPSENSE_LLM_PROVIDER
+        value: openai-compatible
+      - key: TRIPSENSE_LLM_BASE_URL
+        value: https://api.deepseek.com/v1
+      - key: TRIPSENSE_LLM_MODEL
+        value: deepseek-chat
+      - key: TRIPSENSE_LLM_API_KEY
+        sync: false
+      - key: AMAP_WEB_SERVICE_KEY
+        sync: false

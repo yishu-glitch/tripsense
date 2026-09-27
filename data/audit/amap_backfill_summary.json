@@ -1,0 +1,23 @@
+{
+  "source_rows": 5634,
+  "real_amap_ids": 5626,
+  "cached_ids": 5626,
+  "returned_ids": 5508,
+  "not_returned_ids": 118,
+  "fetched_this_run": 5446,
+  "with_photos": 5503,
+  "with_today_hours": 4548,
+  "with_week_hours": 4743,
+  "with_tel": 2353,
+  "with_rating": 5403,
+  "with_cost": 96,
+  "with_parent": 1754,
+  "with_entrance": 4534,
+  "with_exit": 0,
+  "child_candidates": 1821,
+  "child_candidate_statuses": {
+    "exclude_non_attraction": 1812,
+    "review_candidate": 5,
+    "review_unknown": 4
+  }
+}

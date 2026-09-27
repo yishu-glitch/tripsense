@@ -1,0 +1,12 @@
+{
+  "requested": 6,
+  "returned": 5,
+  "name_consistent": 5,
+  "with_photos": 5,
+  "with_today_hours": 3,
+  "with_week_hours": 5,
+  "with_parent": 1,
+  "with_children": 4,
+  "with_entrance": 5,
+  "with_exit": 0
+}
