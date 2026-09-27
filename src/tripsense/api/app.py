@@ -111,7 +111,7 @@ def product_prototype() -> HTMLResponse:
         f"<script>{api_client}</script>",
     )
     prototype = prototype.replace(
-        '<script src="tripsense-ui.js?v=5"></script>',
+        '<script src="tripsense-ui.js?v=6"></script>',
         f"<script>{ui_helpers}</script>",
     )
     return HTMLResponse(prototype)
