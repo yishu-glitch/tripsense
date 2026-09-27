@@ -85,10 +85,12 @@ def handle_invalid_state(_request: Request, exc: ValueError) -> JSONResponse:
 
 
 @app.get("/api/v1/health")
-def health() -> dict:
+def health(request: Request):
+    import json
+
     llm = service.llm_provider
     configured = llm.provider_name != "local-baseline"
-    return {
+    payload = {
         "status": "ok",
         "planner": "kalman-ccp-greedy",
         "realtime": service.realtime_provider.provider_name,
@@ -99,6 +101,32 @@ def health() -> dict:
             "configured": configured,
         },
     }
+    accept = (request.headers.get("accept") or "").lower()
+    wants_html = "text/html" in accept and not accept.strip().startswith("application/json")
+    if wants_html:
+        realtime = str(payload["realtime"])
+        weather_ok = realtime == "amap-weather"
+        return HTMLResponse(
+            "<!doctype html><html lang='zh-CN'><head><meta charset='utf-8'>"
+            "<meta name='viewport' content='width=device-width,initial-scale=1'>"
+            "<title>TripSense Health</title>"
+            "<style>body{font:15px/1.6 system-ui,sans-serif;margin:32px;color:#241f38;background:#faf7f2}"
+            "h1{font-size:22px;margin:0 0 8px}p{color:#5c5668}.ok{color:#1f7a57;font-weight:700}"
+            ".warn{color:#9a5b1f;font-weight:700}code{background:#efeae3;padding:2px 6px;border-radius:6px}"
+            "pre{white-space:pre-wrap;background:#fff;border:1px solid #e4ddd4;border-radius:12px;padding:14px}"
+            "a{color:#5b4a8a}</style></head><body>"
+            "<h1>TripSense 健康检查</h1>"
+            f"<p>状态：<span class='ok'>{payload['status']}</span></p>"
+            f"<p>实时天气：<span class='{'ok' if weather_ok else 'warn'}'>{realtime}</span>"
+            f"{'（高德已接入）' if weather_ok else '（未读取到 AMAP_WEB_SERVICE_KEY）'}</p>"
+            f"<p>大模型：<code>{payload['llm']['provider']}</code> / <code>{payload['llm']['model']}</code>"
+            f"{' · 已配置' if configured else ' · 未配置'}</p>"
+            "<p>说明：天气提醒只在雨雪雾等需要改线时出现在路线页；晴天不会弹横幅。"
+            "<a href='/?demo_weather=rain'>打开雨天演示</a></p>"
+            f"<pre>{json.dumps(payload, ensure_ascii=False, indent=2)}</pre>"
+            "</body></html>"
+        )
+    return payload
 
 
 @app.get("/", include_in_schema=False)
