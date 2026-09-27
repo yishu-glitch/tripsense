@@ -32,7 +32,21 @@ python -m tripsense.mvp
 http://192.168.x.x:8000/?v=route-card
 ```
 
-不要在手机上打开 `http://127.0.0.1:8000/`——那是手机自己，不是电脑。若手机仍打不开：确认手机与电脑同一 Wi‑Fi；必要时在 Windows 防火墙放行 Python 入站 8000 端口。仅本机调试可改回：`--host 127.0.0.1`。
+不要在手机上打开 `http://127.0.0.1:8000/`——那是手机自己，不是电脑。若手机仍打不开：
+
+1. 用 `netstat -ano | findstr :8000` 确认监听是 `0.0.0.0:8000`（若是 `127.0.0.1:8000` 则手机永远进不来，请重启：`python -m tripsense.mvp --host 0.0.0.0 --port 8000`）；
+2. 确认手机与电脑同一 Wi‑Fi；
+3. Windows 防火墙已放行 Python 入站时一般足够；仅本机调试可改回 `--host 127.0.0.1`。
+
+### 可选：临时公网 HTTPS（手机点链接）
+
+本机 MVP 已在跑时，另开终端：
+
+```powershell
+cloudflared tunnel --url http://127.0.0.1:8000
+```
+
+终端会打印 `https://xxxx.trycloudflare.com`，手机浏览器直接打开即可（电脑需保持 MVP + tunnel 运行）。该地址会随重启变化，适合当天演示，不适合长期分享。
 
 默认数据保存于 `data/tripsense-demo.db`。也可运行：
 
@@ -89,7 +103,35 @@ DiaryGenerator
 
 模型只能重写结构化日记中的标题、摘要与叙事，不能虚构地点、照片、心情或实时事实。生成失败时回退到本地模板。
 
-## 6. 生产部署建议
+## 6. 公网托管（手机长期可点链接）
+
+GitHub Pages **不能**跑 FastAPI/聊天 API。完整 MVP 请用容器托管（推荐 Render 免费档）。
+
+仓库已含：
+
+- `Dockerfile`：`python -m tripsense.mvp --host 0.0.0.0 --port $PORT`
+- `render.yaml`：一键 Web Service 蓝图
+
+步骤：
+
+1. 将本仓库推到 GitHub（公开仓库便于分享 demo）；
+2. 打开 [Render](https://render.com) → New → Blueprint，选中该仓库；或 New Web Service → 选仓库 → Runtime=Docker；
+3. 在 Dashboard 配置密钥（**不要**写进 git）：
+   - `TRIPSENSE_LLM_API_KEY`（可选，无 Key 仍可规划/演示，聊天语义增强降级）
+   - `AMAP_WEB_SERVICE_KEY`（可选，天气）
+   - 以及 `.env.example` 中的 `TRIPSENSE_LLM_*` 如需覆盖默认值；
+4. Deploy 完成后用 Render 提供的 `https://xxxx.onrender.com/?v=route-card` 在手机打开。
+
+本地复现容器：
+
+```powershell
+docker build -t tripsense .
+docker run --rm -p 8000:8000 --env-file .env tripsense
+```
+
+免费档冷启动可能要等几十秒；SQLite 在免费实例上不持久，仅适合演示。
+
+## 7. 生产部署建议
 
 生产版建议拆为：静态前端/CDN、FastAPI 容器、PostgreSQL、私有对象存储、后台任务队列、模型网关和实时工具适配器。SQLite 仅用于单机 demo，不用于多实例部署。
 
@@ -102,7 +144,7 @@ DiaryGenerator
 5. 接入模型网关与评测日志；
 6. 在已经接入的高德天气适配器后继续补充预约、开放、活动和交通工具。
 
-## 7. 在哪里切换和对比大模型
+## 8. 在哪里切换和对比大模型
 
 大模型已接入，但**只负责语义与表达**：意图软先验、多候选择优、推荐理由和日记润色。
 选点、排序、时间与距离仍由 `src/tripsense/core/planner.py` 的算法决定，模型不能直接产出

@@ -22,3 +22,5 @@ Thumbs.db
 htmlcov/
 .cloudflared/
 ngrok.yml
+_gh_auth_out.txt
+_gh_auth_err.txt

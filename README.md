@@ -58,10 +58,16 @@ pip install -e ".[api]"
 python -m tripsense.mvp
 ```
 
-本机浏览器打开 `http://127.0.0.1:8000/`。默认绑定 `0.0.0.0`，手机请用电脑局域网 IP（`ipconfig` 查 WLAN IPv4），例如 `http://192.168.x.x:8000/`，不要用手机上的 `127.0.0.1`。首次启动会自动创建
+本机浏览器打开 `http://127.0.0.1:8000/`。默认绑定 `0.0.0.0`，手机请用电脑局域网 IP（`ipconfig` 查 WLAN IPv4），例如 `http://192.168.x.x:8000/`，不要用手机上的 `127.0.0.1`。若 `netstat` 显示只监听 `127.0.0.1:8000`，请重启并显式带上 `--host 0.0.0.0`。首次启动会自动创建
 `data/tripsense-demo.db`，不需要 API Key、账号或外部数据库。原型在该地址运行时，
 保存行程、添加旅途记录和生成 AI 旅行日记会写入真实 SQLite；直接双击 HTML 时则保持
 纯前端演示模式。
+
+### 手机公网演示
+
+- **当天临时链接**：本机 MVP 运行时执行 `cloudflared tunnel --url http://127.0.0.1:8000`，用打印的 `https://*.trycloudflare.com` 在手机打开。
+- **长期托管**：仓库含 `Dockerfile` / `render.yaml`。推到 GitHub 后用 [Render](https://render.com) Docker Web Service 部署；在面板配置 `TRIPSENSE_LLM_API_KEY`、`AMAP_WEB_SERVICE_KEY`（勿提交进 git）。详情见 `docs/TripSense_MVP_运行与部署.md`。
+- **GitHub Pages**：只能托管 `web/` 静态原型，**不能**跑聊天/规划 API。
 
 如需指定端口和数据库：
 
