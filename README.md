@@ -99,7 +99,7 @@ python -m tripsense.mvp
 
 ```powershell
 $env:AMAP_WEB_SERVICE_KEY = "你的高德 Web 服务 Key"   # 天气
-$env:TRIPSENSE_LLM_API_KEY = "你的大模型 Key"          # 语义增强（视部署文档变量名）
+$env:TRIPSENSE_LLM_API_KEY = "你的大模型 Key"          # 语义增强；详见部署文档
 ```
 
 无 Key 回归 / 离线 demo：
@@ -127,11 +127,12 @@ python -m tripsense.demo --city shanghai --text "今天想慢慢走，看看老�
 
 ## 文档导航
 
+校招快读：[`docs/TripSense_作品集导读.md`](docs/TripSense_作品集导读.md)（约 10 分钟）  
 完整分组索引：[`docs/README.md`](docs/README.md)
 
 | 分组 | 从这里读 |
 |------|----------|
-| 产品 / 设计 | 综合产品设计、原型依据、交互、旅行风格、推荐理由 |
+| 产品 / 设计 | 作品集导读、综合产品设计、原型依据、交互、旅行风格、推荐理由 |
 | AI / 架构 | AI 与技术架构、知识分层、产品–研究对齐、LLM 提示词 |
 | 评测 | 指标体系 v2.1、Eval-200 筛选报告 |
 | 部署 | MVP 运行与部署 |
@@ -159,4 +160,4 @@ tests/                   行为与公式回归
 
 ## 作者说明
 
-本仓库为个人项目（校招作品向）：覆盖问题定义、关键交互、LLM×算法边界、可演示 MVP 与离线评测框架。欢迎从 README → 本地 Demo → `docs/` 产品主文档的顺序阅读；技术细节以代码与专题文档为准。
+本仓库为个人项目（校招作品向）：覆盖问题定义、关键交互、LLM×算法边界、可演示 MVP 与离线评测框架。建议阅读顺序：作品集导读 → README → 本地 Demo → 产品主文档；技术细节以代码与专题文档为准。
