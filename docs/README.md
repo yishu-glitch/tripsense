@@ -1,6 +1,6 @@
 # TripSense 文档索引
 
-> 校招 / 面试优先读 **[作品集导读](TripSense_作品集导读.md)**（约 10 分钟路径）。  
+> 建议先读 **[项目导读](TripSense_项目导读.md)**（约 10 分钟）。  
 > 工程启动与 Demo 命令见根目录 [`README.md`](../README.md)。
 
 历史诊断与阶段数据报告在 [`archive/2026-09-phase1/`](archive/2026-09-phase1/)，**不作为当前实现依据**。
@@ -11,7 +11,7 @@
 
 | 文档 | 内容 |
 |------|------|
-| [`TripSense_作品集导读.md`](TripSense_作品集导读.md) | **招聘向入口**：阅读路径与面试可讲决策 |
+| [`TripSense_项目导读.md`](TripSense_项目导读.md) | 快速入口：阅读路径与关键决策 |
 | [`TripSense_综合产品设计文档_v2.0.md`](TripSense_综合产品设计文档_v2.0.md) | **产品主文档**：机会、用户、原则、指标与上海 MVP 范围 |
 | [`TripSense_产品原型设计依据与框架_v2.5.md`](TripSense_产品原型设计依据与框架_v2.5.md) | 手机端交互原型依据、状态字段与验收清单 |
 | [`TripSense_核心交互设计说明_v2.0.md`](TripSense_核心交互设计说明_v2.0.md) | 冷启动、规划、对话与路线、时间调整、手账 |
@@ -49,7 +49,7 @@
 | [`TripSense_评测与指标体系_v2.1.md`](TripSense_评测与指标体系_v2.1.md) | **评测主文档**：采用指标、质量护栏、Eval-200 怎么读 |
 | [`TripSense_评测与指标体系_v2.0.md`](TripSense_评测与指标体系_v2.0.md)、[`TripSense_评测框架_对话集200.md`](TripSense_评测框架_对话集200.md) | 已合并进 v2.1，仅保留跳转 stub |
 | [`../data/eval/SELECTION_REPORT.md`](../data/eval/SELECTION_REPORT.md) | Eval-200 子集筛选报告 |
-| [`../data/eval/reports/`](../data/eval/reports/) | 过程报告（归因、多轮摘要、badcase 复跑等）；面试不必通读 |
+| [`../data/eval/reports/`](../data/eval/reports/) | 过程报告（归因、多轮摘要、badcase 复跑等）；不必通读 |
 
 ---
 
@@ -63,10 +63,10 @@
 
 ---
 
-## 建议阅读顺序（校招 / 面试）
+## 建议阅读顺序
 
-1. [作品集导读](TripSense_作品集导读.md) → 根目录 README（问题 → 混合架构 → 关键决策 → Demo）
+1. [项目导读](TripSense_项目导读.md) → 根目录 README（问题 → 混合架构 → 关键决策 → Demo）
 2. 综合产品设计文档 v2.0
-3. LLM 提示词规范（讲清 B → Planner → A/C）
-4. 评测与指标体系 v2.1（讲清护栏，不堆数字）
+3. LLM 提示词规范（B → Planner → A/C）
+4. 评测与指标体系 v2.1（护栏怎么读）
 5. 需要深挖时：产品研究对齐、交互说明、部署文档
