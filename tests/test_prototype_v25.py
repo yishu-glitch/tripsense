@@ -43,6 +43,13 @@ def test_saved_stops_reuse_duration_wheel():
     render_saved = html.split("function renderSaved()", 1)[1].split("function toast()", 1)[0]
     assert "durationMenu(s)" in render_saved
     assert "bindDurationMenus" in render_saved
+    # Name + time/duration share one row; 了解地点 is alone on the next line.
+    assert 'class="saved-place-head"' in render_saved
+    assert (
+        'class="saved-stop-meta"><span>\'+s.time+\'</span>\'+durationMenu(s)+\'</div></div>'
+        '<button class="place-detail-link saved-place-detail-link"'
+    ) in render_saved
+    assert ".saved-place{display:grid;gap:9px" in html
 
 
 def test_navigation_uses_consistent_line_icon_set():
